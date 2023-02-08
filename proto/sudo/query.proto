@@ -3,13 +3,13 @@ package furybase.furybase.sudo;
 import "google/api/annotations.proto";
 // this line is used by starport scaffolding # 1
 
-option go_package = "github.com/furybase/furybase/x/sudo/types";
+option go_package = "github.com/furyunderverse/furybase/x/sudo/types";
 
 // Query defines the gRPC querier service.
 service Query {
     // Queries a list of admin items.
 	rpc Admin(QueryAdminRequest) returns (QueryAdminResponse) {
-		option (google.api.http).get = "/furybase/furybase/sudo/admin";
+		option (google.api.http).get = "/furyunderverse/furybase/sudo/admin";
 	}
 // this line is used by starport scaffolding # 2
 }

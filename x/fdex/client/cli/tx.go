@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/furybase/furybase/x/fdex/types"
+	"github.com/furyunderverse/furybase/x/fdex/types"
 )
 
 var (

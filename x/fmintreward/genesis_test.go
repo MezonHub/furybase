@@ -3,10 +3,10 @@ package fmintreward_test
 import (
 	"testing"
 
-	keepertest "github.com/furybase/furybase/testutil/keeper"
-	"github.com/furybase/furybase/testutil/nullify"
-	"github.com/furybase/furybase/x/fmintreward"
-	"github.com/furybase/furybase/x/fmintreward/types"
+	keepertest "github.com/furyunderverse/furybase/testutil/keeper"
+	"github.com/furyunderverse/furybase/testutil/nullify"
+	"github.com/furyunderverse/furybase/x/fmintreward"
+	"github.com/furyunderverse/furybase/x/fmintreward/types"
 	"github.com/stretchr/testify/require"
 )
 

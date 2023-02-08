@@ -5,7 +5,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	fvotetypes "github.com/furybase/furybase/x/fvote/types"
+	fvotetypes "github.com/furyunderverse/furybase/x/fvote/types"
 	"github.com/tendermint/tendermint/crypto"
 )
 

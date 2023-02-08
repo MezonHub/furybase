@@ -13,8 +13,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
 	icacontrollerkeeper "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/controller/keeper"
-	"github.com/furybase/furybase/utils"
-	"github.com/furybase/furybase/x/ledger/types"
+	"github.com/furyunderverse/furybase/utils"
+	"github.com/furyunderverse/furybase/x/ledger/types"
 )
 
 type (

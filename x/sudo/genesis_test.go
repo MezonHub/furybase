@@ -3,10 +3,10 @@ package sudo_test
 import (
 	"testing"
 
-	keepertest "github.com/furybase/furybase/testutil/keeper"
-	"github.com/furybase/furybase/testutil/sample"
-	"github.com/furybase/furybase/x/sudo"
-	"github.com/furybase/furybase/x/sudo/types"
+	keepertest "github.com/furyunderverse/furybase/testutil/keeper"
+	"github.com/furyunderverse/furybase/testutil/sample"
+	"github.com/furyunderverse/furybase/x/sudo"
+	"github.com/furyunderverse/furybase/x/sudo/types"
 	"github.com/stretchr/testify/require"
 )
 

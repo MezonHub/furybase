@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/furybase/furybase/utils"
+	"github.com/furyunderverse/furybase/utils"
 )
 
 const TypeMsgSetStakeItemLimit = "set_stake_item_limit"

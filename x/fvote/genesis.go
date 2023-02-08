@@ -2,8 +2,8 @@ package fvote
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/fvote/keeper"
-	"github.com/furybase/furybase/x/fvote/types"
+	"github.com/furyunderverse/furybase/x/fvote/keeper"
+	"github.com/furyunderverse/furybase/x/fvote/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

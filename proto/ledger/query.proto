@@ -7,143 +7,143 @@ import "google/api/annotations.proto";
 //import "cosmos/base/query/v1beta1/pagination.proto";
 // this line is used by starport scaffolding # 1
 
-option go_package = "github.com/furybase/furybase/x/ledger/types";
+option go_package = "github.com/furyunderverse/furybase/x/ledger/types";
 
 // Query defines the gRPC querier service.
 service Query {
 // Queries a list of getExchangeRate items.
 	rpc GetExchangeRate(QueryGetExchangeRateRequest) returns (QueryGetExchangeRateResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/exchange_rate/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/exchange_rate/{denom}";
 	}
 
 // Queries a list of exchangeRateAll items.
 	rpc ExchangeRateAll(QueryExchangeRateAllRequest) returns (QueryExchangeRateAllResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/exchange_rate_all";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/exchange_rate_all";
 	}
 
 // Queries a list of getEraExchangeRate items.
 	rpc GetEraExchangeRate(QueryGetEraExchangeRateRequest) returns (QueryGetEraExchangeRateResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/era_exchange_rate/{denom}/{era}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/era_exchange_rate/{denom}/{era}";
 	}
 
 // Queries a list of eraExchangeRatesByDenom items.
 	rpc EraExchangeRatesByDenom(QueryEraExchangeRatesByDenomRequest) returns (QueryEraExchangeRatesByDenomResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/era_exchange_rates_by_denom/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/era_exchange_rates_by_denom/{denom}";
 	}
 
 // Queries a list of bondedPoolsByDenom items.
 	rpc BondedPoolsByDenom(QueryBondedPoolsByDenomRequest) returns (QueryBondedPoolsByDenomResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/bonded_pools_by_denom/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/bonded_pools_by_denom/{denom}";
 	}
 
 // Queries a list of getPoolDetail items.
 	rpc GetPoolDetail(QueryGetPoolDetailRequest) returns (QueryGetPoolDetailResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_pool_detail/{denom}/{pool}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_pool_detail/{denom}/{pool}";
 	}
 
 // Queries a list of getChainEra items.
 	rpc GetChainEra(QueryGetChainEraRequest) returns (QueryGetChainEraResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_chain_era/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_chain_era/{denom}";
 	}
 
 // Queries a list of getCurrentEraSnapshot items.
 	rpc GetCurrentEraSnapshot(QueryGetCurrentEraSnapshotRequest) returns (QueryGetCurrentEraSnapshotResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_current_era_snapshot/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_current_era_snapshot/{denom}";
 	}
 
 // Queries a list of getReceiver items.
 	rpc GetProtocolFeeReceiver(QueryGetProtocolFeeReceiverRequest) returns (QueryGetProtocolFeeReceiverResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/protocol_fee_receiver";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/protocol_fee_receiver";
 	}
 
 // Queries a list of getCommission items.
 	rpc GetStakingRewardCommission(QueryGetStakingRewardCommissionRequest) returns (QueryGetStakingRewardCommissionResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_staking_reward_commission";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_staking_reward_commission";
 	}
 
 // Queries a list of getUnbondFee items.
 	rpc GetUnbondRelayFee(QueryGetUnbondRelayFeeRequest) returns (QueryGetUnbondRelayFeeResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_unbond_relay_fee/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_unbond_relay_fee/{denom}";
 	}
 
 // Queries a list of getUnbondCommission items.
 	rpc GetUnbondCommission(QueryGetUnbondCommissionRequest) returns (QueryGetUnbondCommissionResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_unbond_commission";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_unbond_commission";
 	}
 
 // Queries a list of getEraUnbondLimit items.
 	rpc GetEraUnbondLimit(QueryGetEraUnbondLimitRequest) returns (QueryGetEraUnbondLimitResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_era_unbond_limit/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_era_unbond_limit/{denom}";
 	}
 
 // Queries a list of getBondPipeline items.
 	rpc GetBondPipeline(QueryGetBondPipelineRequest) returns (QueryGetBondPipelineResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_bond_pipeline/{denom}/{pool}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_bond_pipeline/{denom}/{pool}";
 	}
 
 // Queries a list of getEraSnapshot items.
 	rpc GetEraSnapshot(QueryGetEraSnapshotRequest) returns (QueryGetEraSnapshotResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_era_snapshot/{denom}/{era}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_era_snapshot/{denom}/{era}";
 	}
 
 // Queries a list of getSnapshot items.
 	rpc GetSnapshot(QueryGetSnapshotRequest) returns (QueryGetSnapshotResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_snapshot/{shotId}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_snapshot/{shotId}";
 	}
 
 // Queries a list of getTotalExpectedActive items.
 	rpc GetTotalExpectedActive(QueryGetTotalExpectedActiveRequest) returns (QueryGetTotalExpectedActiveResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_total_expected_active/{denom}/{era}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_total_expected_active/{denom}/{era}";
 	}
 
 // Queries a list of getBondRecord items.
 	rpc GetBondRecord(QueryGetBondRecordRequest) returns (QueryGetBondRecordResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_bond_record/{denom}/{txhash}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_bond_record/{denom}/{txhash}";
 	}
 
 // Queries a list of getSignature items.
 	rpc GetSignature(QueryGetSignatureRequest) returns (QueryGetSignatureResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_signature";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_signature";
 	}
 
 // Queries a list of GetRParams items.
 	rpc GetRParams(QueryGetRParamsRequest) returns (QueryGetRParamsResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/get_r_params/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/get_r_params/{denom}";
 	}
 
 // Queries a list of TotalFeeList items.
 	rpc TotalProtocolFee(QueryTotalProtocolFeeRequest) returns (QueryTotalProtocolFeeResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/total_protocol_fee";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/total_protocol_fee";
 	}
 
 // Queries a list of RelayFeeReceiver items.
 	rpc RelayFeeReceiver(QueryRelayFeeReceiverRequest) returns (QueryRelayFeeReceiverResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/relay_fee_receiver/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/relay_fee_receiver/{denom}";
 	}
 
 // Queries a list of UnbondSwitch items.
 	rpc UnbondSwitch(QueryUnbondSwitchRequest) returns (QueryUnbondSwitchResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/unbond_switch/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/unbond_switch/{denom}";
 	}
 
 // Queries a list of PoolUnbondNextSequence items.
 	rpc PoolUnbondNextSequence(QueryPoolUnbondNextSequenceRequest) returns (QueryPoolUnbondNextSequenceResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/pool_unbond_next_sequence/{denom}/{pool}/{unlockEra}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/pool_unbond_next_sequence/{denom}/{pool}/{unlockEra}";
 	}
 
 // Queries a list of PoolUnbondings items.
 	rpc PoolUnbondings(QueryPoolUnbondingsRequest) returns (QueryPoolUnbondingsResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/pool_unbondings/{denom}/{pool}/{unlockEra}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/pool_unbondings/{denom}/{pool}/{unlockEra}";
 	}
 
 // Queries a list of IcaPoolList items.
 	rpc IcaPoolList(QueryIcaPoolListRequest) returns (QueryIcaPoolListResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/ica_pool_list/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/ica_pool_list/{denom}";
 	}
 
 // Queries a list of InterchainTxStatus items.
 	rpc InterchainTxStatus(QueryInterchainTxStatusRequest) returns (QueryInterchainTxStatusResponse) {
-		option (google.api.http).get = "/furybase/furybase/ledger/interchain_tx_status/{propId}";
+		option (google.api.http).get = "/furyunderverse/furybase/ledger/interchain_tx_status/{propId}";
 	}
 
 // this line is used by starport scaffolding # 2

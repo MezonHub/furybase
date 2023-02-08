@@ -7,7 +7,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/relayers/types"
+	"github.com/furyunderverse/furybase/x/relayers/types"
 )
 
 type (

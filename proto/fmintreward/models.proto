@@ -3,7 +3,7 @@ package furybase.furybase.fmintreward;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/furybase/furybase/x/fmintreward/types";
+option go_package = "github.com/furyunderverse/furybase/x/fmintreward/types";
 
 message MintRewardAct {
     int64 begin = 1;

@@ -16,9 +16,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/furybase/furybase/x/relayers/client/cli"
-	"github.com/furybase/furybase/x/relayers/keeper"
-	"github.com/furybase/furybase/x/relayers/types"
+	"github.com/furyunderverse/furybase/x/relayers/client/cli"
+	"github.com/furyunderverse/furybase/x/relayers/keeper"
+	"github.com/furyunderverse/furybase/x/relayers/types"
 )
 
 var (

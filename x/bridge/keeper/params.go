@@ -2,7 +2,7 @@ package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/bridge/types"
+	"github.com/furyunderverse/furybase/x/bridge/types"
 )
 
 // GetParams get all parameters as types.Params

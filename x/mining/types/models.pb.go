@@ -8,7 +8,7 @@ import (
 	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	github_com_furybase_furybase_utils "github.com/furybase/furybase/utils"
+	github_com_furybase_furybase_utils "github.com/furyunderverse/furybase/utils"
 	io "io"
 	math "math"
 	math_bits "math/bits"
@@ -387,7 +387,7 @@ type StakeItem struct {
 	StakePoolIndex uint32 `protobuf:"varint,2,opt,name=stakePoolIndex,proto3" json:"stakePoolIndex,omitempty"`
 	LockSecond     uint64 `protobuf:"varint,3,opt,name=lockSecond,proto3" json:"lockSecond,omitempty"`
 	// user stakedPower = powerRewardRate * stakedAmount
-	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,4,opt,name=powerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"powerRewardRate"`
+	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,4,opt,name=powerRewardRate,proto3,customtype=github.com/furyunderverse/furybase/utils.Dec" json:"powerRewardRate"`
 	Enable          bool                                   `protobuf:"varint,5,opt,name=enable,proto3" json:"enable,omitempty"`
 }
 
@@ -453,7 +453,7 @@ func (m *StakeItem) GetEnable() bool {
 }
 
 type StakeItemLimit struct {
-	MaxPowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,1,opt,name=maxPowerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"maxPowerRewardRate"`
+	MaxPowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,1,opt,name=maxPowerRewardRate,proto3,customtype=github.com/furyunderverse/furybase/utils.Dec" json:"maxPowerRewardRate"`
 	MaxLockSecond      uint64                                 `protobuf:"varint,2,opt,name=maxLockSecond,proto3" json:"maxLockSecond,omitempty"`
 }
 

@@ -3,9 +3,9 @@ package ledger_test
 import (
 	"testing"
 
-	keepertest "github.com/furybase/furybase/testutil/keeper"
-	"github.com/furybase/furybase/x/ledger"
-	"github.com/furybase/furybase/x/ledger/types"
+	keepertest "github.com/furyunderverse/furybase/testutil/keeper"
+	"github.com/furyunderverse/furybase/x/ledger"
+	"github.com/furyunderverse/furybase/x/ledger/types"
 	"github.com/stretchr/testify/require"
 )
 

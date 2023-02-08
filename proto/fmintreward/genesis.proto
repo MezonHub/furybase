@@ -6,7 +6,7 @@ import "fmintreward/params.proto";
 import "fmintreward/models.proto";
 // this line is used by starport scaffolding # genesis/proto/import
 
-option go_package = "github.com/furybase/furybase/x/fmintreward/types";
+option go_package = "github.com/furyunderverse/furybase/x/fmintreward/types";
 
 // GenesisState defines the fmintreward module's genesis state.
 message GenesisState {

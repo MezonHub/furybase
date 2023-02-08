@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/spf13/cobra"
-	"github.com/furybase/furybase/x/fstaking/types"
+	"github.com/furyunderverse/furybase/x/fstaking/types"
 )
 
 var _ = strconv.Itoa(0)

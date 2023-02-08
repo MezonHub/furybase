@@ -18,9 +18,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/furybase/furybase/x/fstaking/client/cli"
-	"github.com/furybase/furybase/x/fstaking/keeper"
-	"github.com/furybase/furybase/x/fstaking/types"
+	"github.com/furyunderverse/furybase/x/fstaking/client/cli"
+	"github.com/furyunderverse/furybase/x/fstaking/keeper"
+	"github.com/furyunderverse/furybase/x/fstaking/types"
 )
 
 var (

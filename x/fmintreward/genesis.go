@@ -2,8 +2,8 @@ package fmintreward
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/fmintreward/keeper"
-	"github.com/furybase/furybase/x/fmintreward/types"
+	"github.com/furyunderverse/furybase/x/fmintreward/keeper"
+	"github.com/furyunderverse/furybase/x/fmintreward/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

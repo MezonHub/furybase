@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/ledger/types"
+	"github.com/furyunderverse/furybase/x/ledger/types"
 	"github.com/tendermint/tendermint/crypto"
 )
 

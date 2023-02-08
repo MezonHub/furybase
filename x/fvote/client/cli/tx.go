@@ -12,7 +12,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	// "github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/furybase/furybase/x/fvote/types"
+	"github.com/furyunderverse/furybase/x/fvote/types"
 )
 
 var (

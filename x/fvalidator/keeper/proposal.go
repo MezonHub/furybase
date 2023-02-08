@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/fvalidator/types"
+	"github.com/furyunderverse/furybase/x/fvalidator/types"
 )
 
 // old val must exist && new val may exist or not exist in selectedFValidator

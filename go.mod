@@ -1,4 +1,4 @@
-module github.com/furybase/furybase
+module github.com/furyunderverse/furybase
 
 go 1.18
 

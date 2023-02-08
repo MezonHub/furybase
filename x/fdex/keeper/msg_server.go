@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/furybase/furybase/x/fdex/types"
+	"github.com/furyunderverse/furybase/x/fdex/types"
 )
 
 type msgServer struct {

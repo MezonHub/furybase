@@ -3,9 +3,9 @@ package fvote_test
 import (
 	"testing"
 
-	keepertest "github.com/furybase/furybase/testutil/keeper"
-	"github.com/furybase/furybase/x/fvote"
-	"github.com/furybase/furybase/x/fvote/types"
+	keepertest "github.com/furyunderverse/furybase/testutil/keeper"
+	"github.com/furyunderverse/furybase/x/fvote"
+	"github.com/furyunderverse/furybase/x/fvote/types"
 	"github.com/stretchr/testify/require"
 )
 

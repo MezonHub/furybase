@@ -3,9 +3,9 @@ package relayers_test
 import (
 	"testing"
 
-	keepertest "github.com/furybase/furybase/testutil/keeper"
-	"github.com/furybase/furybase/x/relayers"
-	"github.com/furybase/furybase/x/relayers/types"
+	keepertest "github.com/furyunderverse/furybase/testutil/keeper"
+	"github.com/furyunderverse/furybase/x/relayers"
+	"github.com/furyunderverse/furybase/x/relayers/types"
 	"github.com/stretchr/testify/require"
 )
 

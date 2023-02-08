@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/furybase/furybase/x/relayers/types"
+	"github.com/furyunderverse/furybase/x/relayers/types"
 	"github.com/stretchr/testify/require"
 )
 

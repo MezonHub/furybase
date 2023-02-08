@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/furybase/furybase/x/fvote/types"
+	"github.com/furyunderverse/furybase/x/fvote/types"
 	"github.com/stretchr/testify/require"
 )
 

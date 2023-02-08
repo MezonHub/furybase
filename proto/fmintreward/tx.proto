@@ -6,7 +6,7 @@ import "fmintreward/models.proto";
 import "cosmos/base/v1beta1/coin.proto";
 // this line is used by starport scaffolding # proto/tx/import
 
-option go_package = "github.com/furybase/furybase/x/fmintreward/types";
+option go_package = "github.com/furyunderverse/furybase/x/fmintreward/types";
 
 // Msg defines the Msg service.
 service Msg {

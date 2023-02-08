@@ -6,7 +6,7 @@ import (
 	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/msgservice"
-	fvotetypes "github.com/furybase/furybase/x/fvote/types"
+	fvotetypes "github.com/furyunderverse/furybase/x/fvote/types"
 )
 
 func RegisterCodec(cdc *codec.LegacyAmino) {

@@ -3,7 +3,7 @@ package furybase.furybase.fbank ;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/furybase/furybase/x/fbank /types";
+option go_package = "github.com/furyunderverse/furybase/x/fbank /types";
 
 // Params defines the parameters for the module.
 message Params {

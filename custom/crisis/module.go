@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/x/crisis"
 	"github.com/cosmos/cosmos-sdk/x/crisis/types"
-	"github.com/furybase/furybase/utils"
+	"github.com/furyunderverse/furybase/utils"
 )
 
 var (

@@ -5,7 +5,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/furybase/furybase/testutil/sample"
+	"github.com/furyunderverse/furybase/testutil/sample"
 	"github.com/stretchr/testify/require"
 )
 

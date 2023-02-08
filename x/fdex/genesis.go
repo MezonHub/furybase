@@ -2,8 +2,8 @@ package fdex
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/fdex/keeper"
-	"github.com/furybase/furybase/x/fdex/types"
+	"github.com/furyunderverse/furybase/x/fdex/keeper"
+	"github.com/furyunderverse/furybase/x/fdex/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

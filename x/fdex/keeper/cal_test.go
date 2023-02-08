@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	fdexKeeper "github.com/furybase/furybase/x/fdex/keeper"
+	fdexKeeper "github.com/furyunderverse/furybase/x/fdex/keeper"
 	"github.com/stretchr/testify/require"
 )
 

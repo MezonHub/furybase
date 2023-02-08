@@ -3,7 +3,7 @@ package furybase.furybase.fstaking;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/furybase/furybase/x/fstaking/types";
+option go_package = "github.com/furyunderverse/furybase/x/fstaking/types";
 
 // Params defines the parameters for the module.
 message Params {

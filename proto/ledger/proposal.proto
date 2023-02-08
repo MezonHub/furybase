@@ -5,7 +5,7 @@ import "gogoproto/gogo.proto";
 import "ledger/ledger.proto";
 import "google/protobuf/any.proto";
 
-option go_package = "github.com/furybase/furybase/x/ledger/types";
+option go_package = "github.com/furyunderverse/furybase/x/ledger/types";
 
 message SetChainEraProposal {
     string proposer = 1;

@@ -3,10 +3,10 @@ package fbank _test
 import (
 	"testing"
 
-	keepertest "github.com/furybase/furybase/testutil/keeper"
-	"github.com/furybase/furybase/testutil/nullify"
-	"github.com/furybase/furybase/x/fbank "
-	"github.com/furybase/furybase/x/fbank /types"
+	keepertest "github.com/furyunderverse/furybase/testutil/keeper"
+	"github.com/furyunderverse/furybase/testutil/nullify"
+	"github.com/furyunderverse/furybase/x/fbank "
+	"github.com/furyunderverse/furybase/x/fbank /types"
 	"github.com/stretchr/testify/require"
 )
 

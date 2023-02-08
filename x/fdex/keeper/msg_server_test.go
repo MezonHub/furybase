@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	keepertest "github.com/furybase/furybase/testutil/keeper"
-	"github.com/furybase/furybase/testutil/sample"
-	"github.com/furybase/furybase/x/fdex/keeper"
-	"github.com/furybase/furybase/x/fdex/types"
+	keepertest "github.com/furyunderverse/furybase/testutil/keeper"
+	"github.com/furyunderverse/furybase/testutil/sample"
+	"github.com/furyunderverse/furybase/x/fdex/keeper"
+	"github.com/furyunderverse/furybase/x/fdex/types"
 	"github.com/stretchr/testify/require"
 )
 

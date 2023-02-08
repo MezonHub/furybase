@@ -4,10 +4,10 @@ import (
 	"testing"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	testkeeper "github.com/furybase/furybase/testutil/keeper"
-	"github.com/furybase/furybase/testutil/sample"
-	"github.com/furybase/furybase/utils"
-	"github.com/furybase/furybase/x/ledger/types"
+	testkeeper "github.com/furyunderverse/furybase/testutil/keeper"
+	"github.com/furyunderverse/furybase/testutil/sample"
+	"github.com/furyunderverse/furybase/utils"
+	"github.com/furyunderverse/furybase/x/ledger/types"
 	"github.com/stretchr/testify/require"
 )
 

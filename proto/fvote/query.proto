@@ -5,18 +5,18 @@ import "google/api/annotations.proto";
 // import "cosmos/base/query/v1beta1/pagination.proto";
 // this line is used by starport scaffolding # 1
 
-option go_package = "github.com/furybase/furybase/x/fvote/types";
+option go_package = "github.com/furyunderverse/furybase/x/fvote/types";
 
 // Query defines the gRPC querier service.
 service Query {
     // Queries a list of getProposal items.
 	rpc GetProposal(QueryGetProposalRequest) returns (QueryGetProposalResponse) {
-		option (google.api.http).get = "/furybase/furybase/fvote/get_proposal/{propId}";
+		option (google.api.http).get = "/furyunderverse/furybase/fvote/get_proposal/{propId}";
 	}
 
 // Queries a list of getProposalLife items.
 	rpc GetProposalLife(QueryGetProposalLifeRequest) returns (QueryGetProposalLifeResponse) {
-		option (google.api.http).get = "/furybase/furybase/fvote/get_proposal_life";
+		option (google.api.http).get = "/furyunderverse/furybase/fvote/get_proposal_life";
 	}
 
 // this line is used by starport scaffolding # 2

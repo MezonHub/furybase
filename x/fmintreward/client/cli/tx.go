@@ -8,7 +8,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	// "github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/furybase/furybase/x/fmintreward/types"
+	"github.com/furyunderverse/furybase/x/fmintreward/types"
 )
 
 var (

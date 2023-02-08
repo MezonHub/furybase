@@ -3,7 +3,7 @@ package furybase.furybase.fvalidator;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/furybase/furybase/x/fvalidator/types";
+option go_package = "github.com/furyunderverse/furybase/x/fvalidator/types";
 
 // Params defines the parameters for the module.
 message Params {

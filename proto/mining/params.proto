@@ -3,7 +3,7 @@ package furybase.furybase.mining;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/furybase/furybase/x/mining/types";
+option go_package = "github.com/furyunderverse/furybase/x/mining/types";
 
 // Params defines the parameters for the module.
 message Params {

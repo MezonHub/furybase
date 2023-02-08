@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/fstaking/types"
-	sudotypes "github.com/furybase/furybase/x/sudo/types"
+	"github.com/furyunderverse/furybase/x/fstaking/types"
+	sudotypes "github.com/furyunderverse/furybase/x/sudo/types"
 )
 
 func (k msgServer) SetInflationBase(goCtx context.Context, msg *types.MsgSetInflationBase) (*types.MsgSetInflationBaseResponse, error) {

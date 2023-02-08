@@ -5,7 +5,7 @@ import "gogoproto/gogo.proto";
 import "relayers/relayer.proto";
 // this line is used by starport scaffolding # genesis/proto/import
 
-option go_package = "github.com/furybase/furybase/x/relayers/types";
+option go_package = "github.com/furyunderverse/furybase/x/relayers/types";
 
 // GenesisState defines the relayers module's genesis state.
 message GenesisState {

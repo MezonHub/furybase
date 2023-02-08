@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authTypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/furybase/furybase/x/fstaking/keeper"
-	"github.com/furybase/furybase/x/fstaking/types"
+	"github.com/furyunderverse/furybase/x/fstaking/keeper"
+	"github.com/furyunderverse/furybase/x/fstaking/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

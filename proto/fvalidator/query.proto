@@ -8,37 +8,37 @@ import "fvalidator/params.proto";
 import "fvalidator/genesis.proto";
 // this line is used by starport scaffolding # 1
 
-option go_package = "github.com/furybase/furybase/x/fvalidator/types";
+option go_package = "github.com/furyunderverse/furybase/x/fvalidator/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/furybase/furybase/fvalidator/params";
+    option (google.api.http).get = "/furyunderverse/furybase/fvalidator/params";
   }
   // Queries a list of FValidatorList items.
 	rpc FValidatorList(QueryFValidatorListRequest) returns (QueryFValidatorListResponse) {
-		option (google.api.http).get = "/furybase/furybase/fvalidator/r_validator_list/{denom}/{poolAddress}";
+		option (google.api.http).get = "/furyunderverse/furybase/fvalidator/r_validator_list/{denom}/{poolAddress}";
 	}
 
 // Queries a list of CycleSeconds items.
 	rpc CycleSeconds(QueryCycleSecondsRequest) returns (QueryCycleSecondsResponse) {
-		option (google.api.http).get = "/furybase/furybase/fvalidator/cycle_seconds/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/fvalidator/cycle_seconds/{denom}";
 	}
 
 // Queries a list of ShuffleSeconds items.
 	rpc ShuffleSeconds(QueryShuffleSecondsRequest) returns (QueryShuffleSecondsResponse) {
-		option (google.api.http).get = "/furybase/furybase/fvalidator/shuffle_seconds/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/fvalidator/shuffle_seconds/{denom}";
 	}
 
 // Queries a list of LatestVotedCycle items.
 	rpc LatestVotedCycle(QueryLatestVotedCycleRequest) returns (QueryLatestVotedCycleResponse) {
-		option (google.api.http).get = "/furybase/furybase/fvalidator/latest_voted_cycle/{denom}/{poolAddress}";
+		option (google.api.http).get = "/furyunderverse/furybase/fvalidator/latest_voted_cycle/{denom}/{poolAddress}";
 	}
 
 // Queries a list of LatestDealedCycle items.
 	rpc LatestDealedCycle(QueryLatestDealedCycleRequest) returns (QueryLatestDealedCycleResponse) {
-		option (google.api.http).get = "/furybase/furybase/fvalidator/latest_dealed_cycle/{denom}/{poolAddress}";
+		option (google.api.http).get = "/furyunderverse/furybase/fvalidator/latest_dealed_cycle/{denom}/{poolAddress}";
 	}
 
 // this line is used by starport scaffolding # 2

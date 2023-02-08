@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/claim/types"
-	sudoTypes "github.com/furybase/furybase/x/sudo/types"
+	"github.com/furyunderverse/furybase/x/claim/types"
+	sudoTypes "github.com/furyunderverse/furybase/x/sudo/types"
 )
 
 func (k msgServer) ToggleClaimSwitch(goCtx context.Context, msg *types.MsgToggleClaimSwitch) (*types.MsgToggleClaimSwitchResponse, error) {

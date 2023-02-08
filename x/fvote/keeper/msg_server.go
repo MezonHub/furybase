@@ -4,11 +4,11 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	ledgertypes "github.com/furybase/furybase/x/ledger/types"
-	relayerstypes "github.com/furybase/furybase/x/relayers/types"
-	fvalidatortypes "github.com/furybase/furybase/x/fvalidator/types"
-	"github.com/furybase/furybase/x/fvote/types"
-	sudotypes "github.com/furybase/furybase/x/sudo/types"
+	ledgertypes "github.com/furyunderverse/furybase/x/ledger/types"
+	relayerstypes "github.com/furyunderverse/furybase/x/relayers/types"
+	fvalidatortypes "github.com/furyunderverse/furybase/x/fvalidator/types"
+	"github.com/furyunderverse/furybase/x/fvote/types"
+	sudotypes "github.com/furyunderverse/furybase/x/sudo/types"
 )
 
 type msgServer struct {

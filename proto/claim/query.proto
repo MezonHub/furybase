@@ -7,22 +7,22 @@ import "cosmos/base/query/v1beta1/pagination.proto";
 import "claim/params.proto";
 // this line is used by starport scaffolding # 1
 
-option go_package = "github.com/furybase/furybase/x/claim/types";
+option go_package = "github.com/furyunderverse/furybase/x/claim/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/furybase/furybase/claim/params";
+    option (google.api.http).get = "/furyunderverse/furybase/claim/params";
   }
   // Queries a list of IsClaimed items.
 	rpc IsClaimed(QueryIsClaimedRequest) returns (QueryIsClaimedResponse) {
-		option (google.api.http).get = "/furybase/furybase/claim/is_claimed/{round}/{index}";
+		option (google.api.http).get = "/furyunderverse/furybase/claim/is_claimed/{round}/{index}";
 	}
 
 // Queries a list of ClaimSwitch items.
 	rpc ClaimSwitch(QueryClaimSwitchRequest) returns (QueryClaimSwitchResponse) {
-		option (google.api.http).get = "/furybase/furybase/claim/claim_switch/{round}";
+		option (google.api.http).get = "/furyunderverse/furybase/claim/claim_switch/{round}";
 	}
 
 // this line is used by starport scaffolding # 2

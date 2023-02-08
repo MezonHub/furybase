@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/mining/types"
+	"github.com/furyunderverse/furybase/x/mining/types"
 )
 
 func (k msgServer) EmergencyWithdraw(goCtx context.Context, msg *types.MsgEmergencyWithdraw) (*types.MsgEmergencyWithdrawResponse, error) {

@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/furybase/furybase/x/fvalidator/types"
+	"github.com/furyunderverse/furybase/x/fvalidator/types"
 )
 
 type msgServer struct {

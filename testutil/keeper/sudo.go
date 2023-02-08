@@ -10,10 +10,10 @@ import (
 	"github.com/cosmos/cosmos-sdk/store"
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/app"
-	"github.com/furybase/furybase/testutil/sample"
-	"github.com/furybase/furybase/x/sudo/keeper"
-	"github.com/furybase/furybase/x/sudo/types"
+	"github.com/furyunderverse/furybase/app"
+	"github.com/furyunderverse/furybase/testutil/sample"
+	"github.com/furyunderverse/furybase/x/sudo/keeper"
+	"github.com/furyunderverse/furybase/x/sudo/types"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
@@ -26,8 +26,8 @@ import (
 	paramskeeper "github.com/cosmos/cosmos-sdk/x/params/keeper"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	miningtypes "github.com/furybase/furybase/x/mining/types"
-	fdextypes "github.com/furybase/furybase/x/fdex/types"
+	miningtypes "github.com/furyunderverse/furybase/x/mining/types"
+	fdextypes "github.com/furyunderverse/furybase/x/fdex/types"
 )
 
 var (

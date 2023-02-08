@@ -7,7 +7,7 @@ import "bridge/genesis.proto";
 
 // this line is used by starport scaffolding # proto/tx/import
 
-option go_package = "github.com/furybase/furybase/x/bridge/types";
+option go_package = "github.com/furyunderverse/furybase/x/bridge/types";
 
 // Msg defines the Msg service.
 service Msg {

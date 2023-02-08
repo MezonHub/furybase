@@ -3,7 +3,7 @@ package types
 import (
 	// this line is used by starport scaffolding # genesis/types/import
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/utils"
+	"github.com/furyunderverse/furybase/utils"
 )
 
 // DefaultIndex is the default capability global index

@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	testkeeper "github.com/furybase/furybase/testutil/keeper"
-	"github.com/furybase/furybase/x/fdex/types"
+	testkeeper "github.com/furyunderverse/furybase/testutil/keeper"
+	"github.com/furyunderverse/furybase/x/fdex/types"
 	"github.com/stretchr/testify/require"
 )
 

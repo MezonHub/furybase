@@ -6,7 +6,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/sudo/types"
+	"github.com/furyunderverse/furybase/x/sudo/types"
 )
 
 type (

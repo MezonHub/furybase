@@ -7,17 +7,17 @@ import "cosmos/base/query/v1beta1/pagination.proto";
 import "fbank /params.proto";
 // this line is used by starport scaffolding # 1
 
-option go_package = "github.com/furybase/furybase/x/fbank /types";
+option go_package = "github.com/furyunderverse/furybase/x/fbank /types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/furybase/furybase/fbank /params";
+    option (google.api.http).get = "/furyunderverse/furybase/fbank /params";
   }
   // Queries a list of AddressPrefix items.
 	rpc AddressPrefix(QueryAddressPrefixRequest) returns (QueryAddressPrefixResponse) {
-		option (google.api.http).get = "/furybase/furybase/fbank /address_prefix/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/fbank /address_prefix/{denom}";
 	}
 
 // this line is used by starport scaffolding # 2

@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/furybase/furybase/x/fstaking/types"
+	"github.com/furyunderverse/furybase/x/fstaking/types"
 )
 
 type msgServer struct {

@@ -6,18 +6,18 @@ import "cosmos/base/query/v1beta1/pagination.proto";
 // this line is used by starport scaffolding # 1
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/furybase/furybase/x/relayers/types";
+option go_package = "github.com/furyunderverse/furybase/x/relayers/types";
 
 // Query defines the gRPC querier service.
 service Query {
     // Queries a list of relayersByDenom items.
 	rpc Relayers(QueryRelayersRequest) returns (QueryRelayersResponse) {
-		option (google.api.http).get = "/furybase/furybase/relayers/{arena}/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/relayers/{arena}/{denom}";
 	}
 
     // Queries a threshold by denom.
 	rpc Threshold(QueryThresholdRequest) returns (QueryThresholdResponse) {
-		option (google.api.http).get = "/furybase/furybase/relayers/threshold/{arena}/{denom}";
+		option (google.api.http).get = "/furyunderverse/furybase/relayers/threshold/{arena}/{denom}";
 	}
 // this line is used by starport scaffolding # 2
 }

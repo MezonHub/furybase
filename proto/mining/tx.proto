@@ -5,7 +5,7 @@ import "gogoproto/gogo.proto";
 import "cosmos/base/v1beta1/coin.proto";
 // this line is used by starport scaffolding # proto/tx/import
 
-option go_package = "github.com/furybase/furybase/x/mining/types";
+option go_package = "github.com/furyunderverse/furybase/x/mining/types";
 
 // Msg defines the Msg service.
 service Msg {
@@ -51,7 +51,7 @@ message CreateRewardPoolInfo {
 message CreateStakeItemInfo {
   uint64 lockSecond = 1 [(gogoproto.jsontag) = "lockSecond"];
   // user stakedPower = powerRewardRate * stakedAmount
-  string powerRewardRate = 2 [(gogoproto.customtype) = "github.com/furybase/furybase/utils.Dec", (gogoproto.nullable) = false];
+  string powerRewardRate = 2 [(gogoproto.customtype) = "github.com/furyunderverse/furybase/utils.Dec", (gogoproto.nullable) = false];
 }
 
 
@@ -62,7 +62,7 @@ message MsgAddStakeItem {
   string creator = 1;
   uint32 stakePoolIndex = 2 [(gogoproto.jsontag) = "stakePoolIndex"];
   uint64 lockSecond = 3 [(gogoproto.jsontag) = "lockSecond"];
-  string powerRewardRate = 4 [(gogoproto.customtype) = "github.com/furybase/furybase/utils.Dec", (gogoproto.nullable) = false];
+  string powerRewardRate = 4 [(gogoproto.customtype) = "github.com/furyunderverse/furybase/utils.Dec", (gogoproto.nullable) = false];
   bool enable = 5;
 }
 
@@ -115,7 +115,7 @@ message MsgUpdateStakeItem {
   uint32 index = 2 [(gogoproto.jsontag) = "index"];
   uint32 stakePoolIndex = 3 [(gogoproto.jsontag) = "stakePoolIndex"];
   uint64 lockSecond = 4 [(gogoproto.jsontag) = "lockSecond"];
-  string powerRewardRate = 5 [(gogoproto.customtype) = "github.com/furybase/furybase/utils.Dec", (gogoproto.nullable) = false];
+  string powerRewardRate = 5 [(gogoproto.customtype) = "github.com/furyunderverse/furybase/utils.Dec", (gogoproto.nullable) = false];
   bool enable = 6;
 }
 
@@ -237,7 +237,7 @@ message MsgRmStakeTokenResponse {
 message MsgSetStakeItemLimit {
   string creator = 1;
   uint64 maxLockSecond = 2 [(gogoproto.jsontag) = "maxLockSecond"];
-  string maxPowerRewardRate = 3 [(gogoproto.customtype) = "github.com/furybase/furybase/utils.Dec", (gogoproto.nullable) = false];
+  string maxPowerRewardRate = 3 [(gogoproto.customtype) = "github.com/furyunderverse/furybase/utils.Dec", (gogoproto.nullable) = false];
 }
 
 message MsgSetStakeItemLimitResponse {

@@ -9,7 +9,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/furybase/furybase/x/fstaking/types"
+	"github.com/furyunderverse/furybase/x/fstaking/types"
 )
 
 type (

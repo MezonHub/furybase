@@ -5,7 +5,7 @@ through the Inter-Blockchain Communication (IBC) Protocol to rapidly grow the st
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| [![Go Report Card](https://goreportcard.com/badge/github.com/furybase/furybase)](https://goreportcard.com/report/github.com/furybase/furybase) | [![license](https://img.shields.io/github/license/cosmos/gaia.svg)](https://github.com/furybase/furybase/blob/main/LICENSE) | [![LoC](https://tokei.rs/b1/github/furybase/furybase)](https://github.com/furybase/furybase) | [![GolangCI](https://golangci.com/badges/github.com/cosmos/cosmos.svg)](https://golangci.com/r/github.com/furybase/furybase) |
+| [![Go Report Card](https://goreportcard.com/badge/github.com/furyunderverse/furybase)](https://goreportcard.com/report/github.com/furyunderverse/furybase) | [![license](https://img.shields.io/github/license/cosmos/gaia.svg)](https://github.com/furyunderverse/furybase/blob/main/LICENSE) | [![LoC](https://tokei.rs/b1/github/furyunderverse/furybase)](https://github.com/furyunderverse/furybase) | [![GolangCI](https://golangci.com/badges/github.com/cosmos/cosmos.svg)](https://golangci.com/r/github.com/furyunderverse/furybase) |
 
 ## Run node
 

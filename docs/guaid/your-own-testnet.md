@@ -75,7 +75,7 @@ Build the `base` binary (linux) and the `tendermint/basenode` docker image requi
 
 ```bash
 # Clone the furybase repo
-git clone https://github.com/furybase/furybase.git
+git clone https://github.com/furyunderverse/furybase.git
 
 # Work from the SDK repo
 cd furybase

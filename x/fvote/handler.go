@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/furybase/furybase/x/fvote/keeper"
-	"github.com/furybase/furybase/x/fvote/types"
+	"github.com/furyunderverse/furybase/x/fvote/keeper"
+	"github.com/furyunderverse/furybase/x/fvote/types"
 )
 
 // NewHandler ...

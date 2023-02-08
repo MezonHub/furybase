@@ -2,7 +2,7 @@ package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/relayers/types"
+	"github.com/furyunderverse/furybase/x/relayers/types"
 )
 
 func (k Keeper) AddRelayer(ctx sdk.Context, arena, denom, addr string) {

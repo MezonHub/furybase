@@ -4,8 +4,8 @@ import (
 	"os"
 
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
-	"github.com/furybase/furybase/app"
-	"github.com/furybase/furybase/cosmoscmd"
+	"github.com/furyunderverse/furybase/app"
+	"github.com/furyunderverse/furybase/cosmoscmd"
 )
 
 func main() {

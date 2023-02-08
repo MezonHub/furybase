@@ -13,8 +13,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"github.com/furybase/furybase/x/ledger/types"
-	fvotetypes "github.com/furybase/furybase/x/fvote/types"
+	"github.com/furyunderverse/furybase/x/ledger/types"
+	fvotetypes "github.com/furyunderverse/furybase/x/fvote/types"
 )
 
 var _ = strconv.Itoa(0)

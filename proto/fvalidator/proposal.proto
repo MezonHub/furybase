@@ -4,7 +4,7 @@ package furybase.furybase.fvalidator;
 // this line is used by starport scaffolding # proto/tx/import
 import "gogoproto/gogo.proto";
 import "fvalidator/genesis.proto";
-option go_package = "github.com/furybase/furybase/x/fvalidator/types";
+option go_package = "github.com/furyunderverse/furybase/x/fvalidator/types";
 
 message UpdateFValidatorProposal {
     string creator = 1;

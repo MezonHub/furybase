@@ -3,7 +3,7 @@ package keeper
 import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/fvote/types"
+	"github.com/furyunderverse/furybase/x/fvote/types"
 )
 
 func (k Keeper) SetProposal(ctx sdk.Context, proposal *types.Proposal) {

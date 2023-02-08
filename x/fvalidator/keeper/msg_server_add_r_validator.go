@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/fvalidator/types"
-	sudoTypes "github.com/furybase/furybase/x/sudo/types"
+	"github.com/furyunderverse/furybase/x/fvalidator/types"
+	sudoTypes "github.com/furyunderverse/furybase/x/sudo/types"
 )
 
 func (k msgServer) AddFValidator(goCtx context.Context, msg *types.MsgAddFValidator) (*types.MsgAddFValidatorResponse, error) {

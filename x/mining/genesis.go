@@ -2,8 +2,8 @@ package mining
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/mining/keeper"
-	"github.com/furybase/furybase/x/mining/types"
+	"github.com/furyunderverse/furybase/x/mining/keeper"
+	"github.com/furyunderverse/furybase/x/mining/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

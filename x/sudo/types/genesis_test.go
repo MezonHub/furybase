@@ -3,8 +3,8 @@ package types_test
 import (
 	"testing"
 
-	"github.com/furybase/furybase/testutil/sample"
-	"github.com/furybase/furybase/x/sudo/types"
+	"github.com/furyunderverse/furybase/testutil/sample"
+	"github.com/furyunderverse/furybase/x/sudo/types"
 	"github.com/stretchr/testify/require"
 )
 

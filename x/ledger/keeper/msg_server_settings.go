@@ -6,8 +6,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/furybase/furybase/x/ledger/types"
-	sudotypes "github.com/furybase/furybase/x/sudo/types"
+	"github.com/furyunderverse/furybase/x/ledger/types"
+	sudotypes "github.com/furyunderverse/furybase/x/sudo/types"
 )
 
 func (k msgServer) SetEraUnbondLimit(goCtx context.Context, msg *types.MsgSetEraUnbondLimit) (*types.MsgSetEraUnbondLimitResponse, error) {

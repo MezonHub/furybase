@@ -3,9 +3,9 @@ package fvalidator
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/furybase/furybase/x/fvalidator/keeper"
-	"github.com/furybase/furybase/x/fvalidator/types"
-	fvotetypes "github.com/furybase/furybase/x/fvote/types"
+	"github.com/furyunderverse/furybase/x/fvalidator/keeper"
+	"github.com/furyunderverse/furybase/x/fvalidator/types"
+	fvotetypes "github.com/furyunderverse/furybase/x/fvote/types"
 )
 
 func NewProposalHandler(k keeper.Keeper) fvotetypes.Handler {

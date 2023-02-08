@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/furybase/furybase/x/bridge/keeper"
-	"github.com/furybase/furybase/x/bridge/types"
+	"github.com/furyunderverse/furybase/x/bridge/keeper"
+	"github.com/furyunderverse/furybase/x/bridge/types"
 )
 
 // NewHandler ...

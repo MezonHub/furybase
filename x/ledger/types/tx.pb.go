@@ -12,7 +12,7 @@ import (
 	_ "github.com/gogo/protobuf/gogoproto"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"
-	github_com_furybase_furybase_utils "github.com/furybase/furybase/utils"
+	github_com_furybase_furybase_utils "github.com/furyunderverse/furybase/utils"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -427,7 +427,7 @@ var xxx_messageInfo_MsgClearCurrentEraSnapShotsResponse proto.InternalMessageInf
 type MsgSetStakingRewardCommission struct {
 	Creator    string                                 `protobuf:"bytes,1,opt,name=creator,proto3" json:"creator,omitempty"`
 	Denom      string                                 `protobuf:"bytes,2,opt,name=denom,proto3" json:"denom,omitempty"`
-	Commission github_com_furybase_furybase_utils.Dec `protobuf:"bytes,3,opt,name=commission,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"commission"`
+	Commission github_com_furybase_furybase_utils.Dec `protobuf:"bytes,3,opt,name=commission,proto3,customtype=github.com/furyunderverse/furybase/utils.Dec" json:"commission"`
 }
 
 func (m *MsgSetStakingRewardCommission) Reset()         { *m = MsgSetStakingRewardCommission{} }
@@ -790,7 +790,7 @@ var xxx_messageInfo_MsgLiquidityUnbondResponse proto.InternalMessageInfo
 type MsgSetUnbondCommission struct {
 	Creator    string                                 `protobuf:"bytes,1,opt,name=creator,proto3" json:"creator,omitempty"`
 	Denom      string                                 `protobuf:"bytes,2,opt,name=denom,proto3" json:"denom,omitempty"`
-	Commission github_com_furybase_furybase_utils.Dec `protobuf:"bytes,3,opt,name=commission,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"commission"`
+	Commission github_com_furybase_furybase_utils.Dec `protobuf:"bytes,3,opt,name=commission,proto3,customtype=github.com/furyunderverse/furybase/utils.Dec" json:"commission"`
 }
 
 func (m *MsgSetUnbondCommission) Reset()         { *m = MsgSetUnbondCommission{} }
@@ -1540,7 +1540,7 @@ type MsgMigrateInit struct {
 	Active           github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,5,opt,name=active,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"active"`
 	Bond             github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,6,opt,name=bond,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"bond"`
 	Unbond           github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,7,opt,name=unbond,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"unbond"`
-	ExchangeRate     github_com_furybase_furybase_utils.Dec `protobuf:"bytes,8,opt,name=exchangeRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"exchangeRate"`
+	ExchangeRate     github_com_furybase_furybase_utils.Dec `protobuf:"bytes,8,opt,name=exchangeRate,proto3,customtype=github.com/furyunderverse/furybase/utils.Dec" json:"exchangeRate"`
 	TotalProtocolFee github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,9,opt,name=totalProtocolFee,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"totalProtocolFee"`
 }
 

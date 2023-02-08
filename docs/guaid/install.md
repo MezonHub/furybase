@@ -40,9 +40,9 @@ go version
 ## Install the binaries
 
 Next, let's install the latest version of base. Make sure you `git checkout` the
-correct [released version](https://github.com/furybase/furybase/releases).
+correct [released version](https://github.com/furyunderverse/furybase/releases).
 
 ```bash
-git clone -b <latest-release-tag> https://github.com/furybase/furybase
+git clone -b <latest-release-tag> https://github.com/furyunderverse/furybase
 cd furybase && make install
 ```

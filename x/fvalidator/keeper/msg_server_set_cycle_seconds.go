@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/fvalidator/types"
-	sudoTypes "github.com/furybase/furybase/x/sudo/types"
+	"github.com/furyunderverse/furybase/x/fvalidator/types"
+	sudoTypes "github.com/furyunderverse/furybase/x/sudo/types"
 )
 
 func (k msgServer) SetCycleSeconds(goCtx context.Context, msg *types.MsgSetCycleSeconds) (*types.MsgSetCycleSecondsResponse, error) {

@@ -10,8 +10,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/furybase/furybase/utils"
-	"github.com/furybase/furybase/x/bridge/types"
+	"github.com/furyunderverse/furybase/utils"
+	"github.com/furyunderverse/furybase/x/bridge/types"
 )
 
 type (

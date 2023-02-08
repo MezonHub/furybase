@@ -9,72 +9,72 @@ import "mining/models.proto";
 import "cosmos/base/v1beta1/coin.proto";
 // this line is used by starport scaffolding # 1
 
-option go_package = "github.com/furybase/furybase/x/mining/types";
+option go_package = "github.com/furyunderverse/furybase/x/mining/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/furybase/furybase/mining/params";
+    option (google.api.http).get = "/furyunderverse/furybase/mining/params";
   }
   // Queries a list of StakePoolInfo items.
 	rpc StakePoolInfo(QueryStakePoolInfoRequest) returns (QueryStakePoolInfoResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/stake_pool_info/{stakePoolIndex}";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/stake_pool_info/{stakePoolIndex}";
 	}
 
 // Queries a list of StakeItemList items.
 	rpc StakeItemList(QueryStakeItemListRequest) returns (QueryStakeItemListResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/stake_item_list";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/stake_item_list";
 	}
 
 // Queries a list of StakeReward items.
 	rpc StakeReward(QueryStakeRewardRequest) returns (QueryStakeRewardResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/stake_reward/{stakeUserAddress}/{stakePoolIndex}/{stakeRecordIndex}";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/stake_reward/{stakeUserAddress}/{stakePoolIndex}/{stakeRecordIndex}";
 	}
 
 // Queries a list of StakeRecordCount items.
 	rpc StakeRecordCount(QueryStakeRecordCountRequest) returns (QueryStakeRecordCountResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/stake_record_count/{userAddress}/{stakePoolIndex}";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/stake_record_count/{userAddress}/{stakePoolIndex}";
 	}
 
 // Queries a list of StakeRecord items.
 	rpc StakeRecord(QueryStakeRecordRequest) returns (QueryStakeRecordResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/stake_record/{userAddress}/{stakePoolIndex}/{stakeRecordIndex}";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/stake_record/{userAddress}/{stakePoolIndex}/{stakeRecordIndex}";
 	}
 
 // Queries a list of StakeRecordList items.
 	rpc StakeRecordList(QueryStakeRecordListRequest) returns (QueryStakeRecordListResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/stake_record_list/{userAddress}/{stakePoolIndex}";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/stake_record_list/{userAddress}/{stakePoolIndex}";
 	}
 
 // Queries a list of StakePoolList items.
 	rpc StakePoolList(QueryStakePoolListRequest) returns (QueryStakePoolListResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/stake_pool_list";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/stake_pool_list";
 	}
 
 // Queries a list of MiningProviderList items.
 	rpc MiningProviderList(QueryMiningProviderListRequest) returns (QueryMiningProviderListResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/mining_provider_list";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/mining_provider_list";
 	}
 
 // Queries a list of RewardTokenList items.
 	rpc RewardTokenList(QueryRewardTokenListRequest) returns (QueryRewardTokenListResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/reward_token_list";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/reward_token_list";
 	}
 
 // Queries a list of MaxRewardPoolNumber items.
 	rpc MaxRewardPoolNumber(QueryMaxRewardPoolNumberRequest) returns (QueryMaxRewardPoolNumberResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/max_reward_pool_number";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/max_reward_pool_number";
 	}
 
 // Queries a list of MaxStakeItemNumber items.
 	rpc MaxStakeItemNumber(QueryMaxStakeItemNumberRequest) returns (QueryMaxStakeItemNumberResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/max_stake_item_number";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/max_stake_item_number";
 	}
 
 // Queries a list of ProviderSwitch items.
 	rpc ProviderSwitch(QueryProviderSwitchRequest) returns (QueryProviderSwitchResponse) {
-		option (google.api.http).get = "/furybase/furybase/mining/provider_switch";
+		option (google.api.http).get = "/furyunderverse/furybase/mining/provider_switch";
 	}
 
 // this line is used by starport scaffolding # 2

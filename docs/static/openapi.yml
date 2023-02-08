@@ -20906,7 +20906,7 @@ paths:
           format: uint64
       tags:
         - Query
-  /furybase/furybase/bridge/banned_denom_list:
+  /furyunderverse/furybase/bridge/banned_denom_list:
     get:
       summary: Queries a list of BannedDenomList items.
       operationId: FurybaseFurybaseBridgeBannedDenomList
@@ -20946,7 +20946,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/bridge/chaind_ids:
+  /furyunderverse/furybase/bridge/chaind_ids:
     get:
       summary: Queries a list of ChaindIds items.
       operationId: FurybaseFurybaseBridgeChaindIds
@@ -20981,7 +20981,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/furybase/furybase/bridge/get_deposit_count/{chainId}':
+  '/furyunderverse/furybase/bridge/get_deposit_count/{chainId}':
     get:
       summary: Queries a list of GetDepositCount items.
       operationId: FurybaseFurybaseBridgeGetDepositCount
@@ -21020,7 +21020,7 @@ paths:
           format: int64
       tags:
         - Query
-  /furybase/furybase/bridge/params:
+  /furyunderverse/furybase/bridge/params:
     get:
       summary: Parameters queries the parameters of the module.
       operationId: FurybaseFurybaseBridgeParams
@@ -21056,7 +21056,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/furybase/furybase/bridge/proposal_detail/{chainId}/{depositNonce}/{resourceId}/{amount}/{receiver}':
+  '/furyunderverse/furybase/bridge/proposal_detail/{chainId}/{depositNonce}/{resourceId}/{amount}/{receiver}':
     get:
       summary: Queries a list of ProposalDetail items.
       operationId: FurybaseFurybaseBridgeProposalDetail
@@ -21125,7 +21125,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/bridge/relay_fee/{chainId}':
+  '/furyunderverse/furybase/bridge/relay_fee/{chainId}':
     get:
       summary: Queries a list of RelayFee items.
       operationId: FurybaseFurybaseBridgeRelayFee
@@ -21176,7 +21176,7 @@ paths:
           format: int64
       tags:
         - Query
-  /furybase/furybase/bridge/relay_fee_receiver:
+  /furyunderverse/furybase/bridge/relay_fee_receiver:
     get:
       summary: Queries a list of RelayFeeReceiver items.
       operationId: FurybaseFurybaseBridgeRelayFeeReceiver
@@ -21208,7 +21208,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/bridge/resourceid_to_denoms:
+  /furyunderverse/furybase/bridge/resourceid_to_denoms:
     get:
       summary: Queries a list of ResourceidToDenoms items.
       operationId: FurybaseFurybaseBridgeResourceidToDenoms
@@ -21254,7 +21254,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/furybase/furybase/claim/claim_switch/{round}':
+  '/furyunderverse/furybase/claim/claim_switch/{round}':
     get:
       summary: Queries a list of ClaimSwitch items.
       operationId: FurybaseFurybaseClaimClaimSwitch
@@ -21292,7 +21292,7 @@ paths:
           format: uint64
       tags:
         - Query
-  '/furybase/furybase/claim/is_claimed/{round}/{index}':
+  '/furyunderverse/furybase/claim/is_claimed/{round}/{index}':
     get:
       summary: Queries a list of IsClaimed items.
       operationId: FurybaseFurybaseClaimIsClaimed
@@ -21335,7 +21335,7 @@ paths:
           format: uint64
       tags:
         - Query
-  /furybase/furybase/claim/params:
+  /furyunderverse/furybase/claim/params:
     get:
       summary: Parameters queries the parameters of the module.
       operationId: FurybaseFurybaseClaimParams
@@ -21371,7 +21371,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/furybase/furybase/ledger/bonded_pools_by_denom/{denom}':
+  '/furyunderverse/furybase/ledger/bonded_pools_by_denom/{denom}':
     get:
       summary: Queries a list of bondedPoolsByDenom items.
       operationId: FurybaseFurybaseLedgerBondedPoolsByDenom
@@ -21577,7 +21577,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/era_exchange_rate/{denom}/{era}':
+  '/furyunderverse/furybase/ledger/era_exchange_rate/{denom}/{era}':
     get:
       summary: Queries a list of getEraExchangeRate items.
       operationId: FurybaseFurybaseLedgerGetEraExchangeRate
@@ -21794,7 +21794,7 @@ paths:
           format: int64
       tags:
         - Query
-  '/furybase/furybase/ledger/era_exchange_rates_by_denom/{denom}':
+  '/furyunderverse/furybase/ledger/era_exchange_rates_by_denom/{denom}':
     get:
       summary: Queries a list of eraExchangeRatesByDenom items.
       operationId: FurybaseFurybaseLedgerEraExchangeRatesByDenom
@@ -22008,7 +22008,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/exchange_rate/{denom}':
+  '/furyunderverse/furybase/ledger/exchange_rate/{denom}':
     get:
       summary: Queries a list of getExchangeRate items.
       operationId: FurybaseFurybaseLedgerGetExchangeRate
@@ -22217,7 +22217,7 @@ paths:
           type: string
       tags:
         - Query
-  /furybase/furybase/ledger/exchange_rate_all:
+  /furyunderverse/furybase/ledger/exchange_rate_all:
     get:
       summary: Queries a list of exchangeRateAll items.
       operationId: FurybaseFurybaseLedgerExchangeRateAll
@@ -22423,7 +22423,7 @@ paths:
                         }
       tags:
         - Query
-  '/furybase/furybase/ledger/get_bond_pipeline/{denom}/{pool}':
+  '/furyunderverse/furybase/ledger/get_bond_pipeline/{denom}/{pool}':
     get:
       summary: Queries a list of getBondPipeline items.
       operationId: FurybaseFurybaseLedgerGetBondPipeline
@@ -22645,7 +22645,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/get_bond_record/{denom}/{txhash}':
+  '/furyunderverse/furybase/ledger/get_bond_record/{denom}/{txhash}':
     get:
       summary: Queries a list of getBondRecord items.
       operationId: FurybaseFurybaseLedgerGetBondRecord
@@ -22874,7 +22874,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/get_chain_era/{denom}':
+  '/furyunderverse/furybase/ledger/get_chain_era/{denom}':
     get:
       summary: Queries a list of getChainEra items.
       operationId: FurybaseFurybaseLedgerGetChainEra
@@ -23079,7 +23079,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/get_current_era_snapshot/{denom}':
+  '/furyunderverse/furybase/ledger/get_current_era_snapshot/{denom}':
     get:
       summary: Queries a list of getCurrentEraSnapshot items.
       operationId: FurybaseFurybaseLedgerGetCurrentEraSnapshot
@@ -23285,7 +23285,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/get_era_snapshot/{denom}/{era}':
+  '/furyunderverse/furybase/ledger/get_era_snapshot/{denom}/{era}':
     get:
       summary: Queries a list of getEraSnapshot items.
       operationId: FurybaseFurybaseLedgerGetEraSnapshot
@@ -23496,7 +23496,7 @@ paths:
           format: int64
       tags:
         - Query
-  '/furybase/furybase/ledger/get_era_unbond_limit/{denom}':
+  '/furyunderverse/furybase/ledger/get_era_unbond_limit/{denom}':
     get:
       summary: Queries a list of getEraUnbondLimit items.
       operationId: FurybaseFurybaseLedgerGetEraUnbondLimit
@@ -23701,7 +23701,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/get_pool_detail/{denom}/{pool}':
+  '/furyunderverse/furybase/ledger/get_pool_detail/{denom}/{pool}':
     get:
       summary: Queries a list of getPoolDetail items.
       operationId: FurybaseFurybaseLedgerGetPoolDetail
@@ -23928,7 +23928,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/get_r_params/{denom}':
+  '/furyunderverse/furybase/ledger/get_r_params/{denom}':
     get:
       summary: Queries a list of GetRParams items.
       operationId: FurybaseFurybaseLedgerGetRParams
@@ -24148,7 +24148,7 @@ paths:
           type: string
       tags:
         - Query
-  /furybase/furybase/ledger/get_signature:
+  /furyunderverse/furybase/ledger/get_signature:
     get:
       summary: Queries a list of getSignature items.
       operationId: FurybaseFurybaseLedgerGetSignature
@@ -24400,7 +24400,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/get_snapshot/{shotId}':
+  '/furyunderverse/furybase/ledger/get_snapshot/{shotId}':
     get:
       summary: Queries a list of getSnapshot items.
       operationId: FurybaseFurybaseLedgerGetSnapshot
@@ -24630,7 +24630,7 @@ paths:
           type: string
       tags:
         - Query
-  /furybase/furybase/ledger/get_staking_reward_commission:
+  /furyunderverse/furybase/ledger/get_staking_reward_commission:
     get:
       summary: Queries a list of getCommission items.
       operationId: FurybaseFurybaseLedgerGetStakingRewardCommission
@@ -24834,7 +24834,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/get_total_expected_active/{denom}/{era}':
+  '/furyunderverse/furybase/ledger/get_total_expected_active/{denom}/{era}':
     get:
       summary: Queries a list of getTotalExpectedActive items.
       operationId: FurybaseFurybaseLedgerGetTotalExpectedActive
@@ -25043,7 +25043,7 @@ paths:
           format: int64
       tags:
         - Query
-  /furybase/furybase/ledger/get_unbond_commission:
+  /furyunderverse/furybase/ledger/get_unbond_commission:
     get:
       summary: Queries a list of getUnbondCommission items.
       operationId: FurybaseFurybaseLedgerGetUnbondCommission
@@ -25247,7 +25247,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/get_unbond_relay_fee/{denom}':
+  '/furyunderverse/furybase/ledger/get_unbond_relay_fee/{denom}':
     get:
       summary: Queries a list of getUnbondFee items.
       operationId: FurybaseFurybaseLedgerGetUnbondRelayFee
@@ -25469,7 +25469,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/ica_pool_list/{denom}':
+  '/furyunderverse/furybase/ledger/ica_pool_list/{denom}':
     get:
       summary: Queries a list of IcaPoolList items.
       operationId: FurybaseFurybaseLedgerIcaPoolList
@@ -25728,7 +25728,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/interchain_tx_status/{propId}':
+  '/furyunderverse/furybase/ledger/interchain_tx_status/{propId}':
     get:
       summary: Queries a list of InterchainTxStatus items.
       operationId: FurybaseFurybaseLedgerInterchainTxStatus
@@ -25938,7 +25938,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/ledger/pool_unbond_next_sequence/{denom}/{pool}/{unlockEra}':
+  '/furyunderverse/furybase/ledger/pool_unbond_next_sequence/{denom}/{pool}/{unlockEra}':
     get:
       summary: Queries a list of PoolUnbondNextSequence items.
       operationId: FurybaseFurybaseLedgerPoolUnbondNextSequence
@@ -26152,7 +26152,7 @@ paths:
           format: int64
       tags:
         - Query
-  '/furybase/furybase/ledger/pool_unbondings/{denom}/{pool}/{unlockEra}':
+  '/furyunderverse/furybase/ledger/pool_unbondings/{denom}/{pool}/{unlockEra}':
     get:
       summary: Queries a list of PoolUnbondings items.
       operationId: FurybaseFurybaseLedgerPoolUnbondings
@@ -26374,7 +26374,7 @@ paths:
           format: int64
       tags:
         - Query
-  /furybase/furybase/ledger/protocol_fee_receiver:
+  /furyunderverse/furybase/ledger/protocol_fee_receiver:
     get:
       summary: Queries a list of getReceiver items.
       operationId: FurybaseFurybaseLedgerGetProtocolFeeReceiver
@@ -26573,7 +26573,7 @@ paths:
                         }
       tags:
         - Query
-  '/furybase/furybase/ledger/relay_fee_receiver/{denom}':
+  '/furyunderverse/furybase/ledger/relay_fee_receiver/{denom}':
     get:
       summary: Queries a list of RelayFeeReceiver items.
       operationId: FurybaseFurybaseLedgerRelayFeeReceiver
@@ -26777,7 +26777,7 @@ paths:
           type: string
       tags:
         - Query
-  /furybase/furybase/ledger/total_protocol_fee:
+  /furyunderverse/furybase/ledger/total_protocol_fee:
     get:
       summary: Queries a list of TotalFeeList items.
       operationId: FurybaseFurybaseLedgerTotalProtocolFee
@@ -26983,7 +26983,7 @@ paths:
                         }
       tags:
         - Query
-  '/furybase/furybase/ledger/unbond_switch/{denom}':
+  '/furyunderverse/furybase/ledger/unbond_switch/{denom}':
     get:
       summary: Queries a list of UnbondSwitch items.
       operationId: FurybaseFurybaseLedgerUnbondSwitch
@@ -27187,7 +27187,7 @@ paths:
           type: string
       tags:
         - Query
-  /furybase/furybase/mining/max_reward_pool_number:
+  /furyunderverse/furybase/mining/max_reward_pool_number:
     get:
       summary: Queries a list of MaxRewardPoolNumber items.
       operationId: FurybaseFurybaseMiningMaxRewardPoolNumber
@@ -27220,7 +27220,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/mining/max_stake_item_number:
+  /furyunderverse/furybase/mining/max_stake_item_number:
     get:
       summary: Queries a list of MaxStakeItemNumber items.
       operationId: FurybaseFurybaseMiningMaxStakeItemNumber
@@ -27253,7 +27253,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/mining/mining_provider_list:
+  /furyunderverse/furybase/mining/mining_provider_list:
     get:
       summary: Queries a list of MiningProviderList items.
       operationId: FurybaseFurybaseMiningMiningProviderList
@@ -27287,7 +27287,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/mining/params:
+  /furyunderverse/furybase/mining/params:
     get:
       summary: Parameters queries the parameters of the module.
       operationId: FurybaseFurybaseMiningParams
@@ -27323,7 +27323,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/mining/provider_switch:
+  /furyunderverse/furybase/mining/provider_switch:
     get:
       summary: Queries a list of ProviderSwitch items.
       operationId: FurybaseFurybaseMiningProviderSwitch
@@ -27355,7 +27355,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/mining/reward_token_list:
+  /furyunderverse/furybase/mining/reward_token_list:
     get:
       summary: Queries a list of RewardTokenList items.
       operationId: FurybaseFurybaseMiningRewardTokenList
@@ -27396,7 +27396,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/mining/stake_item_list:
+  /furyunderverse/furybase/mining/stake_item_list:
     get:
       summary: Queries a list of StakeItemList items.
       operationId: FurybaseFurybaseMiningStakeItemList
@@ -27451,7 +27451,7 @@ paths:
           format: int64
       tags:
         - Query
-  '/furybase/furybase/mining/stake_pool_info/{stakePoolIndex}':
+  '/furyunderverse/furybase/mining/stake_pool_info/{stakePoolIndex}':
     get:
       summary: Queries a list of StakePoolInfo items.
       operationId: FurybaseFurybaseMiningStakePoolInfo
@@ -27533,7 +27533,7 @@ paths:
           format: int64
       tags:
         - Query
-  /furybase/furybase/mining/stake_pool_list:
+  /furyunderverse/furybase/mining/stake_pool_list:
     get:
       summary: Queries a list of StakePoolList items.
       operationId: FurybaseFurybaseMiningStakePoolList
@@ -27611,7 +27611,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/furybase/furybase/mining/stake_record/{userAddress}/{stakePoolIndex}/{stakeRecordIndex}':
+  '/furyunderverse/furybase/mining/stake_record/{userAddress}/{stakePoolIndex}/{stakeRecordIndex}':
     get:
       summary: Queries a list of StakeRecord items.
       operationId: FurybaseFurybaseMiningStakeRecord
@@ -27696,7 +27696,7 @@ paths:
           format: int64
       tags:
         - Query
-  '/furybase/furybase/mining/stake_record_count/{userAddress}/{stakePoolIndex}':
+  '/furyunderverse/furybase/mining/stake_record_count/{userAddress}/{stakePoolIndex}':
     get:
       summary: Queries a list of StakeRecordCount items.
       operationId: FurybaseFurybaseMiningStakeRecordCount
@@ -27739,7 +27739,7 @@ paths:
           format: int64
       tags:
         - Query
-  '/furybase/furybase/mining/stake_record_list/{userAddress}/{stakePoolIndex}':
+  '/furyunderverse/furybase/mining/stake_record_list/{userAddress}/{stakePoolIndex}':
     get:
       summary: Queries a list of StakeRecordList items.
       operationId: FurybaseFurybaseMiningStakeRecordList
@@ -27821,7 +27821,7 @@ paths:
           format: int64
       tags:
         - Query
-  '/furybase/furybase/mining/stake_reward/{stakeUserAddress}/{stakePoolIndex}/{stakeRecordIndex}':
+  '/furyunderverse/furybase/mining/stake_reward/{stakeUserAddress}/{stakePoolIndex}/{stakeRecordIndex}':
     get:
       summary: Queries a list of StakeReward items.
       operationId: FurybaseFurybaseMiningStakeReward
@@ -27883,7 +27883,7 @@ paths:
           format: int64
       tags:
         - Query
-  '/furybase/furybase/fbank /address_prefix/{denom}':
+  '/furyunderverse/furybase/fbank /address_prefix/{denom}':
     get:
       summary: Queries a list of AddressPrefix items.
       operationId: FurybaseFurybaseFbank AddressPrefix
@@ -27922,7 +27922,7 @@ paths:
           type: string
       tags:
         - Query
-  /furybase/furybase/fbank /params:
+  /furyunderverse/furybase/fbank /params:
     get:
       summary: Parameters queries the parameters of the module.
       operationId: FurybaseFurybaseFbank Params
@@ -27958,7 +27958,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/fdex/params:
+  /furyunderverse/furybase/fdex/params:
     get:
       summary: Parameters queries the parameters of the module.
       operationId: FurybaseFurybaseFdexParams
@@ -27994,7 +27994,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/fdex/pool_creator_list:
+  /furyunderverse/furybase/fdex/pool_creator_list:
     get:
       summary: Queries a list of PoolCreatorList items.
       operationId: FurybaseFurybaseFdexPoolCreatorList
@@ -28028,7 +28028,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/fdex/provider_list:
+  /furyunderverse/furybase/fdex/provider_list:
     get:
       summary: Queries a list of ProviderList items.
       operationId: FurybaseFurybaseFdexProviderList
@@ -28062,7 +28062,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/fdex/provider_switch:
+  /furyunderverse/furybase/fdex/provider_switch:
     get:
       summary: Queries a list of ProviderSwitch items.
       operationId: FurybaseFurybaseFdexProviderSwitch
@@ -28094,7 +28094,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/furybase/furybase/fdex/swap_pool_info/{lpDenom}':
+  '/furyunderverse/furybase/fdex/swap_pool_info/{lpDenom}':
     get:
       summary: Queries a list of SwapPoolInfo items.
       operationId: FurybaseFurybaseFdexSwapPoolInfo
@@ -28180,7 +28180,7 @@ paths:
           type: string
       tags:
         - Query
-  /furybase/furybase/fdex/swap_pool_list:
+  /furyunderverse/furybase/fdex/swap_pool_list:
     get:
       summary: Queries a list of SwapPoolList items.
       operationId: FurybaseFurybaseFdexSwapPoolList
@@ -28263,7 +28263,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/furybase/furybase/relayers/threshold/{arena}/{denom}':
+  '/furyunderverse/furybase/relayers/threshold/{arena}/{denom}':
     get:
       summary: Queries a threshold by denom.
       operationId: FurybaseFurybaseRelayersThreshold
@@ -28305,7 +28305,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/relayers/{arena}/{denom}':
+  '/furyunderverse/furybase/relayers/{arena}/{denom}':
     get:
       summary: Queries a list of relayersByDenom items.
       operationId: FurybaseFurybaseRelayersRelayers
@@ -28348,7 +28348,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/fmintreward/act_current_cycle/{denom}':
+  '/furyunderverse/furybase/fmintreward/act_current_cycle/{denom}':
     get:
       summary: Queries a list of ActCurrentCycle items.
       operationId: FurybaseFurybaseFmintrewardActCurrentCycle
@@ -28386,7 +28386,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/fmintreward/act_detail/{denom}/{cycle}':
+  '/furyunderverse/furybase/fmintreward/act_detail/{denom}/{cycle}':
     get:
       summary: Queries a list of ActDetail items.
       operationId: FurybaseFurybaseFmintrewardActDetail
@@ -28457,7 +28457,7 @@ paths:
           format: uint64
       tags:
         - Query
-  '/furybase/furybase/fmintreward/act_latest_cycle/{denom}':
+  '/furyunderverse/furybase/fmintreward/act_latest_cycle/{denom}':
     get:
       summary: Queries a list of ActLatestCycle items.
       operationId: FurybaseFurybaseFmintrewardActLatestCycle
@@ -28495,7 +28495,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/fmintreward/claim_info_detail/{address}/{denom}/{cycle}/{mintIndex}':
+  '/furyunderverse/furybase/fmintreward/claim_info_detail/{address}/{denom}/{cycle}/{mintIndex}':
     get:
       summary: Queries a list of ClaimInfoDetail items.
       operationId: FurybaseFurybaseFmintrewardClaimInfoDetail
@@ -28568,7 +28568,7 @@ paths:
           format: uint64
       tags:
         - Query
-  /furybase/furybase/fmintreward/params:
+  /furyunderverse/furybase/fmintreward/params:
     get:
       summary: Parameters queries the parameters of the module.
       operationId: FurybaseFurybaseFmintrewardParams
@@ -28604,7 +28604,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/furybase/furybase/fmintreward/user_acts/{address}/{denom}':
+  '/furyunderverse/furybase/fmintreward/user_acts/{address}/{denom}':
     get:
       summary: Queries a list of UserActs items.
       operationId: FurybaseFurybaseFmintrewardUserActs
@@ -28651,7 +28651,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/fmintreward/user_mint_count/{address}/{denom}/{cycle}':
+  '/furyunderverse/furybase/fmintreward/user_mint_count/{address}/{denom}/{cycle}':
     get:
       summary: Queries a list of UserMintCount items.
       operationId: FurybaseFurybaseFmintrewardUserMintCount
@@ -28698,7 +28698,7 @@ paths:
           format: uint64
       tags:
         - Query
-  /furybase/furybase/fstaking/delegator_whitelist:
+  /furyunderverse/furybase/fstaking/delegator_whitelist:
     get:
       summary: Queries a list of DelegatorWhitelist items.
       operationId: FurybaseFurybaseFStakingDelegatorWhitelist
@@ -28732,7 +28732,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/fstaking/delegator_whitelist_switch:
+  /furyunderverse/furybase/fstaking/delegator_whitelist_switch:
     get:
       summary: Queries a list of DelegatorWhitelistSwitch items.
       operationId: FurybaseFurybaseFStakingDelegatorWhitelistSwitch
@@ -28764,7 +28764,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/fstaking/inflation_base:
+  /furyunderverse/furybase/fstaking/inflation_base:
     get:
       summary: Queries a list of InflationBase items.
       operationId: FurybaseFurybaseFStakingInflationBase
@@ -28796,7 +28796,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/fstaking/params:
+  /furyunderverse/furybase/fstaking/params:
     get:
       summary: Parameters queries the parameters of the module.
       operationId: FurybaseFurybaseFStakingParams
@@ -28832,7 +28832,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/fstaking/validator_whitelist:
+  /furyunderverse/furybase/fstaking/validator_whitelist:
     get:
       summary: Queries a list of ValidatorWhitelist items.
       operationId: FurybaseFurybaseFStakingValidatorWhitelist
@@ -28866,7 +28866,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /furybase/furybase/fstaking/validator_whitelist_switch:
+  /furyunderverse/furybase/fstaking/validator_whitelist_switch:
     get:
       summary: Queries a list of WhitelistSwitch items.
       operationId: FurybaseFurybaseFStakingValidatorWhitelistSwitch
@@ -28898,7 +28898,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/furybase/furybase/fvalidator/cycle_seconds/{denom}':
+  '/furyunderverse/furybase/fvalidator/cycle_seconds/{denom}':
     get:
       summary: Queries a list of CycleSeconds items.
       operationId: FurybaseFurybaseFvalidatorCycleSeconds
@@ -28944,7 +28944,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/fvalidator/latest_dealed_cycle/{denom}/{poolAddress}':
+  '/furyunderverse/furybase/fvalidator/latest_dealed_cycle/{denom}/{poolAddress}':
     get:
       summary: Queries a list of LatestDealedCycle items.
       operationId: FurybaseFurybaseFvalidatorLatestDealedCycle
@@ -28996,7 +28996,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/fvalidator/latest_voted_cycle/{denom}/{poolAddress}':
+  '/furyunderverse/furybase/fvalidator/latest_voted_cycle/{denom}/{poolAddress}':
     get:
       summary: Queries a list of LatestVotedCycle items.
       operationId: FurybaseFurybaseFvalidatorLatestVotedCycle
@@ -29048,7 +29048,7 @@ paths:
           type: string
       tags:
         - Query
-  /furybase/furybase/fvalidator/params:
+  /furyunderverse/furybase/fvalidator/params:
     get:
       summary: Parameters queries the parameters of the module.
       operationId: FurybaseFurybaseFvalidatorParams
@@ -29084,7 +29084,7 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/furybase/furybase/fvalidator/r_validator_list/{denom}/{poolAddress}':
+  '/furyunderverse/furybase/fvalidator/r_validator_list/{denom}/{poolAddress}':
     get:
       summary: Queries a list of FValidatorList items.
       operationId: FurybaseFurybaseFvalidatorFValidatorList
@@ -29127,7 +29127,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/fvalidator/shuffle_seconds/{denom}':
+  '/furyunderverse/furybase/fvalidator/shuffle_seconds/{denom}':
     get:
       summary: Queries a list of ShuffleSeconds items.
       operationId: FurybaseFurybaseFvalidatorShuffleSeconds
@@ -29173,7 +29173,7 @@ paths:
           type: string
       tags:
         - Query
-  '/furybase/furybase/fvote/get_proposal/{propId}':
+  '/furyunderverse/furybase/fvote/get_proposal/{propId}':
     get:
       summary: Queries a list of getProposal items.
       operationId: FurybaseFurybaseFvoteGetProposal
@@ -29377,7 +29377,7 @@ paths:
           type: string
       tags:
         - Query
-  /furybase/furybase/fvote/get_proposal_life:
+  /furyunderverse/furybase/fvote/get_proposal_life:
     get:
       summary: Queries a list of getProposalLife items.
       operationId: FurybaseFurybaseFvoteGetProposalLife
@@ -29577,7 +29577,7 @@ paths:
                         }
       tags:
         - Query
-  /furybase/furybase/sudo/admin:
+  /furyunderverse/furybase/sudo/admin:
     get:
       summary: Queries a list of admin items.
       operationId: FurybaseFurybaseSudoAdmin

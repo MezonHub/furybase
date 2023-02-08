@@ -2,8 +2,8 @@ package relayers
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/relayers/keeper"
-	"github.com/furybase/furybase/x/relayers/types"
+	"github.com/furyunderverse/furybase/x/relayers/keeper"
+	"github.com/furyunderverse/furybase/x/relayers/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

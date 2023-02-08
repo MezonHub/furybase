@@ -6,37 +6,37 @@ import "google/api/annotations.proto";
 import "fstaking/params.proto";
 // this line is used by starport scaffolding # 1
 
-option go_package = "github.com/furybase/furybase/x/fstaking/types";
+option go_package = "github.com/furyunderverse/furybase/x/fstaking/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/furybase/furybase/fstaking/params";
+    option (google.api.http).get = "/furyunderverse/furybase/fstaking/params";
   }
   // Queries a list of InflationBase items.
 	rpc InflationBase(QueryInflationBaseRequest) returns (QueryInflationBaseResponse) {
-		option (google.api.http).get = "/furybase/furybase/fstaking/inflation_base";
+		option (google.api.http).get = "/furyunderverse/furybase/fstaking/inflation_base";
 	}
 
 // Queries a list of ValidatorWhitelist items.
 	rpc ValidatorWhitelist(QueryValidatorWhitelistRequest) returns (QueryValidatorWhitelistResponse) {
-		option (google.api.http).get = "/furybase/furybase/fstaking/validator_whitelist";
+		option (google.api.http).get = "/furyunderverse/furybase/fstaking/validator_whitelist";
 	}
 
 // Queries a list of WhitelistSwitch items.
 	rpc ValidatorWhitelistSwitch(QueryValidatorWhitelistSwitchRequest) returns (QueryValidatorWhitelistSwitchResponse) {
-		option (google.api.http).get = "/furybase/furybase/fstaking/validator_whitelist_switch";
+		option (google.api.http).get = "/furyunderverse/furybase/fstaking/validator_whitelist_switch";
 	}
 
 // Queries a list of DelegatorWhitelist items.
 	rpc DelegatorWhitelist(QueryDelegatorWhitelistRequest) returns (QueryDelegatorWhitelistResponse) {
-		option (google.api.http).get = "/furybase/furybase/fstaking/delegator_whitelist";
+		option (google.api.http).get = "/furyunderverse/furybase/fstaking/delegator_whitelist";
 	}
 
 // Queries a list of DelegatorWhitelistSwitch items.
 	rpc DelegatorWhitelistSwitch(QueryDelegatorWhitelistSwitchRequest) returns (QueryDelegatorWhitelistSwitchResponse) {
-		option (google.api.http).get = "/furybase/furybase/fstaking/delegator_whitelist_switch";
+		option (google.api.http).get = "/furyunderverse/furybase/fstaking/delegator_whitelist_switch";
 	}
 
 // this line is used by starport scaffolding # 2

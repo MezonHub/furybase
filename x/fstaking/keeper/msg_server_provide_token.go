@@ -4,9 +4,9 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/utils"
-	"github.com/furybase/furybase/x/fstaking/types"
-	sudotypes "github.com/furybase/furybase/x/sudo/types"
+	"github.com/furyunderverse/furybase/utils"
+	"github.com/furyunderverse/furybase/x/fstaking/types"
+	sudotypes "github.com/furyunderverse/furybase/x/sudo/types"
 )
 
 func (k msgServer) ProvideToken(goCtx context.Context, msg *types.MsgProvideToken) (*types.MsgProvideTokenResponse, error) {

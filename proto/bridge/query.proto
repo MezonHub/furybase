@@ -10,48 +10,48 @@ import "bridge/genesis.proto";
 import "cosmos/base/v1beta1/coin.proto";
 // this line is used by starport scaffolding # 1
 
-option go_package = "github.com/furybase/furybase/x/bridge/types";
+option go_package = "github.com/furyunderverse/furybase/x/bridge/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/furybase/furybase/bridge/params";
+    option (google.api.http).get = "/furyunderverse/furybase/bridge/params";
   }
 
 // Queries a list of ChaindIds items.
 	rpc ChaindIds(QueryChaindIdsRequest) returns (QueryChaindIdsResponse) {
-		option (google.api.http).get = "/furybase/furybase/bridge/chaind_ids";
+		option (google.api.http).get = "/furyunderverse/furybase/bridge/chaind_ids";
 	}
 
 // Queries a list of ProposalDetail items.
 	rpc ProposalDetail(QueryProposalDetailRequest) returns (QueryProposalDetailResponse) {
-		option (google.api.http).get = "/furybase/furybase/bridge/proposal_detail/{chainId}/{depositNonce}/{resourceId}/{amount}/{receiver}";
+		option (google.api.http).get = "/furyunderverse/furybase/bridge/proposal_detail/{chainId}/{depositNonce}/{resourceId}/{amount}/{receiver}";
 	}
 
 // Queries a list of ResourceidToDenoms items.
 	rpc ResourceidToDenoms(QueryResourceidToDenomsRequest) returns (QueryResourceidToDenomsResponse) {
-		option (google.api.http).get = "/furybase/furybase/bridge/resourceid_to_denoms";
+		option (google.api.http).get = "/furyunderverse/furybase/bridge/resourceid_to_denoms";
 	}
 
 // Queries a list of RelayFeeReceiver items.
 	rpc RelayFeeReceiver(QueryRelayFeeReceiverRequest) returns (QueryRelayFeeReceiverResponse) {
-		option (google.api.http).get = "/furybase/furybase/bridge/relay_fee_receiver";
+		option (google.api.http).get = "/furyunderverse/furybase/bridge/relay_fee_receiver";
 	}
 
 // Queries a list of RelayFee items.
 	rpc RelayFee(QueryRelayFeeRequest) returns (QueryRelayFeeResponse) {
-		option (google.api.http).get = "/furybase/furybase/bridge/relay_fee/{chainId}";
+		option (google.api.http).get = "/furyunderverse/furybase/bridge/relay_fee/{chainId}";
 	}
 
 // Queries a list of BannedDenomList items.
 	rpc BannedDenomList(QueryBannedDenomListRequest) returns (QueryBannedDenomListResponse) {
-		option (google.api.http).get = "/furybase/furybase/bridge/banned_denom_list";
+		option (google.api.http).get = "/furyunderverse/furybase/bridge/banned_denom_list";
 	}
 
 // Queries a list of GetDepositCount items.
 	rpc GetDepositCount(QueryGetDepositCountRequest) returns (QueryGetDepositCountResponse) {
-		option (google.api.http).get = "/furybase/furybase/bridge/get_deposit_count/{chainId}";
+		option (google.api.http).get = "/furyunderverse/furybase/bridge/get_deposit_count/{chainId}";
 	}
 
 // this line is used by starport scaffolding # 2

@@ -6,11 +6,11 @@ import (
 	"time"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	keepertest "github.com/furybase/furybase/testutil/keeper"
-	"github.com/furybase/furybase/testutil/sample"
-	"github.com/furybase/furybase/utils"
-	"github.com/furybase/furybase/x/mining/keeper"
-	"github.com/furybase/furybase/x/mining/types"
+	keepertest "github.com/furyunderverse/furybase/testutil/keeper"
+	"github.com/furyunderverse/furybase/testutil/sample"
+	"github.com/furyunderverse/furybase/utils"
+	"github.com/furyunderverse/furybase/x/mining/keeper"
+	"github.com/furyunderverse/furybase/x/mining/types"
 	"github.com/stretchr/testify/require"
 )
 

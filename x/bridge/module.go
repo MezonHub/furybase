@@ -18,9 +18,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/furybase/furybase/x/bridge/client/cli"
-	"github.com/furybase/furybase/x/bridge/keeper"
-	"github.com/furybase/furybase/x/bridge/types"
+	"github.com/furyunderverse/furybase/x/bridge/client/cli"
+	"github.com/furyunderverse/furybase/x/bridge/keeper"
+	"github.com/furyunderverse/furybase/x/bridge/types"
 )
 
 var (

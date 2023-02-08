@@ -2,8 +2,8 @@ package fvalidator
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/fvalidator/keeper"
-	"github.com/furybase/furybase/x/fvalidator/types"
+	"github.com/furyunderverse/furybase/x/fvalidator/keeper"
+	"github.com/furyunderverse/furybase/x/fvalidator/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

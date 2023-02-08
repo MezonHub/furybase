@@ -9,7 +9,7 @@ import (
 	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	github_com_furybase_furybase_utils "github.com/furybase/furybase/utils"
+	github_com_furybase_furybase_utils "github.com/furyunderverse/furybase/utils"
 	io "io"
 	math "math"
 	math_bits "math/bits"
@@ -720,7 +720,7 @@ func (m *BondSnapshot) GetBondState() PoolBondState {
 
 type ExchangeRate struct {
 	Denom string                                 `protobuf:"bytes,1,opt,name=denom,proto3" json:"denom,omitempty"`
-	Value github_com_furybase_furybase_utils.Dec `protobuf:"bytes,2,opt,name=value,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"value"`
+	Value github_com_furybase_furybase_utils.Dec `protobuf:"bytes,2,opt,name=value,proto3,customtype=github.com/furyunderverse/furybase/utils.Dec" json:"value"`
 }
 
 func (m *ExchangeRate) Reset()         { *m = ExchangeRate{} }
@@ -811,7 +811,7 @@ func (m *TotalProtocolFee) GetDenom() string {
 type EraExchangeRate struct {
 	Denom string                                 `protobuf:"bytes,1,opt,name=denom,proto3" json:"denom,omitempty"`
 	Era   uint32                                 `protobuf:"varint,2,opt,name=era,proto3" json:"era,omitempty"`
-	Value github_com_furybase_furybase_utils.Dec `protobuf:"bytes,3,opt,name=value,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"value"`
+	Value github_com_furybase_furybase_utils.Dec `protobuf:"bytes,3,opt,name=value,proto3,customtype=github.com/furyunderverse/furybase/utils.Dec" json:"value"`
 }
 
 func (m *EraExchangeRate) Reset()         { *m = EraExchangeRate{} }

@@ -10,7 +10,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/furybase/furybase/x/ledger/types"
+	"github.com/furyunderverse/furybase/x/ledger/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

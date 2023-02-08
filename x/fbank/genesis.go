@@ -2,8 +2,8 @@ package fbank
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/fbank /keeper"
-	"github.com/furybase/furybase/x/fbank /types"
+	"github.com/furyunderverse/furybase/x/fbank /keeper"
+	"github.com/furyunderverse/furybase/x/fbank /types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

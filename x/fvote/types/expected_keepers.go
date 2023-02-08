@@ -2,7 +2,7 @@ package types
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	relayertypes "github.com/furybase/furybase/x/relayers/types"
+	relayertypes "github.com/furyunderverse/furybase/x/relayers/types"
 )
 
 type SudoKeeper interface {

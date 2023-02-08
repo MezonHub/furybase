@@ -3,7 +3,7 @@ package furybase.furybase.claim;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/furybase/furybase/x/claim/types";
+option go_package = "github.com/furyunderverse/furybase/x/claim/types";
 
 // Params defines the parameters for the module.
 message Params {

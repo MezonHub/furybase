@@ -18,9 +18,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/furybase/furybase/x/mining/client/cli"
-	"github.com/furybase/furybase/x/mining/keeper"
-	"github.com/furybase/furybase/x/mining/types"
+	"github.com/furyunderverse/furybase/x/mining/client/cli"
+	"github.com/furyunderverse/furybase/x/mining/keeper"
+	"github.com/furyunderverse/furybase/x/mining/types"
 )
 
 var (

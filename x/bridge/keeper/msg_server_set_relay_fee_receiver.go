@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/bridge/types"
-	sudoTypes "github.com/furybase/furybase/x/sudo/types"
+	"github.com/furyunderverse/furybase/x/bridge/types"
+	sudoTypes "github.com/furyunderverse/furybase/x/sudo/types"
 )
 
 func (k msgServer) SetRelayFeeReceiver(goCtx context.Context, msg *types.MsgSetRelayFeeReceiver) (*types.MsgSetRelayFeeReceiverResponse, error) {

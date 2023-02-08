@@ -17,8 +17,8 @@ import (
 	tmrand "github.com/tendermint/tendermint/libs/rand"
 	tmdb "github.com/tendermint/tm-db"
 
-	"github.com/furybase/furybase/app"
-	"github.com/furybase/furybase/cosmoscmd"
+	"github.com/furyunderverse/furybase/app"
+	"github.com/furyunderverse/furybase/cosmoscmd"
 )
 
 type (

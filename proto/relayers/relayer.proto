@@ -1,7 +1,7 @@
 syntax = "proto3";
 package furybase.furybase.relayers;
 
-option go_package = "github.com/furybase/furybase/x/relayers/types";
+option go_package = "github.com/furyunderverse/furybase/x/relayers/types";
 
 message Relayer {
     string arena = 1;

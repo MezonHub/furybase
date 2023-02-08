@@ -11,7 +11,7 @@ import (
 	_ "github.com/gogo/protobuf/gogoproto"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"
-	github_com_furybase_furybase_utils "github.com/furybase/furybase/utils"
+	github_com_furybase_furybase_utils "github.com/furyunderverse/furybase/utils"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -156,7 +156,7 @@ func (m *CreateRewardPoolInfo) GetStartTimestamp() uint64 {
 type CreateStakeItemInfo struct {
 	LockSecond uint64 `protobuf:"varint,1,opt,name=lockSecond,proto3" json:"lockSecond"`
 	// user stakedPower = powerRewardRate * stakedAmount
-	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,2,opt,name=powerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"powerRewardRate"`
+	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,2,opt,name=powerRewardRate,proto3,customtype=github.com/furyunderverse/furybase/utils.Dec" json:"powerRewardRate"`
 }
 
 func (m *CreateStakeItemInfo) Reset()         { *m = CreateStakeItemInfo{} }
@@ -239,7 +239,7 @@ type MsgAddStakeItem struct {
 	Creator         string                                 `protobuf:"bytes,1,opt,name=creator,proto3" json:"creator,omitempty"`
 	StakePoolIndex  uint32                                 `protobuf:"varint,2,opt,name=stakePoolIndex,proto3" json:"stakePoolIndex"`
 	LockSecond      uint64                                 `protobuf:"varint,3,opt,name=lockSecond,proto3" json:"lockSecond"`
-	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,4,opt,name=powerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"powerRewardRate"`
+	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,4,opt,name=powerRewardRate,proto3,customtype=github.com/furyunderverse/furybase/utils.Dec" json:"powerRewardRate"`
 	Enable          bool                                   `protobuf:"varint,5,opt,name=enable,proto3" json:"enable,omitempty"`
 }
 
@@ -741,7 +741,7 @@ type MsgUpdateStakeItem struct {
 	Index           uint32                                 `protobuf:"varint,2,opt,name=index,proto3" json:"index"`
 	StakePoolIndex  uint32                                 `protobuf:"varint,3,opt,name=stakePoolIndex,proto3" json:"stakePoolIndex"`
 	LockSecond      uint64                                 `protobuf:"varint,4,opt,name=lockSecond,proto3" json:"lockSecond"`
-	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,5,opt,name=powerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"powerRewardRate"`
+	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,5,opt,name=powerRewardRate,proto3,customtype=github.com/furyunderverse/furybase/utils.Dec" json:"powerRewardRate"`
 	Enable          bool                                   `protobuf:"varint,6,opt,name=enable,proto3" json:"enable,omitempty"`
 }
 
@@ -2025,7 +2025,7 @@ var xxx_messageInfo_MsgRmStakeTokenResponse proto.InternalMessageInfo
 type MsgSetStakeItemLimit struct {
 	Creator            string                                 `protobuf:"bytes,1,opt,name=creator,proto3" json:"creator,omitempty"`
 	MaxLockSecond      uint64                                 `protobuf:"varint,2,opt,name=maxLockSecond,proto3" json:"maxLockSecond"`
-	MaxPowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,3,opt,name=maxPowerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"maxPowerRewardRate"`
+	MaxPowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,3,opt,name=maxPowerRewardRate,proto3,customtype=github.com/furyunderverse/furybase/utils.Dec" json:"maxPowerRewardRate"`
 }
 
 func (m *MsgSetStakeItemLimit) Reset()         { *m = MsgSetStakeItemLimit{} }

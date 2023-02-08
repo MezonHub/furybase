@@ -4,7 +4,7 @@ package furybase.furybase.fdex;
 import "gogoproto/gogo.proto";
 import "cosmos/base/v1beta1/coin.proto";
 
-option go_package = "github.com/furybase/furybase/x/fdex/types";
+option go_package = "github.com/furyunderverse/furybase/x/fdex/types";
 
 message SwapPool {
   uint32 index = 1;

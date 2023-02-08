@@ -10,8 +10,8 @@ import (
 	tmtypes "github.com/tendermint/tendermint/types"
 	tmdb "github.com/tendermint/tm-db"
 
-	"github.com/furybase/furybase/app"
-	"github.com/furybase/furybase/cosmoscmd"
+	"github.com/furyunderverse/furybase/app"
+	"github.com/furyunderverse/furybase/cosmoscmd"
 )
 
 // New creates application instance with in-memory database and disabled logging.

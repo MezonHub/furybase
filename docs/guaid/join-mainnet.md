@@ -11,7 +11,7 @@ This Quickstart tutorial completes the following actions:
 * Put the `genesis.json` file in the correct location
 
 ```bash
-git clone -b vx.x.x https://github.com/furybase/furybase
+git clone -b vx.x.x https://github.com/furyunderverse/furybase
 cd furybase
 make install
 base init chooseanicehandle

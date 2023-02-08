@@ -6,7 +6,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
-	"github.com/furybase/furybase/x/ledger/types"
+	"github.com/furyunderverse/furybase/x/ledger/types"
 )
 
 // ClaimCapability claims the channel capability passed via the OnOpenChanInit callback

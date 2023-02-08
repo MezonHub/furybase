@@ -5,7 +5,7 @@ import "gogoproto/gogo.proto";
 import "fvalidator/params.proto";
 // this line is used by starport scaffolding # genesis/proto/import
 
-option go_package = "github.com/furybase/furybase/x/fvalidator/types";
+option go_package = "github.com/furyunderverse/furybase/x/fvalidator/types";
 
 // GenesisState defines the fvalidator module's genesis state.
 message GenesisState {

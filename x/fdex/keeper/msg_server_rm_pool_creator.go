@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/furybase/furybase/x/fdex/types"
-	sudotypes "github.com/furybase/furybase/x/sudo/types"
+	"github.com/furyunderverse/furybase/x/fdex/types"
+	sudotypes "github.com/furyunderverse/furybase/x/sudo/types"
 )
 
 func (k msgServer) RmPoolCreator(goCtx context.Context, msg *types.MsgRmPoolCreator) (*types.MsgRmPoolCreatorResponse, error) {

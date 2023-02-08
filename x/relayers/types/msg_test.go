@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/furybase/furybase/testutil/sample"
-	"github.com/furybase/furybase/x/relayers/types"
+	"github.com/furyunderverse/furybase/testutil/sample"
+	"github.com/furyunderverse/furybase/x/relayers/types"
 	"github.com/stretchr/testify/require"
 )
 
