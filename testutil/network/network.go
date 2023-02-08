@@ -17,8 +17,8 @@ import (
 	tmrand "github.com/tendermint/tendermint/libs/rand"
 	tmdb "github.com/tendermint/tm-db"
 
-	"github.com/stafihub/stafihub/app"
-	"github.com/stafihub/stafihub/cosmoscmd"
+	"github.com/furybase/furybase/app"
+	"github.com/furybase/furybase/cosmoscmd"
 )
 
 type (
@@ -47,7 +47,7 @@ func New(t *testing.T, configs ...network.Config) *network.Network {
 // genesis and single validator. All other parameters are inherited from cosmos-sdk/testutil/network.DefaultConfig
 func DefaultConfig() network.Config {
 	encoding := cosmoscmd.MakeEncodingConfig(app.ModuleBasics)
-	cosmoscmd.SetPrefixes("stafi")
+	cosmoscmd.SetPrefixes("fury")
 	return network.Config{
 		Codec:             encoding.Marshaler,
 		TxConfig:          encoding.TxConfig,

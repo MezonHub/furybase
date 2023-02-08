@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	testkeeper "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/sample"
+	testkeeper "github.com/furybase/furybase/testutil/keeper"
+	"github.com/furybase/furybase/testutil/sample"
 	"github.com/stretchr/testify/require"
 )
 

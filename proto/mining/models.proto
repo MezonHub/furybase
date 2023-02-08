@@ -1,9 +1,9 @@
 syntax = "proto3";
-package stafihub.stafihub.mining;
+package furybase.furybase.mining;
 
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/stafihub/stafihub/x/mining/types";
+option go_package = "github.com/furybase/furybase/x/mining/types";
 
 message StakePool {
   uint32 index = 1;
@@ -65,11 +65,11 @@ message StakeItem {
 
   uint64 lockSecond = 3;
   // user stakedPower = powerRewardRate * stakedAmount
-  string powerRewardRate = 4 [(gogoproto.customtype) = "github.com/stafihub/stafihub/utils.Dec", (gogoproto.nullable) = false];
+  string powerRewardRate = 4 [(gogoproto.customtype) = "github.com/furybase/furybase/utils.Dec", (gogoproto.nullable) = false];
   bool enable = 5;
 }
 
 message StakeItemLimit {
-  string maxPowerRewardRate = 1 [(gogoproto.customtype) = "github.com/stafihub/stafihub/utils.Dec", (gogoproto.nullable) = false];
+  string maxPowerRewardRate = 1 [(gogoproto.customtype) = "github.com/furybase/furybase/utils.Dec", (gogoproto.nullable) = false];
   uint64 maxLockSecond = 2;
 }

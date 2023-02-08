@@ -8,8 +8,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
 	icacontrollerkeeper "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/controller/keeper"
-	"github.com/stafihub/stafihub/x/ledger/keeper"
-	"github.com/stafihub/stafihub/x/ledger/types"
+	"github.com/furybase/furybase/x/ledger/keeper"
+	"github.com/furybase/furybase/x/ledger/types"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
@@ -30,8 +30,8 @@ func LedgerKeeper(t testing.TB) (keeper.Keeper, sdk.Context) {
 
 	sudoKeeper, _ := SudoKeeper(t)
 	relayersKeeper, _ := RelayersKeeper(t)
-	rmintRewardKeeper, _ := RmintrewardKeeper(t)
-	rBankKeeper, _ := RbankKeeper(t)
+	fmintRewardKeeper, _ := FmintrewardKeeper(t)
+	fBank Keeper, _ := Fbank Keeper(t)
 
 	ledgerKeeper := keeper.NewKeeper(
 		cdc,
@@ -40,8 +40,8 @@ func LedgerKeeper(t testing.TB) (keeper.Keeper, sdk.Context) {
 		sudoKeeper,
 		BankKeeper,
 		relayersKeeper,
-		rmintRewardKeeper,
-		rBankKeeper,
+		fmintRewardKeeper,
+		fBank Keeper,
 		//todo impl keepers below
 		icacontrollerkeeper.Keeper{},
 		capabilitykeeper.ScopedKeeper{},

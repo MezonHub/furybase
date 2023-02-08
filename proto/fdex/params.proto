@@ -1,0 +1,12 @@
+syntax = "proto3";
+package furybase.furybase.fdex;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/furybase/furybase/x/fdex/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

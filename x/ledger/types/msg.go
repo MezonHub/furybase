@@ -4,7 +4,7 @@ import (
 	"fmt"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	utils "github.com/stafihub/stafihub/utils"
+	utils "github.com/furybase/furybase/utils"
 )
 
 var (

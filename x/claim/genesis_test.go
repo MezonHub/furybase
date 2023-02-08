@@ -3,10 +3,10 @@ package claim_test
 import (
 	"testing"
 
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/nullify"
-	"github.com/stafihub/stafihub/x/claim"
-	"github.com/stafihub/stafihub/x/claim/types"
+	keepertest "github.com/furybase/furybase/testutil/keeper"
+	"github.com/furybase/furybase/testutil/nullify"
+	"github.com/furybase/furybase/x/claim"
+	"github.com/furybase/furybase/x/claim/types"
 	"github.com/stretchr/testify/require"
 )
 

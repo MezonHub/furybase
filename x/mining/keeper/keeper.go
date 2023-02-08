@@ -11,7 +11,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/stafihub/stafihub/x/mining/types"
+	"github.com/furybase/furybase/x/mining/types"
 )
 
 type (
@@ -23,7 +23,7 @@ type (
 
 		sudoKeeper types.SudoKeeper
 		bankKeeper types.BankKeeper
-		rDexKeeper types.RDexKeeper
+		fDexKeeper types.FDexKeeper
 	}
 )
 
@@ -34,7 +34,7 @@ func NewKeeper(
 	ps paramtypes.Subspace,
 	sudoKeeper types.SudoKeeper,
 	bankKeeper types.BankKeeper,
-	rDexKeeper types.RDexKeeper,
+	fDexKeeper types.FDexKeeper,
 ) *Keeper {
 	// set KeyTable if it has not already been set
 	if !ps.HasKeyTable() {
@@ -48,7 +48,7 @@ func NewKeeper(
 		paramstore: ps,
 		sudoKeeper: sudoKeeper,
 		bankKeeper: bankKeeper,
-		rDexKeeper: rDexKeeper,
+		fDexKeeper: fDexKeeper,
 	}
 }
 

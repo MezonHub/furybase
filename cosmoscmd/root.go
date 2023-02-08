@@ -136,7 +136,7 @@ func NewRootCmd(
 
 	rootCmd := &cobra.Command{
 		Use:   appName + "d",
-		Short: "StafiHub App",
+		Short: "FuryBase App",
 		PersistentPreRunE: func(cmd *cobra.Command, _ []string) error {
 			initClientCtx, err := client.ReadPersistentCommandFlags(initClientCtx, cmd.Flags())
 			if err != nil {
@@ -461,8 +461,8 @@ func ModuleAddrCmd() *cobra.Command {
 		Long: fmt.Sprintf(`Convert module name to bech32 address.
 
 Example:
-$ %s debug module-addr rdex
-			`, "stafihubd"),
+$ %s debug module-addr fdex
+			`, "base"),
 		Args: cobra.ExactArgs(1),
 		RunE: func(cmd *cobra.Command, args []string) error {
 

@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/ledger/types"
-	sudotypes "github.com/stafihub/stafihub/x/sudo/types"
+	"github.com/furybase/furybase/x/ledger/types"
+	sudotypes "github.com/furybase/furybase/x/sudo/types"
 )
 
 func (k msgServer) SetPoolStatus(goCtx context.Context, msg *types.MsgSetPoolStatus) (*types.MsgSetPoolStatusResponse, error) {

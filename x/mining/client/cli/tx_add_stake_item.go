@@ -8,8 +8,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/spf13/cobra"
-	"github.com/stafihub/stafihub/utils"
-	"github.com/stafihub/stafihub/x/mining/types"
+	"github.com/furybase/furybase/utils"
+	"github.com/furybase/furybase/x/mining/types"
 )
 
 var _ = strconv.Itoa(0)

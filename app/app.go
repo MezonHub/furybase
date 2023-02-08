@@ -97,59 +97,59 @@ import (
 	tmos "github.com/tendermint/tendermint/libs/os"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/stafihub/stafihub/cosmoscmd"
+	"github.com/furybase/furybase/cosmoscmd"
 	"github.com/tendermint/spm/openapiconsole"
 
-	"github.com/stafihub/stafihub/docs"
+	"github.com/furybase/furybase/docs"
 
-	bridgemodule "github.com/stafihub/stafihub/x/bridge"
-	bridgemodulekeeper "github.com/stafihub/stafihub/x/bridge/keeper"
-	bridgemoduletypes "github.com/stafihub/stafihub/x/bridge/types"
-	"github.com/stafihub/stafihub/x/claim"
-	claimmodulekeeper "github.com/stafihub/stafihub/x/claim/keeper"
-	claimmoduletypes "github.com/stafihub/stafihub/x/claim/types"
-	"github.com/stafihub/stafihub/x/ledger"
-	ledgerkeeper "github.com/stafihub/stafihub/x/ledger/keeper"
-	ledgertypes "github.com/stafihub/stafihub/x/ledger/types"
-	miningmodule "github.com/stafihub/stafihub/x/mining"
-	miningmodulekeeper "github.com/stafihub/stafihub/x/mining/keeper"
-	miningmoduletypes "github.com/stafihub/stafihub/x/mining/types"
-	rbankmodule "github.com/stafihub/stafihub/x/rbank"
-	rbankmodulekeeper "github.com/stafihub/stafihub/x/rbank/keeper"
-	rbankmoduletypes "github.com/stafihub/stafihub/x/rbank/types"
-	rdexmodule "github.com/stafihub/stafihub/x/rdex"
-	rdexmodulekeeper "github.com/stafihub/stafihub/x/rdex/keeper"
-	rdexmoduletypes "github.com/stafihub/stafihub/x/rdex/types"
-	"github.com/stafihub/stafihub/x/relayers"
-	relayerskeeper "github.com/stafihub/stafihub/x/relayers/keeper"
-	relayerstypes "github.com/stafihub/stafihub/x/relayers/types"
-	rmintrewardmodule "github.com/stafihub/stafihub/x/rmintreward"
-	rmintrewardmodulekeeper "github.com/stafihub/stafihub/x/rmintreward/keeper"
-	rmintrewardmoduletypes "github.com/stafihub/stafihub/x/rmintreward/types"
-	rstakingmodule "github.com/stafihub/stafihub/x/rstaking"
-	rstakingmodulekeeper "github.com/stafihub/stafihub/x/rstaking/keeper"
-	rstakingmoduletypes "github.com/stafihub/stafihub/x/rstaking/types"
-	"github.com/stafihub/stafihub/x/rvalidator"
-	rvalidatormodulekeeper "github.com/stafihub/stafihub/x/rvalidator/keeper"
-	rvalidatormoduletypes "github.com/stafihub/stafihub/x/rvalidator/types"
-	"github.com/stafihub/stafihub/x/rvote"
-	rvotekeeper "github.com/stafihub/stafihub/x/rvote/keeper"
-	rvotetypes "github.com/stafihub/stafihub/x/rvote/types"
-	"github.com/stafihub/stafihub/x/sudo"
-	sudokeeper "github.com/stafihub/stafihub/x/sudo/keeper"
-	sudotypes "github.com/stafihub/stafihub/x/sudo/types"
+	bridgemodule "github.com/furybase/furybase/x/bridge"
+	bridgemodulekeeper "github.com/furybase/furybase/x/bridge/keeper"
+	bridgemoduletypes "github.com/furybase/furybase/x/bridge/types"
+	"github.com/furybase/furybase/x/claim"
+	claimmodulekeeper "github.com/furybase/furybase/x/claim/keeper"
+	claimmoduletypes "github.com/furybase/furybase/x/claim/types"
+	"github.com/furybase/furybase/x/ledger"
+	ledgerkeeper "github.com/furybase/furybase/x/ledger/keeper"
+	ledgertypes "github.com/furybase/furybase/x/ledger/types"
+	miningmodule "github.com/furybase/furybase/x/mining"
+	miningmodulekeeper "github.com/furybase/furybase/x/mining/keeper"
+	miningmoduletypes "github.com/furybase/furybase/x/mining/types"
+	fbankmodule "github.com/furybase/furybase/x/fbank"
+	fbankmodulekeeper "github.com/furybase/furybase/x/fbank/keeper"
+	fbankmoduletypes "github.com/furybase/furybase/x/fbank/types"
+	fdexmodule "github.com/furybase/furybase/x/fdex"
+	fdexmodulekeeper "github.com/furybase/furybase/x/fdex/keeper"
+	fdexmoduletypes "github.com/furybase/furybase/x/fdex/types"
+	"github.com/furybase/furybase/x/relayers"
+	relayerskeeper "github.com/furybase/furybase/x/relayers/keeper"
+	relayerstypes "github.com/furybase/furybase/x/relayers/types"
+	fmintrewardmodule "github.com/furybase/furybase/x/fmintreward"
+	fmintrewardmodulekeeper "github.com/furybase/furybase/x/fmintreward/keeper"
+	fmintrewardmoduletypes "github.com/furybase/furybase/x/fmintreward/types"
+	fstakingmodule "github.com/furybase/furybase/x/fstaking"
+	fstakingmodulekeeper "github.com/furybase/furybase/x/fstaking/keeper"
+	fstakingmoduletypes "github.com/furybase/furybase/x/fstaking/types"
+	"github.com/furybase/furybase/x/fvalidator"
+	fvalidatormodulekeeper "github.com/furybase/furybase/x/fvalidator/keeper"
+	fvalidatormoduletypes "github.com/furybase/furybase/x/fvalidator/types"
+	"github.com/furybase/furybase/x/fvote"
+	fvotekeeper "github.com/furybase/furybase/x/fvote/keeper"
+	fvotetypes "github.com/furybase/furybase/x/fvote/types"
+	"github.com/furybase/furybase/x/sudo"
+	sudokeeper "github.com/furybase/furybase/x/sudo/keeper"
+	sudotypes "github.com/furybase/furybase/x/sudo/types"
 
 	// this line is used by starport scaffolding # stargate/app/moduleImport
-	custombank "github.com/stafihub/stafihub/custom/bank"
-	customcrisis "github.com/stafihub/stafihub/custom/crisis"
-	customgov "github.com/stafihub/stafihub/custom/gov"
-	custommint "github.com/stafihub/stafihub/custom/mint"
-	customstaking "github.com/stafihub/stafihub/custom/staking"
+	custombank "github.com/furybase/furybase/custom/bank"
+	customcrisis "github.com/furybase/furybase/custom/crisis"
+	customgov "github.com/furybase/furybase/custom/gov"
+	custommint "github.com/furybase/furybase/custom/mint"
+	customstaking "github.com/furybase/furybase/custom/staking"
 )
 
 const (
-	AccountAddressPrefix = "stafi"
-	Name                 = "stafihub"
+	AccountAddressPrefix = "did:fury:"
+	Name                 = "furybase"
 )
 
 // this line is used by starport scaffolding # stargate/wasm/app/enabledProposals
@@ -200,14 +200,14 @@ var (
 		sudo.AppModuleBasic{},
 		relayers.AppModuleBasic{},
 		ledger.AppModuleBasic{},
-		rvote.AppModuleBasic{},
-		rstakingmodule.AppModuleBasic{},
+		fvote.AppModuleBasic{},
+		fstakingmodule.AppModuleBasic{},
 		bridgemodule.AppModuleBasic{},
-		rmintrewardmodule.AppModuleBasic{},
-		rbankmodule.AppModuleBasic{},
-		rdexmodule.AppModuleBasic{},
+		fmintrewardmodule.AppModuleBasic{},
+		fbank module.AppModuleBasic{},
+		fdexmodule.AppModuleBasic{},
 		miningmodule.AppModuleBasic{},
-		rvalidator.AppModuleBasic{},
+		fvalidator.AppModuleBasic{},
 		claim.AppModuleBasic{},
 		// this line is used by starport scaffolding # stargate/app/moduleBasic
 	)
@@ -222,10 +222,10 @@ var (
 		govtypes.ModuleName:               {authtypes.Burner},
 		ibctransfertypes.ModuleName:       {authtypes.Minter, authtypes.Burner},
 		ledgertypes.ModuleName:            {authtypes.Minter, authtypes.Burner},
-		rstakingmoduletypes.ModuleName:    {authtypes.Burner, authtypes.Minter},
+		fstakingmoduletypes.ModuleName:    {authtypes.Burner, authtypes.Minter},
 		bridgemoduletypes.ModuleName:      {authtypes.Burner, authtypes.Minter},
-		rmintrewardmoduletypes.ModuleName: nil,
-		rdexmoduletypes.ModuleName:        {authtypes.Burner, authtypes.Minter},
+		fmintrewardmoduletypes.ModuleName: nil,
+		fdexmoduletypes.ModuleName:        {authtypes.Burner, authtypes.Minter},
 		miningmoduletypes.ModuleName:      nil,
 		icatypes.ModuleName:               nil,
 		claimmoduletypes.ModuleName:       nil,
@@ -297,21 +297,21 @@ type App struct {
 
 	LedgerKeeper ledgerkeeper.Keeper
 
-	RvoteKeeper rvotekeeper.Keeper
+	FvoteKeeper fvotekeeper.Keeper
 
-	RStakingKeeper rstakingmodulekeeper.Keeper
+	FStakingKeeper fstakingmodulekeeper.Keeper
 
 	BridgeKeeper bridgemodulekeeper.Keeper
 
-	RmintrewardKeeper rmintrewardmodulekeeper.Keeper
+	FmintrewardKeeper fmintrewardmodulekeeper.Keeper
 
-	RbankKeeper rbankmodulekeeper.Keeper
+	Fbank Keeper fbank modulekeeper.Keeper
 
-	RdexKeeper rdexmodulekeeper.Keeper
+	FdexKeeper fdexmodulekeeper.Keeper
 
 	MiningKeeper miningmodulekeeper.Keeper
 
-	RValidatorKeeper rvalidatormodulekeeper.Keeper
+	FValidatorKeeper fvalidatormodulekeeper.Keeper
 
 	ClaimKeeper claimmodulekeeper.Keeper
 	// this line is used by starport scaffolding # stargate/app/keeperDeclaration
@@ -362,14 +362,14 @@ func New(
 		sudotypes.StoreKey,
 		relayerstypes.StoreKey,
 		ledgertypes.StoreKey,
-		rvotetypes.StoreKey,
-		rstakingmoduletypes.StoreKey,
+		fvotetypes.StoreKey,
+		fstakingmoduletypes.StoreKey,
 		bridgemoduletypes.StoreKey,
-		rmintrewardmoduletypes.StoreKey,
-		rbankmoduletypes.StoreKey,
-		rdexmoduletypes.StoreKey,
+		fmintrewardmoduletypes.StoreKey,
+		fbank moduletypes.StoreKey,
+		fdexmoduletypes.StoreKey,
 		miningmoduletypes.StoreKey,
-		rvalidatormoduletypes.StoreKey,
+		fvalidatormoduletypes.StoreKey,
 		claimmoduletypes.StoreKey,
 		// this line is used by starport scaffolding # stargate/app/storeKey
 	)
@@ -432,11 +432,11 @@ func New(
 		keys[sudotypes.MemStoreKey],
 	)
 
-	rstakingKeeper := rstakingmodulekeeper.NewKeeper(
+	fstakingKeeper := fstakingmodulekeeper.NewKeeper(
 		appCodec,
-		keys[rstakingmoduletypes.StoreKey],
-		keys[rstakingmoduletypes.MemStoreKey],
-		app.GetSubspace(rstakingmoduletypes.ModuleName),
+		keys[fstakingmoduletypes.StoreKey],
+		keys[fstakingmoduletypes.MemStoreKey],
+		app.GetSubspace(fstakingmoduletypes.ModuleName),
 		app.BankKeeper,
 		app.SudoKeeper,
 		authtypes.FeeCollectorName,
@@ -446,7 +446,7 @@ func New(
 		appCodec,
 		keys[minttypes.StoreKey],
 		app.GetSubspace(minttypes.ModuleName),
-		rstakingKeeper,
+		fstakingKeeper,
 		app.AccountKeeper,
 		app.BankKeeper,
 		authtypes.FeeCollectorName,
@@ -490,7 +490,7 @@ func New(
 	// register the staking hooks
 	// NOTE: stakingKeeper above is passed by reference, so that it will contain these hooks
 	app.StakingKeeper = *stakingKeeper.SetHooks(
-		stakingtypes.NewMultiStakingHooks(rstakingKeeper.Hooks(), app.DistrKeeper.Hooks(), app.SlashingKeeper.Hooks()),
+		stakingtypes.NewMultiStakingHooks(fstakingKeeper.Hooks(), app.DistrKeeper.Hooks(), app.SlashingKeeper.Hooks()),
 	)
 
 	// ... other modules keepers
@@ -576,15 +576,15 @@ func New(
 		govRouter,
 	)
 
-	app.RbankKeeper = *rbankmodulekeeper.NewKeeper(
+	app.Fbank Keeper = *fbank modulekeeper.NewKeeper(
 		appCodec,
-		keys[rbankmoduletypes.StoreKey],
-		keys[rbankmoduletypes.MemStoreKey],
-		app.GetSubspace(rbankmoduletypes.ModuleName),
+		keys[fbank moduletypes.StoreKey],
+		keys[fbank moduletypes.MemStoreKey],
+		app.GetSubspace(fbank moduletypes.ModuleName),
 		app.SudoKeeper,
 		app.BankKeeper,
 	)
-	rbankModule := rbankmodule.NewAppModule(appCodec, app.RbankKeeper)
+	fbank Module := fbank module.NewAppModule(appCodec, app.Fbank Keeper)
 
 	app.RelayersKeeper = *relayerskeeper.NewKeeper(
 		appCodec,
@@ -594,11 +594,11 @@ func New(
 		app.BankKeeper,
 	)
 
-	app.RmintrewardKeeper = *rmintrewardmodulekeeper.NewKeeper(
+	app.FmintrewardKeeper = *fmintrewardmodulekeeper.NewKeeper(
 		appCodec,
-		keys[rmintrewardmoduletypes.StoreKey],
-		keys[rmintrewardmoduletypes.MemStoreKey],
-		app.GetSubspace(rmintrewardmoduletypes.ModuleName),
+		keys[fmintrewardmoduletypes.StoreKey],
+		keys[fmintrewardmoduletypes.MemStoreKey],
+		app.GetSubspace(fmintrewardmoduletypes.ModuleName),
 		app.SudoKeeper,
 		app.BankKeeper,
 	)
@@ -612,8 +612,8 @@ func New(
 		app.SudoKeeper,
 		app.BankKeeper,
 		app.RelayersKeeper,
-		app.RmintrewardKeeper,
-		app.RbankKeeper,
+		app.FmintrewardKeeper,
+		app.Fbank Keeper,
 		app.ICAControllerKeeper,
 		scopedLedgerKeeper,
 	)
@@ -621,16 +621,16 @@ func New(
 	// create ica controller ibcmodule
 	icaControllerIBCModule := icacontroller.NewIBCModule(app.ICAControllerKeeper, ledgerIBCModule)
 
-	app.RValidatorKeeper = *rvalidatormodulekeeper.NewKeeper(
+	app.FValidatorKeeper = *fvalidatormodulekeeper.NewKeeper(
 		appCodec,
-		keys[rvalidatormoduletypes.StoreKey],
-		keys[rvalidatormoduletypes.MemStoreKey],
-		app.GetSubspace(rvalidatormoduletypes.ModuleName),
+		keys[fvalidatormoduletypes.StoreKey],
+		keys[fvalidatormoduletypes.MemStoreKey],
+		app.GetSubspace(fvalidatormoduletypes.ModuleName),
 		app.SudoKeeper,
-		app.RbankKeeper,
+		app.Fbank Keeper,
 		app.LedgerKeeper,
 	)
-	rvalidatorModule := rvalidator.NewAppModule(appCodec, app.RValidatorKeeper, app.AccountKeeper, app.BankKeeper)
+	fvalidatorModule := fvalidator.NewAppModule(appCodec, app.FValidatorKeeper, app.AccountKeeper, app.BankKeeper)
 
 	app.ClaimKeeper = *claimmodulekeeper.NewKeeper(
 		appCodec,
@@ -642,21 +642,21 @@ func New(
 	)
 	claimModule := claim.NewAppModule(appCodec, app.ClaimKeeper, app.AccountKeeper, app.BankKeeper)
 
-	rvoteRouter := rvotetypes.NewRouter()
-	rvoteRouter.AddRoute(ledgertypes.RouterKey, ledger.NewProposalHandler(app.LedgerKeeper))
-	rvoteRouter.AddRoute(rvalidatormoduletypes.RouterKey, rvalidator.NewProposalHandler(app.RValidatorKeeper))
+	fvoteRouter := fvotetypes.NewRouter()
+	fvoteRouter.AddRoute(ledgertypes.RouterKey, ledger.NewProposalHandler(app.LedgerKeeper))
+	fvoteRouter.AddRoute(fvalidatormoduletypes.RouterKey, fvalidator.NewProposalHandler(app.FValidatorKeeper))
 
-	app.RvoteKeeper = *rvotekeeper.NewKeeper(
+	app.FvoteKeeper = *fvotekeeper.NewKeeper(
 		appCodec,
-		keys[rvotetypes.StoreKey],
-		keys[rvotetypes.MemStoreKey],
+		keys[fvotetypes.StoreKey],
+		keys[fvotetypes.MemStoreKey],
 		app.SudoKeeper,
 		app.RelayersKeeper,
-		rvoteRouter,
+		fvoteRouter,
 	)
 
-	app.RStakingKeeper = *rstakingKeeper
-	rstakingModule := rstakingmodule.NewAppModule(appCodec, app.RStakingKeeper, app.MintKeeper)
+	app.FStakingKeeper = *fstakingKeeper
+	fstakingModule := fstakingmodule.NewAppModule(appCodec, app.FStakingKeeper, app.MintKeeper)
 
 	app.BridgeKeeper = *bridgemodulekeeper.NewKeeper(
 		appCodec,
@@ -669,17 +669,17 @@ func New(
 	)
 	bridgeModule := bridgemodule.NewAppModule(appCodec, app.BridgeKeeper, app.AccountKeeper, app.BankKeeper)
 
-	rmintrewardModule := rmintrewardmodule.NewAppModule(appCodec, app.RmintrewardKeeper, app.AccountKeeper, app.BankKeeper)
+	fmintrewardModule := fmintrewardmodule.NewAppModule(appCodec, app.FmintrewardKeeper, app.AccountKeeper, app.BankKeeper)
 
-	app.RdexKeeper = *rdexmodulekeeper.NewKeeper(
+	app.FdexKeeper = *fdexmodulekeeper.NewKeeper(
 		appCodec,
-		keys[rdexmoduletypes.StoreKey],
-		keys[rdexmoduletypes.MemStoreKey],
-		app.GetSubspace(rdexmoduletypes.ModuleName),
+		keys[fdexmoduletypes.StoreKey],
+		keys[fdexmoduletypes.MemStoreKey],
+		app.GetSubspace(fdexmoduletypes.ModuleName),
 		app.BankKeeper,
 		app.SudoKeeper,
 	)
-	rdexModule := rdexmodule.NewAppModule(appCodec, app.RdexKeeper, app.AccountKeeper, app.BankKeeper)
+	fdexModule := fdexmodule.NewAppModule(appCodec, app.FdexKeeper, app.AccountKeeper, app.BankKeeper)
 
 	app.MiningKeeper = *miningmodulekeeper.NewKeeper(
 		appCodec,
@@ -688,7 +688,7 @@ func New(
 		app.GetSubspace(miningmoduletypes.ModuleName),
 		app.SudoKeeper,
 		app.BankKeeper,
-		app.RdexKeeper,
+		app.FdexKeeper,
 	)
 	miningModule := miningmodule.NewAppModule(appCodec, app.MiningKeeper, app.AccountKeeper, app.BankKeeper)
 
@@ -736,15 +736,15 @@ func New(
 		sudo.NewAppModule(appCodec, app.SudoKeeper),
 		relayers.NewAppModule(appCodec, app.RelayersKeeper),
 		ledger.NewAppModule(appCodec, app.LedgerKeeper),
-		rvalidatorModule,
+		fvalidatorModule,
 		claimModule,
-		rvote.NewAppModule(appCodec, app.RvoteKeeper),
+		fvote.NewAppModule(appCodec, app.FvoteKeeper),
 
-		rstakingModule,
+		fstakingModule,
 		bridgeModule,
-		rmintrewardModule,
-		rbankModule,
-		rdexModule,
+		fmintrewardModule,
+		fbank Module,
+		fdexModule,
 		miningModule,
 		// this line is used by starport scaffolding # stargate/app/appModule
 	)
@@ -753,12 +753,12 @@ func New(
 	// there is nothing left over in the validator fee pool, so as to keep the
 	// CanWithdrawInvariant invariant.
 	// NOTE: staking module is required if HistoricalEntries param > 0
-	// NOTE: rstaking module should happens after mint module and before distribution module, as it will burn minted coins
+	// NOTE: fstaking module should happens after mint module and before distribution module, as it will burn minted coins
 	app.mm.SetOrderBeginBlockers(
 		upgradetypes.ModuleName,
 		capabilitytypes.ModuleName,
 		minttypes.ModuleName,
-		rstakingmoduletypes.ModuleName,
+		fstakingmoduletypes.ModuleName,
 		distrtypes.ModuleName,
 		slashingtypes.ModuleName,
 		evidencetypes.ModuleName,
@@ -777,13 +777,13 @@ func New(
 		ibctransfertypes.ModuleName,
 		icatypes.ModuleName,
 		relayerstypes.ModuleName,
-		rvotetypes.ModuleName,
+		fvotetypes.ModuleName,
 		bridgemoduletypes.ModuleName,
-		rmintrewardmoduletypes.ModuleName,
-		rbankmoduletypes.ModuleName,
-		rdexmoduletypes.ModuleName,
+		fmintrewardmoduletypes.ModuleName,
+		fbank moduletypes.ModuleName,
+		fdexmoduletypes.ModuleName,
 		miningmoduletypes.ModuleName,
-		rvalidatormoduletypes.ModuleName,
+		fvalidatormoduletypes.ModuleName,
 		claimmoduletypes.ModuleName,
 	)
 
@@ -794,7 +794,7 @@ func New(
 		upgradetypes.ModuleName,
 		capabilitytypes.ModuleName,
 		minttypes.ModuleName,
-		rstakingmoduletypes.ModuleName,
+		fstakingmoduletypes.ModuleName,
 		distrtypes.ModuleName,
 		slashingtypes.ModuleName,
 		evidencetypes.ModuleName,
@@ -810,13 +810,13 @@ func New(
 		ibctransfertypes.ModuleName,
 		icatypes.ModuleName,
 		relayerstypes.ModuleName,
-		rvotetypes.ModuleName,
+		fvotetypes.ModuleName,
 		bridgemoduletypes.ModuleName,
-		rmintrewardmoduletypes.ModuleName,
-		rbankmoduletypes.ModuleName,
-		rdexmoduletypes.ModuleName,
+		fmintrewardmoduletypes.ModuleName,
+		fbank moduletypes.ModuleName,
+		fdexmoduletypes.ModuleName,
 		miningmoduletypes.ModuleName,
-		rvalidatormoduletypes.ModuleName,
+		fvalidatormoduletypes.ModuleName,
 		claimmoduletypes.ModuleName,
 	)
 
@@ -825,7 +825,7 @@ func New(
 	// NOTE: Capability module must occur first so that it can initialize any capabilities
 	// so that other modules that want to create or claim capabilities afterwards in InitChain
 	// can do so safely.
-	// NOTE: rstaking module must occur after auth/bank/mint moduels so that coinToBeBurned can be set rightly and must
+	// NOTE: fstaking module must occur after auth/bank/mint moduels so that coinToBeBurned can be set rightly and must
 	// before staking module so that hooks can work rightly.
 	app.mm.SetOrderInitGenesis(
 		capabilitytypes.ModuleName,
@@ -833,7 +833,7 @@ func New(
 		banktypes.ModuleName,
 		distrtypes.ModuleName,
 		minttypes.ModuleName,
-		rstakingmoduletypes.ModuleName,
+		fstakingmoduletypes.ModuleName,
 		stakingtypes.ModuleName,
 		slashingtypes.ModuleName,
 		govtypes.ModuleName,
@@ -850,13 +850,13 @@ func New(
 		sudotypes.ModuleName,
 		relayerstypes.ModuleName,
 		ledgertypes.ModuleName,
-		rvotetypes.ModuleName,
+		fvotetypes.ModuleName,
 		bridgemoduletypes.ModuleName,
-		rmintrewardmoduletypes.ModuleName,
-		rbankmoduletypes.ModuleName,
-		rdexmoduletypes.ModuleName,
+		fmintrewardmoduletypes.ModuleName,
+		fbank moduletypes.ModuleName,
+		fdexmoduletypes.ModuleName,
 		miningmoduletypes.ModuleName,
-		rvalidatormoduletypes.ModuleName,
+		fvalidatormoduletypes.ModuleName,
 		claimmoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/initGenesis
 	)
@@ -1055,14 +1055,14 @@ func initParamsKeeper(appCodec codec.BinaryCodec, legacyAmino *codec.LegacyAmino
 	paramsKeeper.Subspace(sudotypes.ModuleName)
 	paramsKeeper.Subspace(relayerstypes.ModuleName)
 	paramsKeeper.Subspace(ledgertypes.ModuleName)
-	paramsKeeper.Subspace(rvotetypes.ModuleName)
-	paramsKeeper.Subspace(rstakingmoduletypes.ModuleName)
+	paramsKeeper.Subspace(fvotetypes.ModuleName)
+	paramsKeeper.Subspace(fstakingmoduletypes.ModuleName)
 	paramsKeeper.Subspace(bridgemoduletypes.ModuleName)
-	paramsKeeper.Subspace(rmintrewardmoduletypes.ModuleName)
-	paramsKeeper.Subspace(rbankmoduletypes.ModuleName)
-	paramsKeeper.Subspace(rdexmoduletypes.ModuleName)
+	paramsKeeper.Subspace(fmintrewardmoduletypes.ModuleName)
+	paramsKeeper.Subspace(fbank moduletypes.ModuleName)
+	paramsKeeper.Subspace(fdexmoduletypes.ModuleName)
 	paramsKeeper.Subspace(miningmoduletypes.ModuleName)
-	paramsKeeper.Subspace(rvalidatormoduletypes.ModuleName)
+	paramsKeeper.Subspace(fvalidatormoduletypes.ModuleName)
 	paramsKeeper.Subspace(claimmoduletypes.ModuleName)
 	// this line is used by starport scaffolding # stargate/app/paramSubspace
 

@@ -18,9 +18,9 @@ import (
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/stafihub/stafihub/x/ledger/client/cli"
-	"github.com/stafihub/stafihub/x/ledger/keeper"
-	"github.com/stafihub/stafihub/x/ledger/types"
+	"github.com/furybase/furybase/x/ledger/client/cli"
+	"github.com/furybase/furybase/x/ledger/keeper"
+	"github.com/furybase/furybase/x/ledger/types"
 )
 
 var (

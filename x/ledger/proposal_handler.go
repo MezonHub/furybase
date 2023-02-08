@@ -3,14 +3,14 @@ package ledger
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/stafihub/stafihub/x/ledger/keeper"
-	"github.com/stafihub/stafihub/x/ledger/types"
-	rvotetypes "github.com/stafihub/stafihub/x/rvote/types"
+	"github.com/furybase/furybase/x/ledger/keeper"
+	"github.com/furybase/furybase/x/ledger/types"
+	fvotetypes "github.com/furybase/furybase/x/fvote/types"
 )
 
 // NewParamChangeProposalHandler creates a new governance Handler for a ParamChangeProposal
-func NewProposalHandler(k keeper.Keeper) rvotetypes.Handler {
-	return func(ctx sdk.Context, content rvotetypes.Content) error {
+func NewProposalHandler(k keeper.Keeper) fvotetypes.Handler {
+	return func(ctx sdk.Context, content fvotetypes.Content) error {
 		switch c := content.(type) {
 		case *types.SetChainEraProposal:
 			return k.ProcessSetChainEraProposal(ctx, c)

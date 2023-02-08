@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/bridge/types"
+	"github.com/furybase/furybase/x/bridge/types"
 )
 
 func (k msgServer) VoteProposal(goCtx context.Context, msg *types.MsgVoteProposal) (*types.MsgVoteProposalResponse, error) {
@@ -29,7 +29,7 @@ func (k msgServer) VoteProposal(goCtx context.Context, msg *types.MsgVoteProposa
 	}
 
 	if msg.Amount.LTE(sdk.ZeroInt()) {
-		return nil, types.ErrVoteProposalAmountZero
+		return nil, types.ErfVoteProposalAmountZero
 	}
 
 	shouldMintOrUnlockCoins := sdk.NewCoins(sdk.NewCoin(resourceIdToDenom.Denom, msg.Amount))

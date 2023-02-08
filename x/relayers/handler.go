@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/stafihub/stafihub/x/relayers/keeper"
-	"github.com/stafihub/stafihub/x/relayers/types"
+	"github.com/furybase/furybase/x/relayers/keeper"
+	"github.com/furybase/furybase/x/relayers/types"
 )
 
 // NewHandler ...

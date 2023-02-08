@@ -60,7 +60,7 @@ func (m *Params) XXX_DiscardUnknown() {
 var xxx_messageInfo_Params proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*Params)(nil), "stafihub.stafihub.bridge.Params")
+	proto.RegisterType((*Params)(nil), "furybase.furybase.bridge.Params")
 }
 
 func init() { proto.RegisterFile("bridge/params.proto", fileDescriptor_ed6fb968a083dd73) }

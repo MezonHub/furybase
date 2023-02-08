@@ -1,0 +1,34 @@
+syntax = "proto3";
+package furybase.furybase.fvalidator;
+
+// this line is used by starport scaffolding # proto/tx/import
+import "gogoproto/gogo.proto";
+import "fvalidator/genesis.proto";
+option go_package = "github.com/furybase/furybase/x/fvalidator/types";
+
+message UpdateFValidatorProposal {
+    string creator = 1;
+    string denom = 2;
+    string poolAddress = 3;
+    string oldAddress = 4;
+    string newAddress = 5;
+    string propId = 6;
+    Cycle cycle = 7;
+}
+
+message UpdateFValidatorReportProposal {
+    string creator = 1;
+    string denom = 2;
+    string poolAddress = 3;
+    string propId = 4;
+    Cycle cycle = 5;
+    UpdateFValidatorStatus status = 6;
+}
+
+enum UpdateFValidatorStatus {
+    option (gogoproto.goproto_enum_prefix) = false;
+  
+    UPDATE_FVALIDATOR_STATUS_UNSPECIFIED = 0 [(gogoproto.enumvalue_customname) = "UpdateFValidatorStatusUnspecified"];
+    UPDATE_FVALIDATOR_STATUS_SUCCESS = 1 [(gogoproto.enumvalue_customname) = "UpdateFValidatorStatusSuccess"];
+    UPDATE_FVALIDATOR_STATUS_FAILED = 2 [(gogoproto.enumvalue_customname) = "UpdateFValidatorStatusFailed"];
+}

@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/mining/types"
+	"github.com/furybase/furybase/x/mining/types"
 )
 
 func (k msgServer) AddStakePool(goCtx context.Context, msg *types.MsgAddStakePool) (*types.MsgAddStakePoolResponse, error) {
@@ -20,7 +20,7 @@ func (k msgServer) AddStakePool(goCtx context.Context, msg *types.MsgAddStakePoo
 	}
 
 	// check stake token denom
-	if !k.rDexKeeper.IsRDexLpToken(ctx, msg.StakeTokenDenom) && !k.Keeper.HasStakeToken(ctx, msg.StakeTokenDenom) {
+	if !k.fDexKeeper.IsFDexLpToken(ctx, msg.StakeTokenDenom) && !k.Keeper.HasStakeToken(ctx, msg.StakeTokenDenom) {
 		return nil, types.ErrStakeTokenPermissionDeny
 	}
 

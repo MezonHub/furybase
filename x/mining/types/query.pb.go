@@ -1165,32 +1165,32 @@ func (m *QueryProviderSwitchResponse) GetProviderSwitch() bool {
 }
 
 func init() {
-	proto.RegisterType((*QueryParamsRequest)(nil), "stafihub.stafihub.mining.QueryParamsRequest")
-	proto.RegisterType((*QueryParamsResponse)(nil), "stafihub.stafihub.mining.QueryParamsResponse")
-	proto.RegisterType((*QueryStakePoolInfoRequest)(nil), "stafihub.stafihub.mining.QueryStakePoolInfoRequest")
-	proto.RegisterType((*QueryStakePoolInfoResponse)(nil), "stafihub.stafihub.mining.QueryStakePoolInfoResponse")
-	proto.RegisterType((*QueryStakeItemListRequest)(nil), "stafihub.stafihub.mining.QueryStakeItemListRequest")
-	proto.RegisterType((*QueryStakeItemListResponse)(nil), "stafihub.stafihub.mining.QueryStakeItemListResponse")
-	proto.RegisterType((*QueryStakeRewardRequest)(nil), "stafihub.stafihub.mining.QueryStakeRewardRequest")
-	proto.RegisterType((*QueryStakeRewardResponse)(nil), "stafihub.stafihub.mining.QueryStakeRewardResponse")
-	proto.RegisterType((*QueryStakeRecordCountRequest)(nil), "stafihub.stafihub.mining.QueryStakeRecordCountRequest")
-	proto.RegisterType((*QueryStakeRecordCountResponse)(nil), "stafihub.stafihub.mining.QueryStakeRecordCountResponse")
-	proto.RegisterType((*QueryStakeRecordRequest)(nil), "stafihub.stafihub.mining.QueryStakeRecordRequest")
-	proto.RegisterType((*QueryStakeRecordResponse)(nil), "stafihub.stafihub.mining.QueryStakeRecordResponse")
-	proto.RegisterType((*QueryStakeRecordListRequest)(nil), "stafihub.stafihub.mining.QueryStakeRecordListRequest")
-	proto.RegisterType((*QueryStakeRecordListResponse)(nil), "stafihub.stafihub.mining.QueryStakeRecordListResponse")
-	proto.RegisterType((*QueryStakePoolListRequest)(nil), "stafihub.stafihub.mining.QueryStakePoolListRequest")
-	proto.RegisterType((*QueryStakePoolListResponse)(nil), "stafihub.stafihub.mining.QueryStakePoolListResponse")
-	proto.RegisterType((*QueryMiningProviderListRequest)(nil), "stafihub.stafihub.mining.QueryMiningProviderListRequest")
-	proto.RegisterType((*QueryMiningProviderListResponse)(nil), "stafihub.stafihub.mining.QueryMiningProviderListResponse")
-	proto.RegisterType((*QueryRewardTokenListRequest)(nil), "stafihub.stafihub.mining.QueryRewardTokenListRequest")
-	proto.RegisterType((*QueryRewardTokenListResponse)(nil), "stafihub.stafihub.mining.QueryRewardTokenListResponse")
-	proto.RegisterType((*QueryMaxRewardPoolNumberRequest)(nil), "stafihub.stafihub.mining.QueryMaxRewardPoolNumberRequest")
-	proto.RegisterType((*QueryMaxRewardPoolNumberResponse)(nil), "stafihub.stafihub.mining.QueryMaxRewardPoolNumberResponse")
-	proto.RegisterType((*QueryMaxStakeItemNumberRequest)(nil), "stafihub.stafihub.mining.QueryMaxStakeItemNumberRequest")
-	proto.RegisterType((*QueryMaxStakeItemNumberResponse)(nil), "stafihub.stafihub.mining.QueryMaxStakeItemNumberResponse")
-	proto.RegisterType((*QueryProviderSwitchRequest)(nil), "stafihub.stafihub.mining.QueryProviderSwitchRequest")
-	proto.RegisterType((*QueryProviderSwitchResponse)(nil), "stafihub.stafihub.mining.QueryProviderSwitchResponse")
+	proto.RegisterType((*QueryParamsRequest)(nil), "furybase.furybase.mining.QueryParamsRequest")
+	proto.RegisterType((*QueryParamsResponse)(nil), "furybase.furybase.mining.QueryParamsResponse")
+	proto.RegisterType((*QueryStakePoolInfoRequest)(nil), "furybase.furybase.mining.QueryStakePoolInfoRequest")
+	proto.RegisterType((*QueryStakePoolInfoResponse)(nil), "furybase.furybase.mining.QueryStakePoolInfoResponse")
+	proto.RegisterType((*QueryStakeItemListRequest)(nil), "furybase.furybase.mining.QueryStakeItemListRequest")
+	proto.RegisterType((*QueryStakeItemListResponse)(nil), "furybase.furybase.mining.QueryStakeItemListResponse")
+	proto.RegisterType((*QueryStakeRewardRequest)(nil), "furybase.furybase.mining.QueryStakeRewardRequest")
+	proto.RegisterType((*QueryStakeRewardResponse)(nil), "furybase.furybase.mining.QueryStakeRewardResponse")
+	proto.RegisterType((*QueryStakeRecordCountRequest)(nil), "furybase.furybase.mining.QueryStakeRecordCountRequest")
+	proto.RegisterType((*QueryStakeRecordCountResponse)(nil), "furybase.furybase.mining.QueryStakeRecordCountResponse")
+	proto.RegisterType((*QueryStakeRecordRequest)(nil), "furybase.furybase.mining.QueryStakeRecordRequest")
+	proto.RegisterType((*QueryStakeRecordResponse)(nil), "furybase.furybase.mining.QueryStakeRecordResponse")
+	proto.RegisterType((*QueryStakeRecordListRequest)(nil), "furybase.furybase.mining.QueryStakeRecordListRequest")
+	proto.RegisterType((*QueryStakeRecordListResponse)(nil), "furybase.furybase.mining.QueryStakeRecordListResponse")
+	proto.RegisterType((*QueryStakePoolListRequest)(nil), "furybase.furybase.mining.QueryStakePoolListRequest")
+	proto.RegisterType((*QueryStakePoolListResponse)(nil), "furybase.furybase.mining.QueryStakePoolListResponse")
+	proto.RegisterType((*QueryMiningProviderListRequest)(nil), "furybase.furybase.mining.QueryMiningProviderListRequest")
+	proto.RegisterType((*QueryMiningProviderListResponse)(nil), "furybase.furybase.mining.QueryMiningProviderListResponse")
+	proto.RegisterType((*QueryRewardTokenListRequest)(nil), "furybase.furybase.mining.QueryRewardTokenListRequest")
+	proto.RegisterType((*QueryRewardTokenListResponse)(nil), "furybase.furybase.mining.QueryRewardTokenListResponse")
+	proto.RegisterType((*QueryMaxRewardPoolNumberRequest)(nil), "furybase.furybase.mining.QueryMaxRewardPoolNumberRequest")
+	proto.RegisterType((*QueryMaxRewardPoolNumberResponse)(nil), "furybase.furybase.mining.QueryMaxRewardPoolNumberResponse")
+	proto.RegisterType((*QueryMaxStakeItemNumberRequest)(nil), "furybase.furybase.mining.QueryMaxStakeItemNumberRequest")
+	proto.RegisterType((*QueryMaxStakeItemNumberResponse)(nil), "furybase.furybase.mining.QueryMaxStakeItemNumberResponse")
+	proto.RegisterType((*QueryProviderSwitchRequest)(nil), "furybase.furybase.mining.QueryProviderSwitchRequest")
+	proto.RegisterType((*QueryProviderSwitchResponse)(nil), "furybase.furybase.mining.QueryProviderSwitchResponse")
 }
 
 func init() { proto.RegisterFile("mining/query.proto", fileDescriptor_5968127a041da29a) }
@@ -1325,7 +1325,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1334,7 +1334,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) StakePoolInfo(ctx context.Context, in *QueryStakePoolInfoRequest, opts ...grpc.CallOption) (*QueryStakePoolInfoResponse, error) {
 	out := new(QueryStakePoolInfoResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/StakePoolInfo", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/StakePoolInfo", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1343,7 +1343,7 @@ func (c *queryClient) StakePoolInfo(ctx context.Context, in *QueryStakePoolInfoR
 
 func (c *queryClient) StakeItemList(ctx context.Context, in *QueryStakeItemListRequest, opts ...grpc.CallOption) (*QueryStakeItemListResponse, error) {
 	out := new(QueryStakeItemListResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/StakeItemList", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/StakeItemList", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1352,7 +1352,7 @@ func (c *queryClient) StakeItemList(ctx context.Context, in *QueryStakeItemListR
 
 func (c *queryClient) StakeReward(ctx context.Context, in *QueryStakeRewardRequest, opts ...grpc.CallOption) (*QueryStakeRewardResponse, error) {
 	out := new(QueryStakeRewardResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/StakeReward", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/StakeReward", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1361,7 +1361,7 @@ func (c *queryClient) StakeReward(ctx context.Context, in *QueryStakeRewardReque
 
 func (c *queryClient) StakeRecordCount(ctx context.Context, in *QueryStakeRecordCountRequest, opts ...grpc.CallOption) (*QueryStakeRecordCountResponse, error) {
 	out := new(QueryStakeRecordCountResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/StakeRecordCount", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/StakeRecordCount", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1370,7 +1370,7 @@ func (c *queryClient) StakeRecordCount(ctx context.Context, in *QueryStakeRecord
 
 func (c *queryClient) StakeRecord(ctx context.Context, in *QueryStakeRecordRequest, opts ...grpc.CallOption) (*QueryStakeRecordResponse, error) {
 	out := new(QueryStakeRecordResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/StakeRecord", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/StakeRecord", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1379,7 +1379,7 @@ func (c *queryClient) StakeRecord(ctx context.Context, in *QueryStakeRecordReque
 
 func (c *queryClient) StakeRecordList(ctx context.Context, in *QueryStakeRecordListRequest, opts ...grpc.CallOption) (*QueryStakeRecordListResponse, error) {
 	out := new(QueryStakeRecordListResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/StakeRecordList", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/StakeRecordList", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1388,7 +1388,7 @@ func (c *queryClient) StakeRecordList(ctx context.Context, in *QueryStakeRecordL
 
 func (c *queryClient) StakePoolList(ctx context.Context, in *QueryStakePoolListRequest, opts ...grpc.CallOption) (*QueryStakePoolListResponse, error) {
 	out := new(QueryStakePoolListResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/StakePoolList", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/StakePoolList", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1397,7 +1397,7 @@ func (c *queryClient) StakePoolList(ctx context.Context, in *QueryStakePoolListR
 
 func (c *queryClient) MiningProviderList(ctx context.Context, in *QueryMiningProviderListRequest, opts ...grpc.CallOption) (*QueryMiningProviderListResponse, error) {
 	out := new(QueryMiningProviderListResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/MiningProviderList", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/MiningProviderList", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1406,7 +1406,7 @@ func (c *queryClient) MiningProviderList(ctx context.Context, in *QueryMiningPro
 
 func (c *queryClient) RewardTokenList(ctx context.Context, in *QueryRewardTokenListRequest, opts ...grpc.CallOption) (*QueryRewardTokenListResponse, error) {
 	out := new(QueryRewardTokenListResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/RewardTokenList", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/RewardTokenList", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1415,7 +1415,7 @@ func (c *queryClient) RewardTokenList(ctx context.Context, in *QueryRewardTokenL
 
 func (c *queryClient) MaxRewardPoolNumber(ctx context.Context, in *QueryMaxRewardPoolNumberRequest, opts ...grpc.CallOption) (*QueryMaxRewardPoolNumberResponse, error) {
 	out := new(QueryMaxRewardPoolNumberResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/MaxRewardPoolNumber", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/MaxRewardPoolNumber", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1424,7 +1424,7 @@ func (c *queryClient) MaxRewardPoolNumber(ctx context.Context, in *QueryMaxRewar
 
 func (c *queryClient) MaxStakeItemNumber(ctx context.Context, in *QueryMaxStakeItemNumberRequest, opts ...grpc.CallOption) (*QueryMaxStakeItemNumberResponse, error) {
 	out := new(QueryMaxStakeItemNumberResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/MaxStakeItemNumber", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/MaxStakeItemNumber", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1433,7 +1433,7 @@ func (c *queryClient) MaxStakeItemNumber(ctx context.Context, in *QueryMaxStakeI
 
 func (c *queryClient) ProviderSwitch(ctx context.Context, in *QueryProviderSwitchRequest, opts ...grpc.CallOption) (*QueryProviderSwitchResponse, error) {
 	out := new(QueryProviderSwitchResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Query/ProviderSwitch", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Query/ProviderSwitch", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -1528,7 +1528,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/Params",
+		FullMethod: "/furybase.furybase.mining.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -1546,7 +1546,7 @@ func _Query_StakePoolInfo_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/StakePoolInfo",
+		FullMethod: "/furybase.furybase.mining.Query/StakePoolInfo",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StakePoolInfo(ctx, req.(*QueryStakePoolInfoRequest))
@@ -1564,7 +1564,7 @@ func _Query_StakeItemList_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/StakeItemList",
+		FullMethod: "/furybase.furybase.mining.Query/StakeItemList",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StakeItemList(ctx, req.(*QueryStakeItemListRequest))
@@ -1582,7 +1582,7 @@ func _Query_StakeReward_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/StakeReward",
+		FullMethod: "/furybase.furybase.mining.Query/StakeReward",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StakeReward(ctx, req.(*QueryStakeRewardRequest))
@@ -1600,7 +1600,7 @@ func _Query_StakeRecordCount_Handler(srv interface{}, ctx context.Context, dec f
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/StakeRecordCount",
+		FullMethod: "/furybase.furybase.mining.Query/StakeRecordCount",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StakeRecordCount(ctx, req.(*QueryStakeRecordCountRequest))
@@ -1618,7 +1618,7 @@ func _Query_StakeRecord_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/StakeRecord",
+		FullMethod: "/furybase.furybase.mining.Query/StakeRecord",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StakeRecord(ctx, req.(*QueryStakeRecordRequest))
@@ -1636,7 +1636,7 @@ func _Query_StakeRecordList_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/StakeRecordList",
+		FullMethod: "/furybase.furybase.mining.Query/StakeRecordList",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StakeRecordList(ctx, req.(*QueryStakeRecordListRequest))
@@ -1654,7 +1654,7 @@ func _Query_StakePoolList_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/StakePoolList",
+		FullMethod: "/furybase.furybase.mining.Query/StakePoolList",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).StakePoolList(ctx, req.(*QueryStakePoolListRequest))
@@ -1672,7 +1672,7 @@ func _Query_MiningProviderList_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/MiningProviderList",
+		FullMethod: "/furybase.furybase.mining.Query/MiningProviderList",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).MiningProviderList(ctx, req.(*QueryMiningProviderListRequest))
@@ -1690,7 +1690,7 @@ func _Query_RewardTokenList_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/RewardTokenList",
+		FullMethod: "/furybase.furybase.mining.Query/RewardTokenList",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).RewardTokenList(ctx, req.(*QueryRewardTokenListRequest))
@@ -1708,7 +1708,7 @@ func _Query_MaxRewardPoolNumber_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/MaxRewardPoolNumber",
+		FullMethod: "/furybase.furybase.mining.Query/MaxRewardPoolNumber",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).MaxRewardPoolNumber(ctx, req.(*QueryMaxRewardPoolNumberRequest))
@@ -1726,7 +1726,7 @@ func _Query_MaxStakeItemNumber_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/MaxStakeItemNumber",
+		FullMethod: "/furybase.furybase.mining.Query/MaxStakeItemNumber",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).MaxStakeItemNumber(ctx, req.(*QueryMaxStakeItemNumberRequest))
@@ -1744,7 +1744,7 @@ func _Query_ProviderSwitch_Handler(srv interface{}, ctx context.Context, dec fun
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Query/ProviderSwitch",
+		FullMethod: "/furybase.furybase.mining.Query/ProviderSwitch",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ProviderSwitch(ctx, req.(*QueryProviderSwitchRequest))
@@ -1753,7 +1753,7 @@ func _Query_ProviderSwitch_Handler(srv interface{}, ctx context.Context, dec fun
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.mining.Query",
+	ServiceName: "furybase.furybase.mining.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

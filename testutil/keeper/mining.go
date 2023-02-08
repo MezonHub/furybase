@@ -8,8 +8,8 @@ import (
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	typesparams "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/stafihub/stafihub/x/mining/keeper"
-	"github.com/stafihub/stafihub/x/mining/types"
+	"github.com/furybase/furybase/x/mining/keeper"
+	"github.com/furybase/furybase/x/mining/types"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
@@ -38,7 +38,7 @@ func MiningKeeper(t testing.TB) (*keeper.Keeper, sdk.Context) {
 	)
 
 	sudoKeeper, _ := SudoKeeper(t)
-	rdexKeeper, _ := RdexKeeper(t)
+	fdexKeeper, _ := FdexKeeper(t)
 
 	k := keeper.NewKeeper(
 		cdc,
@@ -47,7 +47,7 @@ func MiningKeeper(t testing.TB) (*keeper.Keeper, sdk.Context) {
 		paramsSubspace,
 		sudoKeeper,
 		BankKeeper,
-		rdexKeeper,
+		fdexKeeper,
 	)
 
 	ctx := sdk.NewContext(stateStore, tmproto.Header{}, false, log.NewNopLogger())

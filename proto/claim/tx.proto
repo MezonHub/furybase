@@ -1,12 +1,12 @@
 syntax = "proto3";
-package stafihub.stafihub.claim;
+package furybase.furybase.claim;
 
 import "gogoproto/gogo.proto";
 import "cosmos/base/v1beta1/coin.proto";
 
 // this line is used by starport scaffolding # proto/tx/import
 
-option go_package = "github.com/stafihub/stafihub/x/claim/types";
+option go_package = "github.com/furybase/furybase/x/claim/types";
 
 // Msg defines the Msg service.
 service Msg {

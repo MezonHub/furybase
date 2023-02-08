@@ -13,8 +13,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"github.com/stafihub/stafihub/x/ledger/types"
-	rvotetypes "github.com/stafihub/stafihub/x/rvote/types"
+	"github.com/furybase/furybase/x/ledger/types"
+	fvotetypes "github.com/furybase/furybase/x/fvote/types"
 )
 
 var _ = strconv.Itoa(0)
@@ -38,7 +38,7 @@ func CmdSetChainEra() *cobra.Command {
 
 			from := clientCtx.GetFromAddress()
 			content := types.NewSetChainEraProposal(from, argDenom, uint32(argEra))
-			msg, err := rvotetypes.NewMsgSubmitProposal(from, content)
+			msg, err := fvotetypes.NewMsgSubmitProposal(from, content)
 			if err != nil {
 				return err
 			}
@@ -75,7 +75,7 @@ func CmdBondReport() *cobra.Command {
 
 			from := clientCtx.GetFromAddress()
 			content := types.NewBondReportProposal(from, argDenom, argShotId, types.BondAction(argAction))
-			msg, err := rvotetypes.NewMsgSubmitProposal(from, content)
+			msg, err := fvotetypes.NewMsgSubmitProposal(from, content)
 			if err != nil {
 				return err
 			}
@@ -116,7 +116,7 @@ func CmdActiveReport() *cobra.Command {
 
 			from := clientCtx.GetFromAddress()
 			content := types.NewActiveReportProposal(from, argDenom, argShotId, argStaked, argUnstaked)
-			msg, err := rvotetypes.NewMsgSubmitProposal(from, content)
+			msg, err := fvotetypes.NewMsgSubmitProposal(from, content)
 			if err != nil {
 				return err
 			}
@@ -149,7 +149,7 @@ func CmdTransferReport() *cobra.Command {
 
 			from := clientCtx.GetFromAddress()
 			content := types.NewTransferReportProposal(from, argDenom, argShotId)
-			msg, err := rvotetypes.NewMsgSubmitProposal(from, content)
+			msg, err := fvotetypes.NewMsgSubmitProposal(from, content)
 			if err != nil {
 				return err
 			}
@@ -195,7 +195,7 @@ func CmdExecuteBondProposal() *cobra.Command {
 
 			from := clientCtx.GetFromAddress()
 			content := types.NewExecuteBondProposal(from, argDenom, argBonder, argPool, argTxHash, argAmount, types.LiquidityBondState(bondState))
-			msg, err := rvotetypes.NewMsgSubmitProposal(from, content)
+			msg, err := fvotetypes.NewMsgSubmitProposal(from, content)
 			if err != nil {
 				return err
 			}
@@ -270,7 +270,7 @@ func CmdInterchainTxProposal() *cobra.Command {
 				return err
 			}
 
-			msg, err := rvotetypes.NewMsgSubmitProposal(from, content)
+			msg, err := fvotetypes.NewMsgSubmitProposal(from, content)
 			if err != nil {
 				return err
 			}

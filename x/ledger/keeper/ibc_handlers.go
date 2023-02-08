@@ -7,7 +7,7 @@ import (
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
 	proto "github.com/gogo/protobuf/proto"
-	"github.com/stafihub/stafihub/x/ledger/types"
+	"github.com/furybase/furybase/x/ledger/types"
 
 	distributiontypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
 	icatypes "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/types"

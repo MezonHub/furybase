@@ -1,4 +1,4 @@
-module github.com/stafihub/stafihub
+module github.com/furybase/furybase
 
 go 1.18
 
@@ -15,7 +15,7 @@ require (
 	github.com/spf13/cobra v1.5.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.8.0
-	github.com/tendermint/spm v0.1.8
+	github.com/tendermint/spm v0.1.9
 	github.com/tendermint/tendermint v0.34.22
 	github.com/tendermint/tm-db v0.6.6
 	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa

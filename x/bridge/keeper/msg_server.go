@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"github.com/stafihub/stafihub/x/bridge/types"
+	"github.com/furybase/furybase/x/bridge/types"
 )
 
 type msgServer struct {

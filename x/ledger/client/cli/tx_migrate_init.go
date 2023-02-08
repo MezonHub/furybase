@@ -10,8 +10,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
 	"github.com/spf13/cobra"
-	"github.com/stafihub/stafihub/utils"
-	"github.com/stafihub/stafihub/x/ledger/types"
+	"github.com/furybase/furybase/utils"
+	"github.com/furybase/furybase/x/ledger/types"
 )
 
 var _ = strconv.Itoa(0)

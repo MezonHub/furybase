@@ -118,8 +118,8 @@ func (m *MsgUpdateAdminResponse) XXX_DiscardUnknown() {
 var xxx_messageInfo_MsgUpdateAdminResponse proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*MsgUpdateAdmin)(nil), "stafihub.stafihub.sudo.MsgUpdateAdmin")
-	proto.RegisterType((*MsgUpdateAdminResponse)(nil), "stafihub.stafihub.sudo.MsgUpdateAdminResponse")
+	proto.RegisterType((*MsgUpdateAdmin)(nil), "furybase.furybase.sudo.MsgUpdateAdmin")
+	proto.RegisterType((*MsgUpdateAdminResponse)(nil), "furybase.furybase.sudo.MsgUpdateAdminResponse")
 }
 
 func init() { proto.RegisterFile("sudo/tx.proto", fileDescriptor_1b6c9f7217cbe26f) }
@@ -169,7 +169,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) UpdateAdmin(ctx context.Context, in *MsgUpdateAdmin, opts ...grpc.CallOption) (*MsgUpdateAdminResponse, error) {
 	out := new(MsgUpdateAdminResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.sudo.Msg/UpdateAdmin", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.sudo.Msg/UpdateAdmin", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -203,7 +203,7 @@ func _Msg_UpdateAdmin_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.sudo.Msg/UpdateAdmin",
+		FullMethod: "/furybase.furybase.sudo.Msg/UpdateAdmin",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).UpdateAdmin(ctx, req.(*MsgUpdateAdmin))
@@ -212,7 +212,7 @@ func _Msg_UpdateAdmin_Handler(srv interface{}, ctx context.Context, dec func(int
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.sudo.Msg",
+	ServiceName: "furybase.furybase.sudo.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

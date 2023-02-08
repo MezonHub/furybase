@@ -35,7 +35,7 @@ var (
 	ErrPoolDetailNotFound           = sdkerrors.Register(ModuleName, 26, "pool detail not found error")
 	ErrLockedDenomNotMatch          = sdkerrors.Register(ModuleName, 28, "locked not matched error")
 	ErrLockedNotEnough              = sdkerrors.Register(ModuleName, 29, "locked not enough error")
-	ErrRValidatorAlreadyExist       = sdkerrors.Register(ModuleName, 30, "rvalidator already exist error")
+	ErrFValidatorAlreadyExist       = sdkerrors.Register(ModuleName, 30, "fvalidator already exist error")
 	ErrNoRelayFeeReceiver           = sdkerrors.Register(ModuleName, 31, "no relay receiver error")
 	ErrNoStakingRewardCommisson     = sdkerrors.Register(ModuleName, 32, "no staking reward commission error")
 	ErrNoUnbondCommisson            = sdkerrors.Register(ModuleName, 33, "no unbond commission error")

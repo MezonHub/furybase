@@ -11,7 +11,7 @@ import (
 	_ "github.com/gogo/protobuf/gogoproto"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"
-	github_com_stafihub_stafihub_utils "github.com/stafihub/stafihub/utils"
+	github_com_furybase_furybase_utils "github.com/furybase/furybase/utils"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -156,7 +156,7 @@ func (m *CreateRewardPoolInfo) GetStartTimestamp() uint64 {
 type CreateStakeItemInfo struct {
 	LockSecond uint64 `protobuf:"varint,1,opt,name=lockSecond,proto3" json:"lockSecond"`
 	// user stakedPower = powerRewardRate * stakedAmount
-	PowerRewardRate github_com_stafihub_stafihub_utils.Dec `protobuf:"bytes,2,opt,name=powerRewardRate,proto3,customtype=github.com/stafihub/stafihub/utils.Dec" json:"powerRewardRate"`
+	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,2,opt,name=powerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"powerRewardRate"`
 }
 
 func (m *CreateStakeItemInfo) Reset()         { *m = CreateStakeItemInfo{} }
@@ -239,7 +239,7 @@ type MsgAddStakeItem struct {
 	Creator         string                                 `protobuf:"bytes,1,opt,name=creator,proto3" json:"creator,omitempty"`
 	StakePoolIndex  uint32                                 `protobuf:"varint,2,opt,name=stakePoolIndex,proto3" json:"stakePoolIndex"`
 	LockSecond      uint64                                 `protobuf:"varint,3,opt,name=lockSecond,proto3" json:"lockSecond"`
-	PowerRewardRate github_com_stafihub_stafihub_utils.Dec `protobuf:"bytes,4,opt,name=powerRewardRate,proto3,customtype=github.com/stafihub/stafihub/utils.Dec" json:"powerRewardRate"`
+	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,4,opt,name=powerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"powerRewardRate"`
 	Enable          bool                                   `protobuf:"varint,5,opt,name=enable,proto3" json:"enable,omitempty"`
 }
 
@@ -741,7 +741,7 @@ type MsgUpdateStakeItem struct {
 	Index           uint32                                 `protobuf:"varint,2,opt,name=index,proto3" json:"index"`
 	StakePoolIndex  uint32                                 `protobuf:"varint,3,opt,name=stakePoolIndex,proto3" json:"stakePoolIndex"`
 	LockSecond      uint64                                 `protobuf:"varint,4,opt,name=lockSecond,proto3" json:"lockSecond"`
-	PowerRewardRate github_com_stafihub_stafihub_utils.Dec `protobuf:"bytes,5,opt,name=powerRewardRate,proto3,customtype=github.com/stafihub/stafihub/utils.Dec" json:"powerRewardRate"`
+	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,5,opt,name=powerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"powerRewardRate"`
 	Enable          bool                                   `protobuf:"varint,6,opt,name=enable,proto3" json:"enable,omitempty"`
 }
 
@@ -2025,7 +2025,7 @@ var xxx_messageInfo_MsgRmStakeTokenResponse proto.InternalMessageInfo
 type MsgSetStakeItemLimit struct {
 	Creator            string                                 `protobuf:"bytes,1,opt,name=creator,proto3" json:"creator,omitempty"`
 	MaxLockSecond      uint64                                 `protobuf:"varint,2,opt,name=maxLockSecond,proto3" json:"maxLockSecond"`
-	MaxPowerRewardRate github_com_stafihub_stafihub_utils.Dec `protobuf:"bytes,3,opt,name=maxPowerRewardRate,proto3,customtype=github.com/stafihub/stafihub/utils.Dec" json:"maxPowerRewardRate"`
+	MaxPowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,3,opt,name=maxPowerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"maxPowerRewardRate"`
 }
 
 func (m *MsgSetStakeItemLimit) Reset()         { *m = MsgSetStakeItemLimit{} }
@@ -2209,52 +2209,52 @@ func (m *MsgWithdrawRewardTokenResponse) XXX_DiscardUnknown() {
 var xxx_messageInfo_MsgWithdrawRewardTokenResponse proto.InternalMessageInfo
 
 func init() {
-	proto.RegisterType((*MsgAddStakePool)(nil), "stafihub.stafihub.mining.MsgAddStakePool")
-	proto.RegisterType((*CreateRewardPoolInfo)(nil), "stafihub.stafihub.mining.CreateRewardPoolInfo")
-	proto.RegisterType((*CreateStakeItemInfo)(nil), "stafihub.stafihub.mining.CreateStakeItemInfo")
-	proto.RegisterType((*MsgAddStakePoolResponse)(nil), "stafihub.stafihub.mining.MsgAddStakePoolResponse")
-	proto.RegisterType((*MsgAddStakeItem)(nil), "stafihub.stafihub.mining.MsgAddStakeItem")
-	proto.RegisterType((*MsgAddStakeItemResponse)(nil), "stafihub.stafihub.mining.MsgAddStakeItemResponse")
-	proto.RegisterType((*MsgAddRewardPool)(nil), "stafihub.stafihub.mining.MsgAddRewardPool")
-	proto.RegisterType((*MsgAddRewardPoolResponse)(nil), "stafihub.stafihub.mining.MsgAddRewardPoolResponse")
-	proto.RegisterType((*MsgStake)(nil), "stafihub.stafihub.mining.MsgStake")
-	proto.RegisterType((*MsgStakeResponse)(nil), "stafihub.stafihub.mining.MsgStakeResponse")
-	proto.RegisterType((*MsgClaimReward)(nil), "stafihub.stafihub.mining.MsgClaimReward")
-	proto.RegisterType((*MsgClaimRewardResponse)(nil), "stafihub.stafihub.mining.MsgClaimRewardResponse")
-	proto.RegisterType((*MsgWithdraw)(nil), "stafihub.stafihub.mining.MsgWithdraw")
-	proto.RegisterType((*MsgWithdrawResponse)(nil), "stafihub.stafihub.mining.MsgWithdrawResponse")
-	proto.RegisterType((*MsgUpdateStakeItem)(nil), "stafihub.stafihub.mining.MsgUpdateStakeItem")
-	proto.RegisterType((*MsgUpdateStakeItemResponse)(nil), "stafihub.stafihub.mining.MsgUpdateStakeItemResponse")
-	proto.RegisterType((*MsgAddMiningProvider)(nil), "stafihub.stafihub.mining.MsgAddMiningProvider")
-	proto.RegisterType((*MsgAddMiningProviderResponse)(nil), "stafihub.stafihub.mining.MsgAddMiningProviderResponse")
-	proto.RegisterType((*MsgRmMiningProvider)(nil), "stafihub.stafihub.mining.MsgRmMiningProvider")
-	proto.RegisterType((*MsgRmMiningProviderResponse)(nil), "stafihub.stafihub.mining.MsgRmMiningProviderResponse")
-	proto.RegisterType((*MsgAddRewardToken)(nil), "stafihub.stafihub.mining.MsgAddRewardToken")
-	proto.RegisterType((*MsgAddRewardTokenResponse)(nil), "stafihub.stafihub.mining.MsgAddRewardTokenResponse")
-	proto.RegisterType((*MsgSetMaxRewardPoolNumber)(nil), "stafihub.stafihub.mining.MsgSetMaxRewardPoolNumber")
-	proto.RegisterType((*MsgSetMaxRewardPoolNumberResponse)(nil), "stafihub.stafihub.mining.MsgSetMaxRewardPoolNumberResponse")
-	proto.RegisterType((*MsgUpdateRewardPool)(nil), "stafihub.stafihub.mining.MsgUpdateRewardPool")
-	proto.RegisterType((*MsgUpdateRewardPoolResponse)(nil), "stafihub.stafihub.mining.MsgUpdateRewardPoolResponse")
-	proto.RegisterType((*MsgToggleProviderSwitch)(nil), "stafihub.stafihub.mining.MsgToggleProviderSwitch")
-	proto.RegisterType((*MsgToggleProviderSwitchResponse)(nil), "stafihub.stafihub.mining.MsgToggleProviderSwitchResponse")
-	proto.RegisterType((*MsgSetMaxStakeItemNumber)(nil), "stafihub.stafihub.mining.MsgSetMaxStakeItemNumber")
-	proto.RegisterType((*MsgSetMaxStakeItemNumberResponse)(nil), "stafihub.stafihub.mining.MsgSetMaxStakeItemNumberResponse")
-	proto.RegisterType((*MsgAddReward)(nil), "stafihub.stafihub.mining.MsgAddReward")
-	proto.RegisterType((*MsgAddRewardResponse)(nil), "stafihub.stafihub.mining.MsgAddRewardResponse")
-	proto.RegisterType((*MsgToggleEmergencySwitch)(nil), "stafihub.stafihub.mining.MsgToggleEmergencySwitch")
-	proto.RegisterType((*MsgToggleEmergencySwitchResponse)(nil), "stafihub.stafihub.mining.MsgToggleEmergencySwitchResponse")
-	proto.RegisterType((*MsgEmergencyWithdraw)(nil), "stafihub.stafihub.mining.MsgEmergencyWithdraw")
-	proto.RegisterType((*MsgEmergencyWithdrawResponse)(nil), "stafihub.stafihub.mining.MsgEmergencyWithdrawResponse")
-	proto.RegisterType((*MsgAddStakeToken)(nil), "stafihub.stafihub.mining.MsgAddStakeToken")
-	proto.RegisterType((*MsgAddStakeTokenResponse)(nil), "stafihub.stafihub.mining.MsgAddStakeTokenResponse")
-	proto.RegisterType((*MsgRmRewardToken)(nil), "stafihub.stafihub.mining.MsgRmRewardToken")
-	proto.RegisterType((*MsgRmRewardTokenResponse)(nil), "stafihub.stafihub.mining.MsgRmRewardTokenResponse")
-	proto.RegisterType((*MsgRmStakeToken)(nil), "stafihub.stafihub.mining.MsgRmStakeToken")
-	proto.RegisterType((*MsgRmStakeTokenResponse)(nil), "stafihub.stafihub.mining.MsgRmStakeTokenResponse")
-	proto.RegisterType((*MsgSetStakeItemLimit)(nil), "stafihub.stafihub.mining.MsgSetStakeItemLimit")
-	proto.RegisterType((*MsgSetStakeItemLimitResponse)(nil), "stafihub.stafihub.mining.MsgSetStakeItemLimitResponse")
-	proto.RegisterType((*MsgWithdrawRewardToken)(nil), "stafihub.stafihub.mining.MsgWithdrawRewardToken")
-	proto.RegisterType((*MsgWithdrawRewardTokenResponse)(nil), "stafihub.stafihub.mining.MsgWithdrawRewardTokenResponse")
+	proto.RegisterType((*MsgAddStakePool)(nil), "furybase.furybase.mining.MsgAddStakePool")
+	proto.RegisterType((*CreateRewardPoolInfo)(nil), "furybase.furybase.mining.CreateRewardPoolInfo")
+	proto.RegisterType((*CreateStakeItemInfo)(nil), "furybase.furybase.mining.CreateStakeItemInfo")
+	proto.RegisterType((*MsgAddStakePoolResponse)(nil), "furybase.furybase.mining.MsgAddStakePoolResponse")
+	proto.RegisterType((*MsgAddStakeItem)(nil), "furybase.furybase.mining.MsgAddStakeItem")
+	proto.RegisterType((*MsgAddStakeItemResponse)(nil), "furybase.furybase.mining.MsgAddStakeItemResponse")
+	proto.RegisterType((*MsgAddRewardPool)(nil), "furybase.furybase.mining.MsgAddRewardPool")
+	proto.RegisterType((*MsgAddRewardPoolResponse)(nil), "furybase.furybase.mining.MsgAddRewardPoolResponse")
+	proto.RegisterType((*MsgStake)(nil), "furybase.furybase.mining.MsgStake")
+	proto.RegisterType((*MsgStakeResponse)(nil), "furybase.furybase.mining.MsgStakeResponse")
+	proto.RegisterType((*MsgClaimReward)(nil), "furybase.furybase.mining.MsgClaimReward")
+	proto.RegisterType((*MsgClaimRewardResponse)(nil), "furybase.furybase.mining.MsgClaimRewardResponse")
+	proto.RegisterType((*MsgWithdraw)(nil), "furybase.furybase.mining.MsgWithdraw")
+	proto.RegisterType((*MsgWithdrawResponse)(nil), "furybase.furybase.mining.MsgWithdrawResponse")
+	proto.RegisterType((*MsgUpdateStakeItem)(nil), "furybase.furybase.mining.MsgUpdateStakeItem")
+	proto.RegisterType((*MsgUpdateStakeItemResponse)(nil), "furybase.furybase.mining.MsgUpdateStakeItemResponse")
+	proto.RegisterType((*MsgAddMiningProvider)(nil), "furybase.furybase.mining.MsgAddMiningProvider")
+	proto.RegisterType((*MsgAddMiningProviderResponse)(nil), "furybase.furybase.mining.MsgAddMiningProviderResponse")
+	proto.RegisterType((*MsgRmMiningProvider)(nil), "furybase.furybase.mining.MsgRmMiningProvider")
+	proto.RegisterType((*MsgRmMiningProviderResponse)(nil), "furybase.furybase.mining.MsgRmMiningProviderResponse")
+	proto.RegisterType((*MsgAddRewardToken)(nil), "furybase.furybase.mining.MsgAddRewardToken")
+	proto.RegisterType((*MsgAddRewardTokenResponse)(nil), "furybase.furybase.mining.MsgAddRewardTokenResponse")
+	proto.RegisterType((*MsgSetMaxRewardPoolNumber)(nil), "furybase.furybase.mining.MsgSetMaxRewardPoolNumber")
+	proto.RegisterType((*MsgSetMaxRewardPoolNumberResponse)(nil), "furybase.furybase.mining.MsgSetMaxRewardPoolNumberResponse")
+	proto.RegisterType((*MsgUpdateRewardPool)(nil), "furybase.furybase.mining.MsgUpdateRewardPool")
+	proto.RegisterType((*MsgUpdateRewardPoolResponse)(nil), "furybase.furybase.mining.MsgUpdateRewardPoolResponse")
+	proto.RegisterType((*MsgToggleProviderSwitch)(nil), "furybase.furybase.mining.MsgToggleProviderSwitch")
+	proto.RegisterType((*MsgToggleProviderSwitchResponse)(nil), "furybase.furybase.mining.MsgToggleProviderSwitchResponse")
+	proto.RegisterType((*MsgSetMaxStakeItemNumber)(nil), "furybase.furybase.mining.MsgSetMaxStakeItemNumber")
+	proto.RegisterType((*MsgSetMaxStakeItemNumberResponse)(nil), "furybase.furybase.mining.MsgSetMaxStakeItemNumberResponse")
+	proto.RegisterType((*MsgAddReward)(nil), "furybase.furybase.mining.MsgAddReward")
+	proto.RegisterType((*MsgAddRewardResponse)(nil), "furybase.furybase.mining.MsgAddRewardResponse")
+	proto.RegisterType((*MsgToggleEmergencySwitch)(nil), "furybase.furybase.mining.MsgToggleEmergencySwitch")
+	proto.RegisterType((*MsgToggleEmergencySwitchResponse)(nil), "furybase.furybase.mining.MsgToggleEmergencySwitchResponse")
+	proto.RegisterType((*MsgEmergencyWithdraw)(nil), "furybase.furybase.mining.MsgEmergencyWithdraw")
+	proto.RegisterType((*MsgEmergencyWithdrawResponse)(nil), "furybase.furybase.mining.MsgEmergencyWithdrawResponse")
+	proto.RegisterType((*MsgAddStakeToken)(nil), "furybase.furybase.mining.MsgAddStakeToken")
+	proto.RegisterType((*MsgAddStakeTokenResponse)(nil), "furybase.furybase.mining.MsgAddStakeTokenResponse")
+	proto.RegisterType((*MsgRmRewardToken)(nil), "furybase.furybase.mining.MsgRmRewardToken")
+	proto.RegisterType((*MsgRmRewardTokenResponse)(nil), "furybase.furybase.mining.MsgRmRewardTokenResponse")
+	proto.RegisterType((*MsgRmStakeToken)(nil), "furybase.furybase.mining.MsgRmStakeToken")
+	proto.RegisterType((*MsgRmStakeTokenResponse)(nil), "furybase.furybase.mining.MsgRmStakeTokenResponse")
+	proto.RegisterType((*MsgSetStakeItemLimit)(nil), "furybase.furybase.mining.MsgSetStakeItemLimit")
+	proto.RegisterType((*MsgSetStakeItemLimitResponse)(nil), "furybase.furybase.mining.MsgSetStakeItemLimitResponse")
+	proto.RegisterType((*MsgWithdrawRewardToken)(nil), "furybase.furybase.mining.MsgWithdrawRewardToken")
+	proto.RegisterType((*MsgWithdrawRewardTokenResponse)(nil), "furybase.furybase.mining.MsgWithdrawRewardTokenResponse")
 }
 
 func init() { proto.RegisterFile("mining/tx.proto", fileDescriptor_7b7cc93178595aaa) }
@@ -2406,7 +2406,7 @@ func NewMsgClient(cc grpc1.ClientConn) MsgClient {
 
 func (c *msgClient) AddStakePool(ctx context.Context, in *MsgAddStakePool, opts ...grpc.CallOption) (*MsgAddStakePoolResponse, error) {
 	out := new(MsgAddStakePoolResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/AddStakePool", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/AddStakePool", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2415,7 +2415,7 @@ func (c *msgClient) AddStakePool(ctx context.Context, in *MsgAddStakePool, opts 
 
 func (c *msgClient) AddStakeItem(ctx context.Context, in *MsgAddStakeItem, opts ...grpc.CallOption) (*MsgAddStakeItemResponse, error) {
 	out := new(MsgAddStakeItemResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/AddStakeItem", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/AddStakeItem", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2424,7 +2424,7 @@ func (c *msgClient) AddStakeItem(ctx context.Context, in *MsgAddStakeItem, opts 
 
 func (c *msgClient) AddRewardPool(ctx context.Context, in *MsgAddRewardPool, opts ...grpc.CallOption) (*MsgAddRewardPoolResponse, error) {
 	out := new(MsgAddRewardPoolResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/AddRewardPool", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/AddRewardPool", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2433,7 +2433,7 @@ func (c *msgClient) AddRewardPool(ctx context.Context, in *MsgAddRewardPool, opt
 
 func (c *msgClient) Stake(ctx context.Context, in *MsgStake, opts ...grpc.CallOption) (*MsgStakeResponse, error) {
 	out := new(MsgStakeResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/Stake", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/Stake", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2442,7 +2442,7 @@ func (c *msgClient) Stake(ctx context.Context, in *MsgStake, opts ...grpc.CallOp
 
 func (c *msgClient) ClaimReward(ctx context.Context, in *MsgClaimReward, opts ...grpc.CallOption) (*MsgClaimRewardResponse, error) {
 	out := new(MsgClaimRewardResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/ClaimReward", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/ClaimReward", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2451,7 +2451,7 @@ func (c *msgClient) ClaimReward(ctx context.Context, in *MsgClaimReward, opts ..
 
 func (c *msgClient) Withdraw(ctx context.Context, in *MsgWithdraw, opts ...grpc.CallOption) (*MsgWithdrawResponse, error) {
 	out := new(MsgWithdrawResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/Withdraw", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/Withdraw", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2460,7 +2460,7 @@ func (c *msgClient) Withdraw(ctx context.Context, in *MsgWithdraw, opts ...grpc.
 
 func (c *msgClient) UpdateStakeItem(ctx context.Context, in *MsgUpdateStakeItem, opts ...grpc.CallOption) (*MsgUpdateStakeItemResponse, error) {
 	out := new(MsgUpdateStakeItemResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/UpdateStakeItem", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/UpdateStakeItem", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2469,7 +2469,7 @@ func (c *msgClient) UpdateStakeItem(ctx context.Context, in *MsgUpdateStakeItem,
 
 func (c *msgClient) AddMiningProvider(ctx context.Context, in *MsgAddMiningProvider, opts ...grpc.CallOption) (*MsgAddMiningProviderResponse, error) {
 	out := new(MsgAddMiningProviderResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/AddMiningProvider", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/AddMiningProvider", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2478,7 +2478,7 @@ func (c *msgClient) AddMiningProvider(ctx context.Context, in *MsgAddMiningProvi
 
 func (c *msgClient) RmMiningProvider(ctx context.Context, in *MsgRmMiningProvider, opts ...grpc.CallOption) (*MsgRmMiningProviderResponse, error) {
 	out := new(MsgRmMiningProviderResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/RmMiningProvider", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/RmMiningProvider", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2487,7 +2487,7 @@ func (c *msgClient) RmMiningProvider(ctx context.Context, in *MsgRmMiningProvide
 
 func (c *msgClient) AddRewardToken(ctx context.Context, in *MsgAddRewardToken, opts ...grpc.CallOption) (*MsgAddRewardTokenResponse, error) {
 	out := new(MsgAddRewardTokenResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/AddRewardToken", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/AddRewardToken", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2496,7 +2496,7 @@ func (c *msgClient) AddRewardToken(ctx context.Context, in *MsgAddRewardToken, o
 
 func (c *msgClient) SetMaxRewardPoolNumber(ctx context.Context, in *MsgSetMaxRewardPoolNumber, opts ...grpc.CallOption) (*MsgSetMaxRewardPoolNumberResponse, error) {
 	out := new(MsgSetMaxRewardPoolNumberResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/SetMaxRewardPoolNumber", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/SetMaxRewardPoolNumber", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2505,7 +2505,7 @@ func (c *msgClient) SetMaxRewardPoolNumber(ctx context.Context, in *MsgSetMaxRew
 
 func (c *msgClient) UpdateRewardPool(ctx context.Context, in *MsgUpdateRewardPool, opts ...grpc.CallOption) (*MsgUpdateRewardPoolResponse, error) {
 	out := new(MsgUpdateRewardPoolResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/UpdateRewardPool", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/UpdateRewardPool", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2514,7 +2514,7 @@ func (c *msgClient) UpdateRewardPool(ctx context.Context, in *MsgUpdateRewardPoo
 
 func (c *msgClient) ToggleProviderSwitch(ctx context.Context, in *MsgToggleProviderSwitch, opts ...grpc.CallOption) (*MsgToggleProviderSwitchResponse, error) {
 	out := new(MsgToggleProviderSwitchResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/ToggleProviderSwitch", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/ToggleProviderSwitch", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2523,7 +2523,7 @@ func (c *msgClient) ToggleProviderSwitch(ctx context.Context, in *MsgToggleProvi
 
 func (c *msgClient) SetMaxStakeItemNumber(ctx context.Context, in *MsgSetMaxStakeItemNumber, opts ...grpc.CallOption) (*MsgSetMaxStakeItemNumberResponse, error) {
 	out := new(MsgSetMaxStakeItemNumberResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/SetMaxStakeItemNumber", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/SetMaxStakeItemNumber", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2532,7 +2532,7 @@ func (c *msgClient) SetMaxStakeItemNumber(ctx context.Context, in *MsgSetMaxStak
 
 func (c *msgClient) AddReward(ctx context.Context, in *MsgAddReward, opts ...grpc.CallOption) (*MsgAddRewardResponse, error) {
 	out := new(MsgAddRewardResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/AddReward", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/AddReward", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2541,7 +2541,7 @@ func (c *msgClient) AddReward(ctx context.Context, in *MsgAddReward, opts ...grp
 
 func (c *msgClient) ToggleEmergencySwitch(ctx context.Context, in *MsgToggleEmergencySwitch, opts ...grpc.CallOption) (*MsgToggleEmergencySwitchResponse, error) {
 	out := new(MsgToggleEmergencySwitchResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/ToggleEmergencySwitch", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/ToggleEmergencySwitch", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2550,7 +2550,7 @@ func (c *msgClient) ToggleEmergencySwitch(ctx context.Context, in *MsgToggleEmer
 
 func (c *msgClient) EmergencyWithdraw(ctx context.Context, in *MsgEmergencyWithdraw, opts ...grpc.CallOption) (*MsgEmergencyWithdrawResponse, error) {
 	out := new(MsgEmergencyWithdrawResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/EmergencyWithdraw", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/EmergencyWithdraw", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2559,7 +2559,7 @@ func (c *msgClient) EmergencyWithdraw(ctx context.Context, in *MsgEmergencyWithd
 
 func (c *msgClient) AddStakeToken(ctx context.Context, in *MsgAddStakeToken, opts ...grpc.CallOption) (*MsgAddStakeTokenResponse, error) {
 	out := new(MsgAddStakeTokenResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/AddStakeToken", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/AddStakeToken", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2568,7 +2568,7 @@ func (c *msgClient) AddStakeToken(ctx context.Context, in *MsgAddStakeToken, opt
 
 func (c *msgClient) RmRewardToken(ctx context.Context, in *MsgRmRewardToken, opts ...grpc.CallOption) (*MsgRmRewardTokenResponse, error) {
 	out := new(MsgRmRewardTokenResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/RmRewardToken", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/RmRewardToken", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2577,7 +2577,7 @@ func (c *msgClient) RmRewardToken(ctx context.Context, in *MsgRmRewardToken, opt
 
 func (c *msgClient) RmStakeToken(ctx context.Context, in *MsgRmStakeToken, opts ...grpc.CallOption) (*MsgRmStakeTokenResponse, error) {
 	out := new(MsgRmStakeTokenResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/RmStakeToken", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/RmStakeToken", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2586,7 +2586,7 @@ func (c *msgClient) RmStakeToken(ctx context.Context, in *MsgRmStakeToken, opts 
 
 func (c *msgClient) SetStakeItemLimit(ctx context.Context, in *MsgSetStakeItemLimit, opts ...grpc.CallOption) (*MsgSetStakeItemLimitResponse, error) {
 	out := new(MsgSetStakeItemLimitResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/SetStakeItemLimit", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/SetStakeItemLimit", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2595,7 +2595,7 @@ func (c *msgClient) SetStakeItemLimit(ctx context.Context, in *MsgSetStakeItemLi
 
 func (c *msgClient) WithdrawRewardToken(ctx context.Context, in *MsgWithdrawRewardToken, opts ...grpc.CallOption) (*MsgWithdrawRewardTokenResponse, error) {
 	out := new(MsgWithdrawRewardTokenResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.mining.Msg/WithdrawRewardToken", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.mining.Msg/WithdrawRewardToken", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2713,7 +2713,7 @@ func _Msg_AddStakePool_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/AddStakePool",
+		FullMethod: "/furybase.furybase.mining.Msg/AddStakePool",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddStakePool(ctx, req.(*MsgAddStakePool))
@@ -2731,7 +2731,7 @@ func _Msg_AddStakeItem_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/AddStakeItem",
+		FullMethod: "/furybase.furybase.mining.Msg/AddStakeItem",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddStakeItem(ctx, req.(*MsgAddStakeItem))
@@ -2749,7 +2749,7 @@ func _Msg_AddRewardPool_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/AddRewardPool",
+		FullMethod: "/furybase.furybase.mining.Msg/AddRewardPool",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddRewardPool(ctx, req.(*MsgAddRewardPool))
@@ -2767,7 +2767,7 @@ func _Msg_Stake_Handler(srv interface{}, ctx context.Context, dec func(interface
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/Stake",
+		FullMethod: "/furybase.furybase.mining.Msg/Stake",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).Stake(ctx, req.(*MsgStake))
@@ -2785,7 +2785,7 @@ func _Msg_ClaimReward_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/ClaimReward",
+		FullMethod: "/furybase.furybase.mining.Msg/ClaimReward",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).ClaimReward(ctx, req.(*MsgClaimReward))
@@ -2803,7 +2803,7 @@ func _Msg_Withdraw_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/Withdraw",
+		FullMethod: "/furybase.furybase.mining.Msg/Withdraw",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).Withdraw(ctx, req.(*MsgWithdraw))
@@ -2821,7 +2821,7 @@ func _Msg_UpdateStakeItem_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/UpdateStakeItem",
+		FullMethod: "/furybase.furybase.mining.Msg/UpdateStakeItem",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).UpdateStakeItem(ctx, req.(*MsgUpdateStakeItem))
@@ -2839,7 +2839,7 @@ func _Msg_AddMiningProvider_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/AddMiningProvider",
+		FullMethod: "/furybase.furybase.mining.Msg/AddMiningProvider",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddMiningProvider(ctx, req.(*MsgAddMiningProvider))
@@ -2857,7 +2857,7 @@ func _Msg_RmMiningProvider_Handler(srv interface{}, ctx context.Context, dec fun
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/RmMiningProvider",
+		FullMethod: "/furybase.furybase.mining.Msg/RmMiningProvider",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RmMiningProvider(ctx, req.(*MsgRmMiningProvider))
@@ -2875,7 +2875,7 @@ func _Msg_AddRewardToken_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/AddRewardToken",
+		FullMethod: "/furybase.furybase.mining.Msg/AddRewardToken",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddRewardToken(ctx, req.(*MsgAddRewardToken))
@@ -2893,7 +2893,7 @@ func _Msg_SetMaxRewardPoolNumber_Handler(srv interface{}, ctx context.Context, d
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/SetMaxRewardPoolNumber",
+		FullMethod: "/furybase.furybase.mining.Msg/SetMaxRewardPoolNumber",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetMaxRewardPoolNumber(ctx, req.(*MsgSetMaxRewardPoolNumber))
@@ -2911,7 +2911,7 @@ func _Msg_UpdateRewardPool_Handler(srv interface{}, ctx context.Context, dec fun
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/UpdateRewardPool",
+		FullMethod: "/furybase.furybase.mining.Msg/UpdateRewardPool",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).UpdateRewardPool(ctx, req.(*MsgUpdateRewardPool))
@@ -2929,7 +2929,7 @@ func _Msg_ToggleProviderSwitch_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/ToggleProviderSwitch",
+		FullMethod: "/furybase.furybase.mining.Msg/ToggleProviderSwitch",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).ToggleProviderSwitch(ctx, req.(*MsgToggleProviderSwitch))
@@ -2947,7 +2947,7 @@ func _Msg_SetMaxStakeItemNumber_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/SetMaxStakeItemNumber",
+		FullMethod: "/furybase.furybase.mining.Msg/SetMaxStakeItemNumber",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetMaxStakeItemNumber(ctx, req.(*MsgSetMaxStakeItemNumber))
@@ -2965,7 +2965,7 @@ func _Msg_AddReward_Handler(srv interface{}, ctx context.Context, dec func(inter
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/AddReward",
+		FullMethod: "/furybase.furybase.mining.Msg/AddReward",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddReward(ctx, req.(*MsgAddReward))
@@ -2983,7 +2983,7 @@ func _Msg_ToggleEmergencySwitch_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/ToggleEmergencySwitch",
+		FullMethod: "/furybase.furybase.mining.Msg/ToggleEmergencySwitch",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).ToggleEmergencySwitch(ctx, req.(*MsgToggleEmergencySwitch))
@@ -3001,7 +3001,7 @@ func _Msg_EmergencyWithdraw_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/EmergencyWithdraw",
+		FullMethod: "/furybase.furybase.mining.Msg/EmergencyWithdraw",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).EmergencyWithdraw(ctx, req.(*MsgEmergencyWithdraw))
@@ -3019,7 +3019,7 @@ func _Msg_AddStakeToken_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/AddStakeToken",
+		FullMethod: "/furybase.furybase.mining.Msg/AddStakeToken",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).AddStakeToken(ctx, req.(*MsgAddStakeToken))
@@ -3037,7 +3037,7 @@ func _Msg_RmRewardToken_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/RmRewardToken",
+		FullMethod: "/furybase.furybase.mining.Msg/RmRewardToken",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RmRewardToken(ctx, req.(*MsgRmRewardToken))
@@ -3055,7 +3055,7 @@ func _Msg_RmStakeToken_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/RmStakeToken",
+		FullMethod: "/furybase.furybase.mining.Msg/RmStakeToken",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).RmStakeToken(ctx, req.(*MsgRmStakeToken))
@@ -3073,7 +3073,7 @@ func _Msg_SetStakeItemLimit_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/SetStakeItemLimit",
+		FullMethod: "/furybase.furybase.mining.Msg/SetStakeItemLimit",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).SetStakeItemLimit(ctx, req.(*MsgSetStakeItemLimit))
@@ -3091,7 +3091,7 @@ func _Msg_WithdrawRewardToken_Handler(srv interface{}, ctx context.Context, dec 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.mining.Msg/WithdrawRewardToken",
+		FullMethod: "/furybase.furybase.mining.Msg/WithdrawRewardToken",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(MsgServer).WithdrawRewardToken(ctx, req.(*MsgWithdrawRewardToken))
@@ -3100,7 +3100,7 @@ func _Msg_WithdrawRewardToken_Handler(srv interface{}, ctx context.Context, dec 
 }
 
 var _Msg_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.mining.Msg",
+	ServiceName: "furybase.furybase.mining.Msg",
 	HandlerType: (*MsgServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

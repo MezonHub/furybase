@@ -1,0 +1,21 @@
+syntax = "proto3";
+package furybase.furybase.fbank ;
+
+import "gogoproto/gogo.proto";
+import "fbank /params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/furybase/furybase/x/fbank /types";
+
+// GenesisState defines the fbank  module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  repeated AddressPrefix addressPrefix = 2;
+  // this line is used by starport scaffolding # genesis/proto/state
+}
+
+message AddressPrefix {
+  string denom = 1;
+  string accAddressPrefix = 2;
+  string valAddressPrefix = 3;
+}

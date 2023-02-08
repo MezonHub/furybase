@@ -768,21 +768,21 @@ func RegisterQueryHandlerClient(ctx context.Context, mux *runtime.ServeMux, clie
 }
 
 var (
-	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "bridge", "params"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "bridge", "params"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_ChaindIds_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "bridge", "chaind_ids"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_ChaindIds_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "bridge", "chaind_ids"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_ProposalDetail_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3, 1, 0, 4, 1, 5, 4, 1, 0, 4, 1, 5, 5, 1, 0, 4, 1, 5, 6, 1, 0, 4, 1, 5, 7}, []string{"stafihub", "bridge", "proposal_detail", "chainId", "depositNonce", "resourceId", "amount", "receiver"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_ProposalDetail_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3, 1, 0, 4, 1, 5, 4, 1, 0, 4, 1, 5, 5, 1, 0, 4, 1, 5, 6, 1, 0, 4, 1, 5, 7}, []string{"furybase", "bridge", "proposal_detail", "chainId", "depositNonce", "resourceId", "amount", "receiver"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_ResourceidToDenoms_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "bridge", "resourceid_to_denoms"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_ResourceidToDenoms_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "bridge", "resourceid_to_denoms"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_RelayFeeReceiver_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "bridge", "relay_fee_receiver"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_RelayFeeReceiver_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "bridge", "relay_fee_receiver"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_RelayFee_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"stafihub", "bridge", "relay_fee", "chainId"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_RelayFee_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"furybase", "bridge", "relay_fee", "chainId"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_BannedDenomList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "bridge", "banned_denom_list"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_BannedDenomList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "bridge", "banned_denom_list"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_GetDepositCount_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"stafihub", "bridge", "get_deposit_count", "chainId"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_GetDepositCount_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"furybase", "bridge", "get_deposit_count", "chainId"}, "", runtime.AssumeColonVerbOpt(true)))
 )
 
 var (

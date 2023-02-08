@@ -8,7 +8,7 @@ import (
 	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	github_com_stafihub_stafihub_utils "github.com/stafihub/stafihub/utils"
+	github_com_furybase_furybase_utils "github.com/furybase/furybase/utils"
 	io "io"
 	math "math"
 	math_bits "math/bits"
@@ -384,7 +384,7 @@ func (m *GenesisEraSnapshot) GetShotIds() []string {
 
 type StakingRewardCommission struct {
 	Denom string                                 `protobuf:"bytes,1,opt,name=denom,proto3" json:"denom,omitempty"`
-	Value github_com_stafihub_stafihub_utils.Dec `protobuf:"bytes,2,opt,name=value,proto3,customtype=github.com/stafihub/stafihub/utils.Dec" json:"value"`
+	Value github_com_furybase_furybase_utils.Dec `protobuf:"bytes,2,opt,name=value,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"value"`
 }
 
 func (m *StakingRewardCommission) Reset()         { *m = StakingRewardCommission{} }
@@ -429,7 +429,7 @@ func (m *StakingRewardCommission) GetDenom() string {
 
 type UnbondCommission struct {
 	Denom string                                 `protobuf:"bytes,1,opt,name=denom,proto3" json:"denom,omitempty"`
-	Value github_com_stafihub_stafihub_utils.Dec `protobuf:"bytes,2,opt,name=value,proto3,customtype=github.com/stafihub/stafihub/utils.Dec" json:"value"`
+	Value github_com_furybase_furybase_utils.Dec `protobuf:"bytes,2,opt,name=value,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"value"`
 }
 
 func (m *UnbondCommission) Reset()         { *m = UnbondCommission{} }
@@ -763,7 +763,7 @@ type GenesisInterchainTxProposalInfo struct {
 	CtrlChannelId string             `protobuf:"bytes,2,opt,name=ctrlChannelId,proto3" json:"ctrlChannelId,omitempty"`
 	Sequence      uint64             `protobuf:"varint,3,opt,name=sequence,proto3" json:"sequence,omitempty"`
 	ProposalId    string             `protobuf:"bytes,4,opt,name=proposalId,proto3" json:"proposalId,omitempty"`
-	Status        InterchainTxStatus `protobuf:"varint,5,opt,name=status,proto3,enum=stafihub.stafihub.ledger.InterchainTxStatus" json:"status,omitempty"`
+	Status        InterchainTxStatus `protobuf:"varint,5,opt,name=status,proto3,enum=furybase.furybase.ledger.InterchainTxStatus" json:"status,omitempty"`
 }
 
 func (m *GenesisInterchainTxProposalInfo) Reset()         { *m = GenesisInterchainTxProposalInfo{} }
@@ -835,17 +835,17 @@ func (m *GenesisInterchainTxProposalInfo) GetStatus() InterchainTxStatus {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "stafihub.stafihub.ledger.GenesisState")
-	proto.RegisterType((*UnbondSwitch)(nil), "stafihub.stafihub.ledger.UnbondSwitch")
-	proto.RegisterType((*GenesisEraSnapshot)(nil), "stafihub.stafihub.ledger.GenesisEraSnapshot")
-	proto.RegisterType((*StakingRewardCommission)(nil), "stafihub.stafihub.ledger.StakingRewardCommission")
-	proto.RegisterType((*UnbondCommission)(nil), "stafihub.stafihub.ledger.UnbondCommission")
-	proto.RegisterType((*RelayFeeReceiver)(nil), "stafihub.stafihub.ledger.RelayFeeReceiver")
-	proto.RegisterType((*TotalExpectedActive)(nil), "stafihub.stafihub.ledger.TotalExpectedActive")
-	proto.RegisterType((*TotalExpectedFee)(nil), "stafihub.stafihub.ledger.TotalExpectedFee")
-	proto.RegisterType((*GenesisPoolUnbonding)(nil), "stafihub.stafihub.ledger.GenesisPoolUnbonding")
-	proto.RegisterType((*GenesisSnapshot)(nil), "stafihub.stafihub.ledger.GenesisSnapshot")
-	proto.RegisterType((*GenesisInterchainTxProposalInfo)(nil), "stafihub.stafihub.ledger.GenesisInterchainTxProposalInfo")
+	proto.RegisterType((*GenesisState)(nil), "furybase.furybase.ledger.GenesisState")
+	proto.RegisterType((*UnbondSwitch)(nil), "furybase.furybase.ledger.UnbondSwitch")
+	proto.RegisterType((*GenesisEraSnapshot)(nil), "furybase.furybase.ledger.GenesisEraSnapshot")
+	proto.RegisterType((*StakingRewardCommission)(nil), "furybase.furybase.ledger.StakingRewardCommission")
+	proto.RegisterType((*UnbondCommission)(nil), "furybase.furybase.ledger.UnbondCommission")
+	proto.RegisterType((*RelayFeeReceiver)(nil), "furybase.furybase.ledger.RelayFeeReceiver")
+	proto.RegisterType((*TotalExpectedActive)(nil), "furybase.furybase.ledger.TotalExpectedActive")
+	proto.RegisterType((*TotalExpectedFee)(nil), "furybase.furybase.ledger.TotalExpectedFee")
+	proto.RegisterType((*GenesisPoolUnbonding)(nil), "furybase.furybase.ledger.GenesisPoolUnbonding")
+	proto.RegisterType((*GenesisSnapshot)(nil), "furybase.furybase.ledger.GenesisSnapshot")
+	proto.RegisterType((*GenesisInterchainTxProposalInfo)(nil), "furybase.furybase.ledger.GenesisInterchainTxProposalInfo")
 }
 
 func init() { proto.RegisterFile("ledger/genesis.proto", fileDescriptor_9841dde51c65fe0e) }

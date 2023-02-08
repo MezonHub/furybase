@@ -3,10 +3,10 @@ package mining_test
 import (
 	"testing"
 
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/nullify"
-	"github.com/stafihub/stafihub/x/mining"
-	"github.com/stafihub/stafihub/x/mining/types"
+	keepertest "github.com/furybase/furybase/testutil/keeper"
+	"github.com/furybase/furybase/testutil/nullify"
+	"github.com/furybase/furybase/x/mining"
+	"github.com/furybase/furybase/x/mining/types"
 	"github.com/stretchr/testify/require"
 )
 

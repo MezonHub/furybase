@@ -2,8 +2,8 @@ package ledger
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/ledger/keeper"
-	"github.com/stafihub/stafihub/x/ledger/types"
+	"github.com/furybase/furybase/x/ledger/keeper"
+	"github.com/furybase/furybase/x/ledger/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

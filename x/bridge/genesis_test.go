@@ -3,10 +3,10 @@ package bridge_test
 import (
 	"testing"
 
-	keepertest "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/nullify"
-	"github.com/stafihub/stafihub/x/bridge"
-	"github.com/stafihub/stafihub/x/bridge/types"
+	keepertest "github.com/furybase/furybase/testutil/keeper"
+	"github.com/furybase/furybase/testutil/nullify"
+	"github.com/furybase/furybase/x/bridge"
+	"github.com/furybase/furybase/x/bridge/types"
 	"github.com/stretchr/testify/require"
 )
 

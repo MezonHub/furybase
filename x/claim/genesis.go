@@ -2,8 +2,8 @@ package claim
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/claim/keeper"
-	"github.com/stafihub/stafihub/x/claim/types"
+	"github.com/furybase/furybase/x/claim/keeper"
+	"github.com/furybase/furybase/x/claim/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

@@ -13,8 +13,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
 	icacontrollerkeeper "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/controller/keeper"
-	"github.com/stafihub/stafihub/utils"
-	"github.com/stafihub/stafihub/x/ledger/types"
+	"github.com/furybase/furybase/utils"
+	"github.com/furybase/furybase/x/ledger/types"
 )
 
 type (
@@ -27,7 +27,7 @@ type (
 		bankKeeper       types.BankKeeper
 		relayerKeeper    types.RelayerKeeper
 		mintrewardKeeper types.MintRewardKeeper
-		rbankKeeper      types.RBankKeeper
+		fbank Keeper      types.FBank Keeper
 
 		ICAControllerKeeper icacontrollerkeeper.Keeper
 		scopedKeeper        capabilitykeeper.ScopedKeeper
@@ -43,7 +43,7 @@ func NewKeeper(
 	bankKeeper types.BankKeeper,
 	relayerKeeper types.RelayerKeeper,
 	mintrewardKeeper types.MintRewardKeeper,
-	rbankKeeepr types.RBankKeeper,
+	fbank Keeepr types.FBank Keeper,
 
 	icaControllerKeeper icacontrollerkeeper.Keeper,
 	scopedKeeper capabilitykeeper.ScopedKeeper,
@@ -57,7 +57,7 @@ func NewKeeper(
 		bankKeeper:       bankKeeper,
 		relayerKeeper:    relayerKeeper,
 		mintrewardKeeper: mintrewardKeeper,
-		rbankKeeper:      rbankKeeepr,
+		fbank Keeper:      fbank Keeepr,
 
 		ICAControllerKeeper: icaControllerKeeper,
 		scopedKeeper:        scopedKeeper,
@@ -248,7 +248,7 @@ func (k Keeper) GetAllTotalProtocolFee(ctx sdk.Context) (list []*types.TotalProt
 
 func (k Keeper) CheckAddress(ctx sdk.Context, denom string, addresses ...string) error {
 	for _, addr := range addresses {
-		err := k.rbankKeeper.CheckAccAddress(ctx, denom, addr)
+		err := k.fbank Keeper.CheckAccAddress(ctx, denom, addr)
 		if err != nil {
 			return err
 		}

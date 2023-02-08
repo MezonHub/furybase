@@ -1,6 +1,6 @@
 # Install
 
-This guide will explain how to install the `stafihubd` entrypoint
+This guide will explain how to install the `base` entrypoint
 onto your system. With these installed on a server, you can participate in the
 mainnet as either a [Full Node](./join-mainnet.md) or a
 [Validator](./validator-setup.md).
@@ -39,10 +39,10 @@ go version
 
 ## Install the binaries
 
-Next, let's install the latest version of stafihubd. Make sure you `git checkout` the
-correct [released version](https://github.com/stafihub/stafihub/releases).
+Next, let's install the latest version of base. Make sure you `git checkout` the
+correct [released version](https://github.com/furybase/furybase/releases).
 
 ```bash
-git clone -b <latest-release-tag> https://github.com/stafihub/stafihub
-cd stafihub && make install
+git clone -b <latest-release-tag> https://github.com/furybase/furybase
+cd furybase && make install
 ```

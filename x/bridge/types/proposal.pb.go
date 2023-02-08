@@ -130,8 +130,8 @@ func (m *ProposalContent) GetReceiver() string {
 }
 
 func init() {
-	proto.RegisterType((*Proposal)(nil), "stafihub.stafihub.bridge.Proposal")
-	proto.RegisterType((*ProposalContent)(nil), "stafihub.stafihub.bridge.ProposalContent")
+	proto.RegisterType((*Proposal)(nil), "furybase.furybase.bridge.Proposal")
+	proto.RegisterType((*ProposalContent)(nil), "furybase.furybase.bridge.ProposalContent")
 }
 
 func init() { proto.RegisterFile("bridge/proposal.proto", fileDescriptor_ede56148d86d38d9) }

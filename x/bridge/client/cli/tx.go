@@ -8,7 +8,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 	// "github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/stafihub/stafihub/x/bridge/types"
+	"github.com/furybase/furybase/x/bridge/types"
 )
 
 var (

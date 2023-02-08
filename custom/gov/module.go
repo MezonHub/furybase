@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/gov"
 	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
 	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/stafihub/stafihub/utils"
+	"github.com/furybase/furybase/utils"
 )
 
 var (

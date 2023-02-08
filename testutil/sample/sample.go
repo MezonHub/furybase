@@ -3,20 +3,20 @@ package sample
 import (
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/cosmoscmd"
+	"github.com/furybase/furybase/cosmoscmd"
 )
 
 var (
 	TestDenom      = "TestDenom"
 	TestDenom1     = "TestDenom1"
 	TestDenom2     = "TestDenom2"
-	TestAddrPrefix = "Tstafi"
+	TestAddrPrefix = "Tfury"
 	TestAdmin      string
 	TestAdminAcc   sdk.AccAddress
 )
 
 func init() {
-	cosmoscmd.SetPrefixes("stafi")
+	cosmoscmd.SetPrefixes("fury")
 	TestAdminAcc = OriginAccAddress()
 	TestAdmin = TestAdminAcc.String()
 }

@@ -76,7 +76,7 @@ func (m *AddrPrefix) GetPrefix() string {
 }
 
 func init() {
-	proto.RegisterType((*AddrPrefix)(nil), "stafihub.stafihub.sudo.AddrPrefix")
+	proto.RegisterType((*AddrPrefix)(nil), "furybase.furybase.sudo.AddrPrefix")
 }
 
 func init() { proto.RegisterFile("sudo/sudo.proto", fileDescriptor_b23b780a4c507810) }

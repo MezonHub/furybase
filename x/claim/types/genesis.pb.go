@@ -257,10 +257,10 @@ func (m *ClaimSwitch) GetIsOpen() bool {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "stafihub.stafihub.claim.GenesisState")
-	proto.RegisterType((*MerkleRoot)(nil), "stafihub.stafihub.claim.MerkleRoot")
-	proto.RegisterType((*ClaimBitMap)(nil), "stafihub.stafihub.claim.ClaimBitMap")
-	proto.RegisterType((*ClaimSwitch)(nil), "stafihub.stafihub.claim.ClaimSwitch")
+	proto.RegisterType((*GenesisState)(nil), "furybase.furybase.claim.GenesisState")
+	proto.RegisterType((*MerkleRoot)(nil), "furybase.furybase.claim.MerkleRoot")
+	proto.RegisterType((*ClaimBitMap)(nil), "furybase.furybase.claim.ClaimBitMap")
+	proto.RegisterType((*ClaimSwitch)(nil), "furybase.furybase.claim.ClaimSwitch")
 }
 
 func init() { proto.RegisterFile("claim/genesis.proto", fileDescriptor_53acb741836a34f8) }

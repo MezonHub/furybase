@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/stafihub/stafihub/testutil/sample"
-	"github.com/stafihub/stafihub/x/mining/types"
+	"github.com/furybase/furybase/testutil/sample"
+	"github.com/furybase/furybase/x/mining/types"
 	"github.com/stretchr/testify/require"
 )
 

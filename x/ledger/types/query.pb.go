@@ -1647,7 +1647,7 @@ type QueryGetSignatureRequest struct {
 	Denom  string         `protobuf:"bytes,1,opt,name=denom,proto3" json:"denom,omitempty"`
 	Era    uint32         `protobuf:"varint,2,opt,name=era,proto3" json:"era,omitempty"`
 	Pool   string         `protobuf:"bytes,3,opt,name=pool,proto3" json:"pool,omitempty"`
-	TxType OriginalTxType `protobuf:"varint,4,opt,name=txType,proto3,enum=stafihub.stafihub.ledger.OriginalTxType" json:"txType,omitempty"`
+	TxType OriginalTxType `protobuf:"varint,4,opt,name=txType,proto3,enum=furybase.furybase.ledger.OriginalTxType" json:"txType,omitempty"`
 	PropId string         `protobuf:"bytes,5,opt,name=propId,proto3" json:"propId,omitempty"`
 }
 
@@ -2448,7 +2448,7 @@ func (m *QueryInterchainTxStatusRequest) GetPropId() string {
 }
 
 type QueryInterchainTxStatusResponse struct {
-	InterchainTxStatus InterchainTxStatus `protobuf:"varint,1,opt,name=interchainTxStatus,proto3,enum=stafihub.stafihub.ledger.InterchainTxStatus" json:"interchainTxStatus,omitempty"`
+	InterchainTxStatus InterchainTxStatus `protobuf:"varint,1,opt,name=interchainTxStatus,proto3,enum=furybase.furybase.ledger.InterchainTxStatus" json:"interchainTxStatus,omitempty"`
 }
 
 func (m *QueryInterchainTxStatusResponse) Reset()         { *m = QueryInterchainTxStatusResponse{} }
@@ -2492,60 +2492,60 @@ func (m *QueryInterchainTxStatusResponse) GetInterchainTxStatus() InterchainTxSt
 }
 
 func init() {
-	proto.RegisterType((*QueryGetExchangeRateRequest)(nil), "stafihub.stafihub.ledger.QueryGetExchangeRateRequest")
-	proto.RegisterType((*QueryGetExchangeRateResponse)(nil), "stafihub.stafihub.ledger.QueryGetExchangeRateResponse")
-	proto.RegisterType((*QueryExchangeRateAllRequest)(nil), "stafihub.stafihub.ledger.QueryExchangeRateAllRequest")
-	proto.RegisterType((*QueryExchangeRateAllResponse)(nil), "stafihub.stafihub.ledger.QueryExchangeRateAllResponse")
-	proto.RegisterType((*QueryGetEraExchangeRateRequest)(nil), "stafihub.stafihub.ledger.QueryGetEraExchangeRateRequest")
-	proto.RegisterType((*QueryGetEraExchangeRateResponse)(nil), "stafihub.stafihub.ledger.QueryGetEraExchangeRateResponse")
-	proto.RegisterType((*QueryEraExchangeRatesByDenomRequest)(nil), "stafihub.stafihub.ledger.QueryEraExchangeRatesByDenomRequest")
-	proto.RegisterType((*QueryEraExchangeRatesByDenomResponse)(nil), "stafihub.stafihub.ledger.QueryEraExchangeRatesByDenomResponse")
-	proto.RegisterType((*QueryBondedPoolsByDenomRequest)(nil), "stafihub.stafihub.ledger.QueryBondedPoolsByDenomRequest")
-	proto.RegisterType((*QueryBondedPoolsByDenomResponse)(nil), "stafihub.stafihub.ledger.QueryBondedPoolsByDenomResponse")
-	proto.RegisterType((*QueryGetPoolDetailRequest)(nil), "stafihub.stafihub.ledger.QueryGetPoolDetailRequest")
-	proto.RegisterType((*QueryGetPoolDetailResponse)(nil), "stafihub.stafihub.ledger.QueryGetPoolDetailResponse")
-	proto.RegisterType((*QueryGetChainEraRequest)(nil), "stafihub.stafihub.ledger.QueryGetChainEraRequest")
-	proto.RegisterType((*QueryGetChainEraResponse)(nil), "stafihub.stafihub.ledger.QueryGetChainEraResponse")
-	proto.RegisterType((*QueryGetCurrentEraSnapshotRequest)(nil), "stafihub.stafihub.ledger.QueryGetCurrentEraSnapshotRequest")
-	proto.RegisterType((*QueryGetCurrentEraSnapshotResponse)(nil), "stafihub.stafihub.ledger.QueryGetCurrentEraSnapshotResponse")
-	proto.RegisterType((*QueryGetProtocolFeeReceiverRequest)(nil), "stafihub.stafihub.ledger.QueryGetProtocolFeeReceiverRequest")
-	proto.RegisterType((*QueryGetProtocolFeeReceiverResponse)(nil), "stafihub.stafihub.ledger.QueryGetProtocolFeeReceiverResponse")
-	proto.RegisterType((*QueryGetStakingRewardCommissionRequest)(nil), "stafihub.stafihub.ledger.QueryGetStakingRewardCommissionRequest")
-	proto.RegisterType((*QueryGetStakingRewardCommissionResponse)(nil), "stafihub.stafihub.ledger.QueryGetStakingRewardCommissionResponse")
-	proto.RegisterType((*QueryGetUnbondRelayFeeRequest)(nil), "stafihub.stafihub.ledger.QueryGetUnbondRelayFeeRequest")
-	proto.RegisterType((*QueryGetUnbondRelayFeeResponse)(nil), "stafihub.stafihub.ledger.QueryGetUnbondRelayFeeResponse")
-	proto.RegisterType((*QueryGetUnbondCommissionRequest)(nil), "stafihub.stafihub.ledger.QueryGetUnbondCommissionRequest")
-	proto.RegisterType((*QueryGetUnbondCommissionResponse)(nil), "stafihub.stafihub.ledger.QueryGetUnbondCommissionResponse")
-	proto.RegisterType((*QueryGetEraUnbondLimitRequest)(nil), "stafihub.stafihub.ledger.QueryGetEraUnbondLimitRequest")
-	proto.RegisterType((*QueryGetEraUnbondLimitResponse)(nil), "stafihub.stafihub.ledger.QueryGetEraUnbondLimitResponse")
-	proto.RegisterType((*QueryGetBondPipelineRequest)(nil), "stafihub.stafihub.ledger.QueryGetBondPipelineRequest")
-	proto.RegisterType((*QueryGetBondPipelineResponse)(nil), "stafihub.stafihub.ledger.QueryGetBondPipelineResponse")
-	proto.RegisterType((*QueryGetEraSnapshotRequest)(nil), "stafihub.stafihub.ledger.QueryGetEraSnapshotRequest")
-	proto.RegisterType((*QueryGetEraSnapshotResponse)(nil), "stafihub.stafihub.ledger.QueryGetEraSnapshotResponse")
-	proto.RegisterType((*QueryGetSnapshotRequest)(nil), "stafihub.stafihub.ledger.QueryGetSnapshotRequest")
-	proto.RegisterType((*QueryGetSnapshotResponse)(nil), "stafihub.stafihub.ledger.QueryGetSnapshotResponse")
-	proto.RegisterType((*QueryGetTotalExpectedActiveRequest)(nil), "stafihub.stafihub.ledger.QueryGetTotalExpectedActiveRequest")
-	proto.RegisterType((*QueryGetTotalExpectedActiveResponse)(nil), "stafihub.stafihub.ledger.QueryGetTotalExpectedActiveResponse")
-	proto.RegisterType((*QueryGetBondRecordRequest)(nil), "stafihub.stafihub.ledger.QueryGetBondRecordRequest")
-	proto.RegisterType((*QueryGetBondRecordResponse)(nil), "stafihub.stafihub.ledger.QueryGetBondRecordResponse")
-	proto.RegisterType((*QueryGetSignatureRequest)(nil), "stafihub.stafihub.ledger.QueryGetSignatureRequest")
-	proto.RegisterType((*QueryGetSignatureResponse)(nil), "stafihub.stafihub.ledger.QueryGetSignatureResponse")
-	proto.RegisterType((*QueryGetRParamsRequest)(nil), "stafihub.stafihub.ledger.QueryGetRParamsRequest")
-	proto.RegisterType((*QueryGetRParamsResponse)(nil), "stafihub.stafihub.ledger.QueryGetRParamsResponse")
-	proto.RegisterType((*QueryTotalProtocolFeeRequest)(nil), "stafihub.stafihub.ledger.QueryTotalProtocolFeeRequest")
-	proto.RegisterType((*QueryTotalProtocolFeeResponse)(nil), "stafihub.stafihub.ledger.QueryTotalProtocolFeeResponse")
-	proto.RegisterType((*QueryRelayFeeReceiverRequest)(nil), "stafihub.stafihub.ledger.QueryRelayFeeReceiverRequest")
-	proto.RegisterType((*QueryRelayFeeReceiverResponse)(nil), "stafihub.stafihub.ledger.QueryRelayFeeReceiverResponse")
-	proto.RegisterType((*QueryUnbondSwitchRequest)(nil), "stafihub.stafihub.ledger.QueryUnbondSwitchRequest")
-	proto.RegisterType((*QueryUnbondSwitchResponse)(nil), "stafihub.stafihub.ledger.QueryUnbondSwitchResponse")
-	proto.RegisterType((*QueryPoolUnbondNextSequenceRequest)(nil), "stafihub.stafihub.ledger.QueryPoolUnbondNextSequenceRequest")
-	proto.RegisterType((*QueryPoolUnbondNextSequenceResponse)(nil), "stafihub.stafihub.ledger.QueryPoolUnbondNextSequenceResponse")
-	proto.RegisterType((*QueryPoolUnbondingsRequest)(nil), "stafihub.stafihub.ledger.QueryPoolUnbondingsRequest")
-	proto.RegisterType((*QueryPoolUnbondingsResponse)(nil), "stafihub.stafihub.ledger.QueryPoolUnbondingsResponse")
-	proto.RegisterType((*QueryIcaPoolListRequest)(nil), "stafihub.stafihub.ledger.QueryIcaPoolListRequest")
-	proto.RegisterType((*QueryIcaPoolListResponse)(nil), "stafihub.stafihub.ledger.QueryIcaPoolListResponse")
-	proto.RegisterType((*QueryInterchainTxStatusRequest)(nil), "stafihub.stafihub.ledger.QueryInterchainTxStatusRequest")
-	proto.RegisterType((*QueryInterchainTxStatusResponse)(nil), "stafihub.stafihub.ledger.QueryInterchainTxStatusResponse")
+	proto.RegisterType((*QueryGetExchangeRateRequest)(nil), "furybase.furybase.ledger.QueryGetExchangeRateRequest")
+	proto.RegisterType((*QueryGetExchangeRateResponse)(nil), "furybase.furybase.ledger.QueryGetExchangeRateResponse")
+	proto.RegisterType((*QueryExchangeRateAllRequest)(nil), "furybase.furybase.ledger.QueryExchangeRateAllRequest")
+	proto.RegisterType((*QueryExchangeRateAllResponse)(nil), "furybase.furybase.ledger.QueryExchangeRateAllResponse")
+	proto.RegisterType((*QueryGetEraExchangeRateRequest)(nil), "furybase.furybase.ledger.QueryGetEraExchangeRateRequest")
+	proto.RegisterType((*QueryGetEraExchangeRateResponse)(nil), "furybase.furybase.ledger.QueryGetEraExchangeRateResponse")
+	proto.RegisterType((*QueryEraExchangeRatesByDenomRequest)(nil), "furybase.furybase.ledger.QueryEraExchangeRatesByDenomRequest")
+	proto.RegisterType((*QueryEraExchangeRatesByDenomResponse)(nil), "furybase.furybase.ledger.QueryEraExchangeRatesByDenomResponse")
+	proto.RegisterType((*QueryBondedPoolsByDenomRequest)(nil), "furybase.furybase.ledger.QueryBondedPoolsByDenomRequest")
+	proto.RegisterType((*QueryBondedPoolsByDenomResponse)(nil), "furybase.furybase.ledger.QueryBondedPoolsByDenomResponse")
+	proto.RegisterType((*QueryGetPoolDetailRequest)(nil), "furybase.furybase.ledger.QueryGetPoolDetailRequest")
+	proto.RegisterType((*QueryGetPoolDetailResponse)(nil), "furybase.furybase.ledger.QueryGetPoolDetailResponse")
+	proto.RegisterType((*QueryGetChainEraRequest)(nil), "furybase.furybase.ledger.QueryGetChainEraRequest")
+	proto.RegisterType((*QueryGetChainEraResponse)(nil), "furybase.furybase.ledger.QueryGetChainEraResponse")
+	proto.RegisterType((*QueryGetCurrentEraSnapshotRequest)(nil), "furybase.furybase.ledger.QueryGetCurrentEraSnapshotRequest")
+	proto.RegisterType((*QueryGetCurrentEraSnapshotResponse)(nil), "furybase.furybase.ledger.QueryGetCurrentEraSnapshotResponse")
+	proto.RegisterType((*QueryGetProtocolFeeReceiverRequest)(nil), "furybase.furybase.ledger.QueryGetProtocolFeeReceiverRequest")
+	proto.RegisterType((*QueryGetProtocolFeeReceiverResponse)(nil), "furybase.furybase.ledger.QueryGetProtocolFeeReceiverResponse")
+	proto.RegisterType((*QueryGetStakingRewardCommissionRequest)(nil), "furybase.furybase.ledger.QueryGetStakingRewardCommissionRequest")
+	proto.RegisterType((*QueryGetStakingRewardCommissionResponse)(nil), "furybase.furybase.ledger.QueryGetStakingRewardCommissionResponse")
+	proto.RegisterType((*QueryGetUnbondRelayFeeRequest)(nil), "furybase.furybase.ledger.QueryGetUnbondRelayFeeRequest")
+	proto.RegisterType((*QueryGetUnbondRelayFeeResponse)(nil), "furybase.furybase.ledger.QueryGetUnbondRelayFeeResponse")
+	proto.RegisterType((*QueryGetUnbondCommissionRequest)(nil), "furybase.furybase.ledger.QueryGetUnbondCommissionRequest")
+	proto.RegisterType((*QueryGetUnbondCommissionResponse)(nil), "furybase.furybase.ledger.QueryGetUnbondCommissionResponse")
+	proto.RegisterType((*QueryGetEraUnbondLimitRequest)(nil), "furybase.furybase.ledger.QueryGetEraUnbondLimitRequest")
+	proto.RegisterType((*QueryGetEraUnbondLimitResponse)(nil), "furybase.furybase.ledger.QueryGetEraUnbondLimitResponse")
+	proto.RegisterType((*QueryGetBondPipelineRequest)(nil), "furybase.furybase.ledger.QueryGetBondPipelineRequest")
+	proto.RegisterType((*QueryGetBondPipelineResponse)(nil), "furybase.furybase.ledger.QueryGetBondPipelineResponse")
+	proto.RegisterType((*QueryGetEraSnapshotRequest)(nil), "furybase.furybase.ledger.QueryGetEraSnapshotRequest")
+	proto.RegisterType((*QueryGetEraSnapshotResponse)(nil), "furybase.furybase.ledger.QueryGetEraSnapshotResponse")
+	proto.RegisterType((*QueryGetSnapshotRequest)(nil), "furybase.furybase.ledger.QueryGetSnapshotRequest")
+	proto.RegisterType((*QueryGetSnapshotResponse)(nil), "furybase.furybase.ledger.QueryGetSnapshotResponse")
+	proto.RegisterType((*QueryGetTotalExpectedActiveRequest)(nil), "furybase.furybase.ledger.QueryGetTotalExpectedActiveRequest")
+	proto.RegisterType((*QueryGetTotalExpectedActiveResponse)(nil), "furybase.furybase.ledger.QueryGetTotalExpectedActiveResponse")
+	proto.RegisterType((*QueryGetBondRecordRequest)(nil), "furybase.furybase.ledger.QueryGetBondRecordRequest")
+	proto.RegisterType((*QueryGetBondRecordResponse)(nil), "furybase.furybase.ledger.QueryGetBondRecordResponse")
+	proto.RegisterType((*QueryGetSignatureRequest)(nil), "furybase.furybase.ledger.QueryGetSignatureRequest")
+	proto.RegisterType((*QueryGetSignatureResponse)(nil), "furybase.furybase.ledger.QueryGetSignatureResponse")
+	proto.RegisterType((*QueryGetRParamsRequest)(nil), "furybase.furybase.ledger.QueryGetRParamsRequest")
+	proto.RegisterType((*QueryGetRParamsResponse)(nil), "furybase.furybase.ledger.QueryGetRParamsResponse")
+	proto.RegisterType((*QueryTotalProtocolFeeRequest)(nil), "furybase.furybase.ledger.QueryTotalProtocolFeeRequest")
+	proto.RegisterType((*QueryTotalProtocolFeeResponse)(nil), "furybase.furybase.ledger.QueryTotalProtocolFeeResponse")
+	proto.RegisterType((*QueryRelayFeeReceiverRequest)(nil), "furybase.furybase.ledger.QueryRelayFeeReceiverRequest")
+	proto.RegisterType((*QueryRelayFeeReceiverResponse)(nil), "furybase.furybase.ledger.QueryRelayFeeReceiverResponse")
+	proto.RegisterType((*QueryUnbondSwitchRequest)(nil), "furybase.furybase.ledger.QueryUnbondSwitchRequest")
+	proto.RegisterType((*QueryUnbondSwitchResponse)(nil), "furybase.furybase.ledger.QueryUnbondSwitchResponse")
+	proto.RegisterType((*QueryPoolUnbondNextSequenceRequest)(nil), "furybase.furybase.ledger.QueryPoolUnbondNextSequenceRequest")
+	proto.RegisterType((*QueryPoolUnbondNextSequenceResponse)(nil), "furybase.furybase.ledger.QueryPoolUnbondNextSequenceResponse")
+	proto.RegisterType((*QueryPoolUnbondingsRequest)(nil), "furybase.furybase.ledger.QueryPoolUnbondingsRequest")
+	proto.RegisterType((*QueryPoolUnbondingsResponse)(nil), "furybase.furybase.ledger.QueryPoolUnbondingsResponse")
+	proto.RegisterType((*QueryIcaPoolListRequest)(nil), "furybase.furybase.ledger.QueryIcaPoolListRequest")
+	proto.RegisterType((*QueryIcaPoolListResponse)(nil), "furybase.furybase.ledger.QueryIcaPoolListResponse")
+	proto.RegisterType((*QueryInterchainTxStatusRequest)(nil), "furybase.furybase.ledger.QueryInterchainTxStatusRequest")
+	proto.RegisterType((*QueryInterchainTxStatusResponse)(nil), "furybase.furybase.ledger.QueryInterchainTxStatusResponse")
 }
 
 func init() { proto.RegisterFile("ledger/query.proto", fileDescriptor_ca959e2684fc7842) }
@@ -2767,7 +2767,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) GetExchangeRate(ctx context.Context, in *QueryGetExchangeRateRequest, opts ...grpc.CallOption) (*QueryGetExchangeRateResponse, error) {
 	out := new(QueryGetExchangeRateResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetExchangeRate", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetExchangeRate", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2776,7 +2776,7 @@ func (c *queryClient) GetExchangeRate(ctx context.Context, in *QueryGetExchangeR
 
 func (c *queryClient) ExchangeRateAll(ctx context.Context, in *QueryExchangeRateAllRequest, opts ...grpc.CallOption) (*QueryExchangeRateAllResponse, error) {
 	out := new(QueryExchangeRateAllResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/ExchangeRateAll", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/ExchangeRateAll", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2785,7 +2785,7 @@ func (c *queryClient) ExchangeRateAll(ctx context.Context, in *QueryExchangeRate
 
 func (c *queryClient) GetEraExchangeRate(ctx context.Context, in *QueryGetEraExchangeRateRequest, opts ...grpc.CallOption) (*QueryGetEraExchangeRateResponse, error) {
 	out := new(QueryGetEraExchangeRateResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetEraExchangeRate", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetEraExchangeRate", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2794,7 +2794,7 @@ func (c *queryClient) GetEraExchangeRate(ctx context.Context, in *QueryGetEraExc
 
 func (c *queryClient) EraExchangeRatesByDenom(ctx context.Context, in *QueryEraExchangeRatesByDenomRequest, opts ...grpc.CallOption) (*QueryEraExchangeRatesByDenomResponse, error) {
 	out := new(QueryEraExchangeRatesByDenomResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/EraExchangeRatesByDenom", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/EraExchangeRatesByDenom", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2803,7 +2803,7 @@ func (c *queryClient) EraExchangeRatesByDenom(ctx context.Context, in *QueryEraE
 
 func (c *queryClient) BondedPoolsByDenom(ctx context.Context, in *QueryBondedPoolsByDenomRequest, opts ...grpc.CallOption) (*QueryBondedPoolsByDenomResponse, error) {
 	out := new(QueryBondedPoolsByDenomResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/BondedPoolsByDenom", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/BondedPoolsByDenom", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2812,7 +2812,7 @@ func (c *queryClient) BondedPoolsByDenom(ctx context.Context, in *QueryBondedPoo
 
 func (c *queryClient) GetPoolDetail(ctx context.Context, in *QueryGetPoolDetailRequest, opts ...grpc.CallOption) (*QueryGetPoolDetailResponse, error) {
 	out := new(QueryGetPoolDetailResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetPoolDetail", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetPoolDetail", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2821,7 +2821,7 @@ func (c *queryClient) GetPoolDetail(ctx context.Context, in *QueryGetPoolDetailR
 
 func (c *queryClient) GetChainEra(ctx context.Context, in *QueryGetChainEraRequest, opts ...grpc.CallOption) (*QueryGetChainEraResponse, error) {
 	out := new(QueryGetChainEraResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetChainEra", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetChainEra", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2830,7 +2830,7 @@ func (c *queryClient) GetChainEra(ctx context.Context, in *QueryGetChainEraReque
 
 func (c *queryClient) GetCurrentEraSnapshot(ctx context.Context, in *QueryGetCurrentEraSnapshotRequest, opts ...grpc.CallOption) (*QueryGetCurrentEraSnapshotResponse, error) {
 	out := new(QueryGetCurrentEraSnapshotResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetCurrentEraSnapshot", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetCurrentEraSnapshot", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2839,7 +2839,7 @@ func (c *queryClient) GetCurrentEraSnapshot(ctx context.Context, in *QueryGetCur
 
 func (c *queryClient) GetProtocolFeeReceiver(ctx context.Context, in *QueryGetProtocolFeeReceiverRequest, opts ...grpc.CallOption) (*QueryGetProtocolFeeReceiverResponse, error) {
 	out := new(QueryGetProtocolFeeReceiverResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetProtocolFeeReceiver", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetProtocolFeeReceiver", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2848,7 +2848,7 @@ func (c *queryClient) GetProtocolFeeReceiver(ctx context.Context, in *QueryGetPr
 
 func (c *queryClient) GetStakingRewardCommission(ctx context.Context, in *QueryGetStakingRewardCommissionRequest, opts ...grpc.CallOption) (*QueryGetStakingRewardCommissionResponse, error) {
 	out := new(QueryGetStakingRewardCommissionResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetStakingRewardCommission", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetStakingRewardCommission", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2857,7 +2857,7 @@ func (c *queryClient) GetStakingRewardCommission(ctx context.Context, in *QueryG
 
 func (c *queryClient) GetUnbondRelayFee(ctx context.Context, in *QueryGetUnbondRelayFeeRequest, opts ...grpc.CallOption) (*QueryGetUnbondRelayFeeResponse, error) {
 	out := new(QueryGetUnbondRelayFeeResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetUnbondRelayFee", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetUnbondRelayFee", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2866,7 +2866,7 @@ func (c *queryClient) GetUnbondRelayFee(ctx context.Context, in *QueryGetUnbondR
 
 func (c *queryClient) GetUnbondCommission(ctx context.Context, in *QueryGetUnbondCommissionRequest, opts ...grpc.CallOption) (*QueryGetUnbondCommissionResponse, error) {
 	out := new(QueryGetUnbondCommissionResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetUnbondCommission", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetUnbondCommission", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2875,7 +2875,7 @@ func (c *queryClient) GetUnbondCommission(ctx context.Context, in *QueryGetUnbon
 
 func (c *queryClient) GetEraUnbondLimit(ctx context.Context, in *QueryGetEraUnbondLimitRequest, opts ...grpc.CallOption) (*QueryGetEraUnbondLimitResponse, error) {
 	out := new(QueryGetEraUnbondLimitResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetEraUnbondLimit", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetEraUnbondLimit", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2884,7 +2884,7 @@ func (c *queryClient) GetEraUnbondLimit(ctx context.Context, in *QueryGetEraUnbo
 
 func (c *queryClient) GetBondPipeline(ctx context.Context, in *QueryGetBondPipelineRequest, opts ...grpc.CallOption) (*QueryGetBondPipelineResponse, error) {
 	out := new(QueryGetBondPipelineResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetBondPipeline", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetBondPipeline", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2893,7 +2893,7 @@ func (c *queryClient) GetBondPipeline(ctx context.Context, in *QueryGetBondPipel
 
 func (c *queryClient) GetEraSnapshot(ctx context.Context, in *QueryGetEraSnapshotRequest, opts ...grpc.CallOption) (*QueryGetEraSnapshotResponse, error) {
 	out := new(QueryGetEraSnapshotResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetEraSnapshot", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetEraSnapshot", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2902,7 +2902,7 @@ func (c *queryClient) GetEraSnapshot(ctx context.Context, in *QueryGetEraSnapsho
 
 func (c *queryClient) GetSnapshot(ctx context.Context, in *QueryGetSnapshotRequest, opts ...grpc.CallOption) (*QueryGetSnapshotResponse, error) {
 	out := new(QueryGetSnapshotResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetSnapshot", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetSnapshot", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2911,7 +2911,7 @@ func (c *queryClient) GetSnapshot(ctx context.Context, in *QueryGetSnapshotReque
 
 func (c *queryClient) GetTotalExpectedActive(ctx context.Context, in *QueryGetTotalExpectedActiveRequest, opts ...grpc.CallOption) (*QueryGetTotalExpectedActiveResponse, error) {
 	out := new(QueryGetTotalExpectedActiveResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetTotalExpectedActive", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetTotalExpectedActive", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2920,7 +2920,7 @@ func (c *queryClient) GetTotalExpectedActive(ctx context.Context, in *QueryGetTo
 
 func (c *queryClient) GetBondRecord(ctx context.Context, in *QueryGetBondRecordRequest, opts ...grpc.CallOption) (*QueryGetBondRecordResponse, error) {
 	out := new(QueryGetBondRecordResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetBondRecord", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetBondRecord", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2929,7 +2929,7 @@ func (c *queryClient) GetBondRecord(ctx context.Context, in *QueryGetBondRecordR
 
 func (c *queryClient) GetSignature(ctx context.Context, in *QueryGetSignatureRequest, opts ...grpc.CallOption) (*QueryGetSignatureResponse, error) {
 	out := new(QueryGetSignatureResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetSignature", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetSignature", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2938,7 +2938,7 @@ func (c *queryClient) GetSignature(ctx context.Context, in *QueryGetSignatureReq
 
 func (c *queryClient) GetRParams(ctx context.Context, in *QueryGetRParamsRequest, opts ...grpc.CallOption) (*QueryGetRParamsResponse, error) {
 	out := new(QueryGetRParamsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/GetRParams", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/GetRParams", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2947,7 +2947,7 @@ func (c *queryClient) GetRParams(ctx context.Context, in *QueryGetRParamsRequest
 
 func (c *queryClient) TotalProtocolFee(ctx context.Context, in *QueryTotalProtocolFeeRequest, opts ...grpc.CallOption) (*QueryTotalProtocolFeeResponse, error) {
 	out := new(QueryTotalProtocolFeeResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/TotalProtocolFee", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/TotalProtocolFee", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2956,7 +2956,7 @@ func (c *queryClient) TotalProtocolFee(ctx context.Context, in *QueryTotalProtoc
 
 func (c *queryClient) RelayFeeReceiver(ctx context.Context, in *QueryRelayFeeReceiverRequest, opts ...grpc.CallOption) (*QueryRelayFeeReceiverResponse, error) {
 	out := new(QueryRelayFeeReceiverResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/RelayFeeReceiver", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/RelayFeeReceiver", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2965,7 +2965,7 @@ func (c *queryClient) RelayFeeReceiver(ctx context.Context, in *QueryRelayFeeRec
 
 func (c *queryClient) UnbondSwitch(ctx context.Context, in *QueryUnbondSwitchRequest, opts ...grpc.CallOption) (*QueryUnbondSwitchResponse, error) {
 	out := new(QueryUnbondSwitchResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/UnbondSwitch", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/UnbondSwitch", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2974,7 +2974,7 @@ func (c *queryClient) UnbondSwitch(ctx context.Context, in *QueryUnbondSwitchReq
 
 func (c *queryClient) PoolUnbondNextSequence(ctx context.Context, in *QueryPoolUnbondNextSequenceRequest, opts ...grpc.CallOption) (*QueryPoolUnbondNextSequenceResponse, error) {
 	out := new(QueryPoolUnbondNextSequenceResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/PoolUnbondNextSequence", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/PoolUnbondNextSequence", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2983,7 +2983,7 @@ func (c *queryClient) PoolUnbondNextSequence(ctx context.Context, in *QueryPoolU
 
 func (c *queryClient) PoolUnbondings(ctx context.Context, in *QueryPoolUnbondingsRequest, opts ...grpc.CallOption) (*QueryPoolUnbondingsResponse, error) {
 	out := new(QueryPoolUnbondingsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/PoolUnbondings", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/PoolUnbondings", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -2992,7 +2992,7 @@ func (c *queryClient) PoolUnbondings(ctx context.Context, in *QueryPoolUnbonding
 
 func (c *queryClient) IcaPoolList(ctx context.Context, in *QueryIcaPoolListRequest, opts ...grpc.CallOption) (*QueryIcaPoolListResponse, error) {
 	out := new(QueryIcaPoolListResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/IcaPoolList", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/IcaPoolList", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -3001,7 +3001,7 @@ func (c *queryClient) IcaPoolList(ctx context.Context, in *QueryIcaPoolListReque
 
 func (c *queryClient) InterchainTxStatus(ctx context.Context, in *QueryInterchainTxStatusRequest, opts ...grpc.CallOption) (*QueryInterchainTxStatusResponse, error) {
 	out := new(QueryInterchainTxStatusResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.ledger.Query/InterchainTxStatus", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.ledger.Query/InterchainTxStatus", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -3166,7 +3166,7 @@ func _Query_GetExchangeRate_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetExchangeRate",
+		FullMethod: "/furybase.furybase.ledger.Query/GetExchangeRate",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetExchangeRate(ctx, req.(*QueryGetExchangeRateRequest))
@@ -3184,7 +3184,7 @@ func _Query_ExchangeRateAll_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/ExchangeRateAll",
+		FullMethod: "/furybase.furybase.ledger.Query/ExchangeRateAll",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ExchangeRateAll(ctx, req.(*QueryExchangeRateAllRequest))
@@ -3202,7 +3202,7 @@ func _Query_GetEraExchangeRate_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetEraExchangeRate",
+		FullMethod: "/furybase.furybase.ledger.Query/GetEraExchangeRate",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetEraExchangeRate(ctx, req.(*QueryGetEraExchangeRateRequest))
@@ -3220,7 +3220,7 @@ func _Query_EraExchangeRatesByDenom_Handler(srv interface{}, ctx context.Context
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/EraExchangeRatesByDenom",
+		FullMethod: "/furybase.furybase.ledger.Query/EraExchangeRatesByDenom",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).EraExchangeRatesByDenom(ctx, req.(*QueryEraExchangeRatesByDenomRequest))
@@ -3238,7 +3238,7 @@ func _Query_BondedPoolsByDenom_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/BondedPoolsByDenom",
+		FullMethod: "/furybase.furybase.ledger.Query/BondedPoolsByDenom",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).BondedPoolsByDenom(ctx, req.(*QueryBondedPoolsByDenomRequest))
@@ -3256,7 +3256,7 @@ func _Query_GetPoolDetail_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetPoolDetail",
+		FullMethod: "/furybase.furybase.ledger.Query/GetPoolDetail",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetPoolDetail(ctx, req.(*QueryGetPoolDetailRequest))
@@ -3274,7 +3274,7 @@ func _Query_GetChainEra_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetChainEra",
+		FullMethod: "/furybase.furybase.ledger.Query/GetChainEra",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetChainEra(ctx, req.(*QueryGetChainEraRequest))
@@ -3292,7 +3292,7 @@ func _Query_GetCurrentEraSnapshot_Handler(srv interface{}, ctx context.Context, 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetCurrentEraSnapshot",
+		FullMethod: "/furybase.furybase.ledger.Query/GetCurrentEraSnapshot",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetCurrentEraSnapshot(ctx, req.(*QueryGetCurrentEraSnapshotRequest))
@@ -3310,7 +3310,7 @@ func _Query_GetProtocolFeeReceiver_Handler(srv interface{}, ctx context.Context,
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetProtocolFeeReceiver",
+		FullMethod: "/furybase.furybase.ledger.Query/GetProtocolFeeReceiver",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetProtocolFeeReceiver(ctx, req.(*QueryGetProtocolFeeReceiverRequest))
@@ -3328,7 +3328,7 @@ func _Query_GetStakingRewardCommission_Handler(srv interface{}, ctx context.Cont
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetStakingRewardCommission",
+		FullMethod: "/furybase.furybase.ledger.Query/GetStakingRewardCommission",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetStakingRewardCommission(ctx, req.(*QueryGetStakingRewardCommissionRequest))
@@ -3346,7 +3346,7 @@ func _Query_GetUnbondRelayFee_Handler(srv interface{}, ctx context.Context, dec 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetUnbondRelayFee",
+		FullMethod: "/furybase.furybase.ledger.Query/GetUnbondRelayFee",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetUnbondRelayFee(ctx, req.(*QueryGetUnbondRelayFeeRequest))
@@ -3364,7 +3364,7 @@ func _Query_GetUnbondCommission_Handler(srv interface{}, ctx context.Context, de
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetUnbondCommission",
+		FullMethod: "/furybase.furybase.ledger.Query/GetUnbondCommission",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetUnbondCommission(ctx, req.(*QueryGetUnbondCommissionRequest))
@@ -3382,7 +3382,7 @@ func _Query_GetEraUnbondLimit_Handler(srv interface{}, ctx context.Context, dec 
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetEraUnbondLimit",
+		FullMethod: "/furybase.furybase.ledger.Query/GetEraUnbondLimit",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetEraUnbondLimit(ctx, req.(*QueryGetEraUnbondLimitRequest))
@@ -3400,7 +3400,7 @@ func _Query_GetBondPipeline_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetBondPipeline",
+		FullMethod: "/furybase.furybase.ledger.Query/GetBondPipeline",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetBondPipeline(ctx, req.(*QueryGetBondPipelineRequest))
@@ -3418,7 +3418,7 @@ func _Query_GetEraSnapshot_Handler(srv interface{}, ctx context.Context, dec fun
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetEraSnapshot",
+		FullMethod: "/furybase.furybase.ledger.Query/GetEraSnapshot",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetEraSnapshot(ctx, req.(*QueryGetEraSnapshotRequest))
@@ -3436,7 +3436,7 @@ func _Query_GetSnapshot_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetSnapshot",
+		FullMethod: "/furybase.furybase.ledger.Query/GetSnapshot",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetSnapshot(ctx, req.(*QueryGetSnapshotRequest))
@@ -3454,7 +3454,7 @@ func _Query_GetTotalExpectedActive_Handler(srv interface{}, ctx context.Context,
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetTotalExpectedActive",
+		FullMethod: "/furybase.furybase.ledger.Query/GetTotalExpectedActive",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetTotalExpectedActive(ctx, req.(*QueryGetTotalExpectedActiveRequest))
@@ -3472,7 +3472,7 @@ func _Query_GetBondRecord_Handler(srv interface{}, ctx context.Context, dec func
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetBondRecord",
+		FullMethod: "/furybase.furybase.ledger.Query/GetBondRecord",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetBondRecord(ctx, req.(*QueryGetBondRecordRequest))
@@ -3490,7 +3490,7 @@ func _Query_GetSignature_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetSignature",
+		FullMethod: "/furybase.furybase.ledger.Query/GetSignature",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetSignature(ctx, req.(*QueryGetSignatureRequest))
@@ -3508,7 +3508,7 @@ func _Query_GetRParams_Handler(srv interface{}, ctx context.Context, dec func(in
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/GetRParams",
+		FullMethod: "/furybase.furybase.ledger.Query/GetRParams",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetRParams(ctx, req.(*QueryGetRParamsRequest))
@@ -3526,7 +3526,7 @@ func _Query_TotalProtocolFee_Handler(srv interface{}, ctx context.Context, dec f
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/TotalProtocolFee",
+		FullMethod: "/furybase.furybase.ledger.Query/TotalProtocolFee",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).TotalProtocolFee(ctx, req.(*QueryTotalProtocolFeeRequest))
@@ -3544,7 +3544,7 @@ func _Query_RelayFeeReceiver_Handler(srv interface{}, ctx context.Context, dec f
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/RelayFeeReceiver",
+		FullMethod: "/furybase.furybase.ledger.Query/RelayFeeReceiver",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).RelayFeeReceiver(ctx, req.(*QueryRelayFeeReceiverRequest))
@@ -3562,7 +3562,7 @@ func _Query_UnbondSwitch_Handler(srv interface{}, ctx context.Context, dec func(
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/UnbondSwitch",
+		FullMethod: "/furybase.furybase.ledger.Query/UnbondSwitch",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).UnbondSwitch(ctx, req.(*QueryUnbondSwitchRequest))
@@ -3580,7 +3580,7 @@ func _Query_PoolUnbondNextSequence_Handler(srv interface{}, ctx context.Context,
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/PoolUnbondNextSequence",
+		FullMethod: "/furybase.furybase.ledger.Query/PoolUnbondNextSequence",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).PoolUnbondNextSequence(ctx, req.(*QueryPoolUnbondNextSequenceRequest))
@@ -3598,7 +3598,7 @@ func _Query_PoolUnbondings_Handler(srv interface{}, ctx context.Context, dec fun
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/PoolUnbondings",
+		FullMethod: "/furybase.furybase.ledger.Query/PoolUnbondings",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).PoolUnbondings(ctx, req.(*QueryPoolUnbondingsRequest))
@@ -3616,7 +3616,7 @@ func _Query_IcaPoolList_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/IcaPoolList",
+		FullMethod: "/furybase.furybase.ledger.Query/IcaPoolList",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).IcaPoolList(ctx, req.(*QueryIcaPoolListRequest))
@@ -3634,7 +3634,7 @@ func _Query_InterchainTxStatus_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.ledger.Query/InterchainTxStatus",
+		FullMethod: "/furybase.furybase.ledger.Query/InterchainTxStatus",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).InterchainTxStatus(ctx, req.(*QueryInterchainTxStatusRequest))
@@ -3643,7 +3643,7 @@ func _Query_InterchainTxStatus_Handler(srv interface{}, ctx context.Context, dec
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.ledger.Query",
+	ServiceName: "furybase.furybase.ledger.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

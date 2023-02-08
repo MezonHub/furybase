@@ -3,8 +3,8 @@ package bridge
 import (
 	"encoding/hex"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/bridge/keeper"
-	"github.com/stafihub/stafihub/x/bridge/types"
+	"github.com/furybase/furybase/x/bridge/keeper"
+	"github.com/furybase/furybase/x/bridge/types"
 )
 
 // InitGenesis initializes the capability module's state from a provided genesis

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package furybase.furybase.fvote;
+
+import "gogoproto/gogo.proto";
+
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/furybase/furybase/x/fvote/types";
+
+// GenesisState defines the fvote module's genesis state.
+message GenesisState {
+    int64 proposal_life = 1 [(gogoproto.moretags) = "yaml:\"proposal_life\""];
+    // this line is used by starport scaffolding # genesis/proto/state
+}

@@ -1207,31 +1207,31 @@ func RegisterQueryHandlerClient(ctx context.Context, mux *runtime.ServeMux, clie
 }
 
 var (
-	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "mining", "params"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_Params_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "mining", "params"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_StakePoolInfo_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"stafihub", "mining", "stake_pool_info", "stakePoolIndex"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_StakePoolInfo_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3}, []string{"furybase", "mining", "stake_pool_info", "stakePoolIndex"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_StakeItemList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "mining", "stake_item_list"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_StakeItemList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "mining", "stake_item_list"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_StakeReward_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3, 1, 0, 4, 1, 5, 4, 1, 0, 4, 1, 5, 5}, []string{"stafihub", "mining", "stake_reward", "stakeUserAddress", "stakePoolIndex", "stakeRecordIndex"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_StakeReward_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3, 1, 0, 4, 1, 5, 4, 1, 0, 4, 1, 5, 5}, []string{"furybase", "mining", "stake_reward", "stakeUserAddress", "stakePoolIndex", "stakeRecordIndex"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_StakeRecordCount_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3, 1, 0, 4, 1, 5, 4}, []string{"stafihub", "mining", "stake_record_count", "userAddress", "stakePoolIndex"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_StakeRecordCount_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3, 1, 0, 4, 1, 5, 4}, []string{"furybase", "mining", "stake_record_count", "userAddress", "stakePoolIndex"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_StakeRecord_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3, 1, 0, 4, 1, 5, 4, 1, 0, 4, 1, 5, 5}, []string{"stafihub", "mining", "stake_record", "userAddress", "stakePoolIndex", "stakeRecordIndex"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_StakeRecord_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3, 1, 0, 4, 1, 5, 4, 1, 0, 4, 1, 5, 5}, []string{"furybase", "mining", "stake_record", "userAddress", "stakePoolIndex", "stakeRecordIndex"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_StakeRecordList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3, 1, 0, 4, 1, 5, 4}, []string{"stafihub", "mining", "stake_record_list", "userAddress", "stakePoolIndex"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_StakeRecordList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2, 1, 0, 4, 1, 5, 3, 1, 0, 4, 1, 5, 4}, []string{"furybase", "mining", "stake_record_list", "userAddress", "stakePoolIndex"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_StakePoolList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "mining", "stake_pool_list"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_StakePoolList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "mining", "stake_pool_list"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_MiningProviderList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "mining", "mining_provider_list"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_MiningProviderList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "mining", "mining_provider_list"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_RewardTokenList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "mining", "reward_token_list"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_RewardTokenList_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "mining", "reward_token_list"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_MaxRewardPoolNumber_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "mining", "max_reward_pool_number"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_MaxRewardPoolNumber_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "mining", "max_reward_pool_number"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_MaxStakeItemNumber_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "mining", "max_stake_item_number"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_MaxStakeItemNumber_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "mining", "max_stake_item_number"}, "", runtime.AssumeColonVerbOpt(true)))
 
-	pattern_Query_ProviderSwitch_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"stafihub", "mining", "provider_switch"}, "", runtime.AssumeColonVerbOpt(true)))
+	pattern_Query_ProviderSwitch_0 = runtime.MustPattern(runtime.NewPattern(1, []int{2, 0, 2, 0, 2, 1, 2, 2}, []string{"furybase", "mining", "provider_switch"}, "", runtime.AssumeColonVerbOpt(true)))
 )
 
 var (

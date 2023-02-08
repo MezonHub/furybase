@@ -4,8 +4,8 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/claim/types"
-	sudoTypes "github.com/stafihub/stafihub/x/sudo/types"
+	"github.com/furybase/furybase/x/claim/types"
+	sudoTypes "github.com/furybase/furybase/x/sudo/types"
 )
 
 func (k msgServer) WithdrawToken(goCtx context.Context, msg *types.MsgWithdrawToken) (*types.MsgWithdrawTokenResponse, error) {

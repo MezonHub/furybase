@@ -5,7 +5,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	rvotetypes "github.com/stafihub/stafihub/x/rvote/types"
+	fvotetypes "github.com/furybase/furybase/x/fvote/types"
 	"github.com/tendermint/tendermint/crypto"
 )
 
@@ -20,19 +20,19 @@ const (
 )
 
 func init() {
-	rvotetypes.RegisterProposalType(SetChainEraProposalType)
-	rvotetypes.RegisterProposalTypeCodec(&SetChainEraProposal{}, "ledger/SetChainEraProposal")
-	rvotetypes.RegisterProposalType(BondReportProposalType)
-	rvotetypes.RegisterProposalTypeCodec(&BondReportProposal{}, "ledger/BondReportProposal")
-	rvotetypes.RegisterProposalType(BondAndReportActiveProposalType)
-	rvotetypes.RegisterProposalType(ActiveReportProposalType)
-	rvotetypes.RegisterProposalTypeCodec(&ActiveReportProposal{}, "ledger/ActiveReportProposal")
-	rvotetypes.RegisterProposalType(TransferReportProposalType)
-	rvotetypes.RegisterProposalTypeCodec(&TransferReportProposal{}, "ledger/TransferReportProposal")
-	rvotetypes.RegisterProposalType(ExecuteBondProposalType)
-	rvotetypes.RegisterProposalTypeCodec(&ExecuteBondProposal{}, "ledger/ExecuteBondProposal")
-	rvotetypes.RegisterProposalType(InterchainTxProposalType)
-	rvotetypes.RegisterProposalTypeCodec(&InterchainTxProposal{}, "ledger/InterchainTxProposal")
+	fvotetypes.RegisterProposalType(SetChainEraProposalType)
+	fvotetypes.RegisterProposalTypeCodec(&SetChainEraProposal{}, "ledger/SetChainEraProposal")
+	fvotetypes.RegisterProposalType(BondReportProposalType)
+	fvotetypes.RegisterProposalTypeCodec(&BondReportProposal{}, "ledger/BondReportProposal")
+	fvotetypes.RegisterProposalType(BondAndReportActiveProposalType)
+	fvotetypes.RegisterProposalType(ActiveReportProposalType)
+	fvotetypes.RegisterProposalTypeCodec(&ActiveReportProposal{}, "ledger/ActiveReportProposal")
+	fvotetypes.RegisterProposalType(TransferReportProposalType)
+	fvotetypes.RegisterProposalTypeCodec(&TransferReportProposal{}, "ledger/TransferReportProposal")
+	fvotetypes.RegisterProposalType(ExecuteBondProposalType)
+	fvotetypes.RegisterProposalTypeCodec(&ExecuteBondProposal{}, "ledger/ExecuteBondProposal")
+	fvotetypes.RegisterProposalType(InterchainTxProposalType)
+	fvotetypes.RegisterProposalTypeCodec(&InterchainTxProposal{}, "ledger/InterchainTxProposal")
 }
 
 func NewSetChainEraProposal(proposer sdk.AccAddress, denom string, era uint32) *SetChainEraProposal {
@@ -68,7 +68,7 @@ func (p *SetChainEraProposal) InFavour() bool {
 }
 
 func (p *SetChainEraProposal) ValidateBasic() error {
-	err := rvotetypes.ValidateAbstract(p)
+	err := fvotetypes.ValidateAbstract(p)
 	if err != nil {
 		return err
 	}
@@ -110,7 +110,7 @@ func (p *BondReportProposal) InFavour() bool {
 }
 
 func (p *BondReportProposal) ValidateBasic() error {
-	err := rvotetypes.ValidateAbstract(p)
+	err := fvotetypes.ValidateAbstract(p)
 	if err != nil {
 		return err
 	}
@@ -153,7 +153,7 @@ func (p *ActiveReportProposal) InFavour() bool {
 }
 
 func (p *ActiveReportProposal) ValidateBasic() error {
-	err := rvotetypes.ValidateAbstract(p)
+	err := fvotetypes.ValidateAbstract(p)
 	if err != nil {
 		return err
 	}
@@ -194,7 +194,7 @@ func (p *TransferReportProposal) InFavour() bool {
 }
 
 func (p *TransferReportProposal) ValidateBasic() error {
-	err := rvotetypes.ValidateAbstract(p)
+	err := fvotetypes.ValidateAbstract(p)
 	if err != nil {
 		return err
 	}
@@ -237,7 +237,7 @@ func (p *ExecuteBondProposal) ProposalType() string {
 }
 
 func (p *ExecuteBondProposal) ValidateBasic() error {
-	err := rvotetypes.ValidateAbstract(p)
+	err := fvotetypes.ValidateAbstract(p)
 	if err != nil {
 		return err
 	}
@@ -288,7 +288,7 @@ func (p *InterchainTxProposal) ProposalType() string {
 }
 
 func (p *InterchainTxProposal) ValidateBasic() error {
-	err := rvotetypes.ValidateAbstract(p)
+	err := fvotetypes.ValidateAbstract(p)
 	if err != nil {
 		return err
 	}

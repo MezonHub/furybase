@@ -8,7 +8,7 @@ import (
 	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	github_com_stafihub_stafihub_utils "github.com/stafihub/stafihub/utils"
+	github_com_furybase_furybase_utils "github.com/furybase/furybase/utils"
 	io "io"
 	math "math"
 	math_bits "math/bits"
@@ -387,7 +387,7 @@ type StakeItem struct {
 	StakePoolIndex uint32 `protobuf:"varint,2,opt,name=stakePoolIndex,proto3" json:"stakePoolIndex,omitempty"`
 	LockSecond     uint64 `protobuf:"varint,3,opt,name=lockSecond,proto3" json:"lockSecond,omitempty"`
 	// user stakedPower = powerRewardRate * stakedAmount
-	PowerRewardRate github_com_stafihub_stafihub_utils.Dec `protobuf:"bytes,4,opt,name=powerRewardRate,proto3,customtype=github.com/stafihub/stafihub/utils.Dec" json:"powerRewardRate"`
+	PowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,4,opt,name=powerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"powerRewardRate"`
 	Enable          bool                                   `protobuf:"varint,5,opt,name=enable,proto3" json:"enable,omitempty"`
 }
 
@@ -453,7 +453,7 @@ func (m *StakeItem) GetEnable() bool {
 }
 
 type StakeItemLimit struct {
-	MaxPowerRewardRate github_com_stafihub_stafihub_utils.Dec `protobuf:"bytes,1,opt,name=maxPowerRewardRate,proto3,customtype=github.com/stafihub/stafihub/utils.Dec" json:"maxPowerRewardRate"`
+	MaxPowerRewardRate github_com_furybase_furybase_utils.Dec `protobuf:"bytes,1,opt,name=maxPowerRewardRate,proto3,customtype=github.com/furybase/furybase/utils.Dec" json:"maxPowerRewardRate"`
 	MaxLockSecond      uint64                                 `protobuf:"varint,2,opt,name=maxLockSecond,proto3" json:"maxLockSecond,omitempty"`
 }
 
@@ -498,13 +498,13 @@ func (m *StakeItemLimit) GetMaxLockSecond() uint64 {
 }
 
 func init() {
-	proto.RegisterType((*StakePool)(nil), "stafihub.stafihub.mining.StakePool")
-	proto.RegisterType((*RewardPool)(nil), "stafihub.stafihub.mining.RewardPool")
-	proto.RegisterType((*UserStakeRecord)(nil), "stafihub.stafihub.mining.UserStakeRecord")
-	proto.RegisterType((*UserRewardInfo)(nil), "stafihub.stafihub.mining.UserRewardInfo")
-	proto.RegisterType((*RewardToken)(nil), "stafihub.stafihub.mining.RewardToken")
-	proto.RegisterType((*StakeItem)(nil), "stafihub.stafihub.mining.StakeItem")
-	proto.RegisterType((*StakeItemLimit)(nil), "stafihub.stafihub.mining.StakeItemLimit")
+	proto.RegisterType((*StakePool)(nil), "furybase.furybase.mining.StakePool")
+	proto.RegisterType((*RewardPool)(nil), "furybase.furybase.mining.RewardPool")
+	proto.RegisterType((*UserStakeRecord)(nil), "furybase.furybase.mining.UserStakeRecord")
+	proto.RegisterType((*UserRewardInfo)(nil), "furybase.furybase.mining.UserRewardInfo")
+	proto.RegisterType((*RewardToken)(nil), "furybase.furybase.mining.RewardToken")
+	proto.RegisterType((*StakeItem)(nil), "furybase.furybase.mining.StakeItem")
+	proto.RegisterType((*StakeItemLimit)(nil), "furybase.furybase.mining.StakeItemLimit")
 }
 
 func init() { proto.RegisterFile("mining/models.proto", fileDescriptor_155eb5abfcd1d3be) }

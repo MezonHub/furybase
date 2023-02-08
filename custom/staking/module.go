@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/x/staking"
 	"github.com/cosmos/cosmos-sdk/x/staking/types"
-	"github.com/stafihub/stafihub/utils"
+	"github.com/furybase/furybase/utils"
 )
 
 var (

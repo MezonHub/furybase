@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/utils"
+	"github.com/furybase/furybase/utils"
 )
 
 const (

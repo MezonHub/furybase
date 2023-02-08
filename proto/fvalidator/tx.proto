@@ -1,0 +1,68 @@
+syntax = "proto3";
+package furybase.furybase.fvalidator;
+import "gogoproto/gogo.proto";
+// this line is used by starport scaffolding # proto/tx/import
+
+option go_package = "github.com/furybase/furybase/x/fvalidator/types";
+
+// Msg defines the Msg service.
+service Msg {
+  rpc InitFValidator(MsgInitFValidator) returns (MsgInitFValidatorResponse);
+  rpc SetCycleSeconds(MsgSetCycleSeconds) returns (MsgSetCycleSecondsResponse);
+  rpc SetShuffleSeconds(MsgSetShuffleSeconds) returns (MsgSetShuffleSecondsResponse);
+  rpc AddFValidator(MsgAddFValidator) returns (MsgAddFValidatorResponse);
+  rpc RmFValidator(MsgRmFValidator) returns (MsgRmFValidatorResponse);
+// this line is used by starport scaffolding # proto/tx/rpc
+}
+
+message MsgInitFValidator {
+  string creator = 1;
+  string denom = 2;
+  string poolAddress = 3;
+  repeated string valAddressList = 4;
+}
+
+message MsgInitFValidatorResponse {
+}
+
+message MsgSetCycleSeconds {
+  string creator = 1;
+  string denom = 2;
+  uint64 seconds = 3 [(gogoproto.jsontag) = "seconds"];
+}
+
+message MsgSetCycleSecondsResponse {
+}
+
+message MsgSetShuffleSeconds {
+  string creator = 1;
+  string denom = 2;
+  uint64 seconds = 3 [(gogoproto.jsontag) = "seconds"];
+}
+
+message MsgSetShuffleSecondsResponse {
+}
+
+
+message MsgAddFValidator {
+  string creator = 1;
+  string denom = 2;
+  string poolAddress = 3;
+  string valAddress = 4;
+}
+
+message MsgAddFValidatorResponse {
+}
+
+message MsgRmFValidator {
+  string creator = 1;
+  string denom = 2;
+  string poolAddress = 3;
+  string oldAddress = 4;
+  string newAddress = 5;
+}
+
+message MsgRmFValidatorResponse {
+}
+
+// this line is used by starport scaffolding # proto/tx/message

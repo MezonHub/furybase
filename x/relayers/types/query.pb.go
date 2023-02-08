@@ -223,10 +223,10 @@ func (m *QueryThresholdResponse) GetThreshold() uint32 {
 }
 
 func init() {
-	proto.RegisterType((*QueryRelayersRequest)(nil), "stafihub.stafihub.relayers.QueryRelayersRequest")
-	proto.RegisterType((*QueryRelayersResponse)(nil), "stafihub.stafihub.relayers.QueryRelayersResponse")
-	proto.RegisterType((*QueryThresholdRequest)(nil), "stafihub.stafihub.relayers.QueryThresholdRequest")
-	proto.RegisterType((*QueryThresholdResponse)(nil), "stafihub.stafihub.relayers.QueryThresholdResponse")
+	proto.RegisterType((*QueryRelayersRequest)(nil), "furybase.furybase.relayers.QueryRelayersRequest")
+	proto.RegisterType((*QueryRelayersResponse)(nil), "furybase.furybase.relayers.QueryRelayersResponse")
+	proto.RegisterType((*QueryThresholdRequest)(nil), "furybase.furybase.relayers.QueryThresholdRequest")
+	proto.RegisterType((*QueryThresholdResponse)(nil), "furybase.furybase.relayers.QueryThresholdResponse")
 }
 
 func init() { proto.RegisterFile("relayers/query.proto", fileDescriptor_e796b53400be0772) }
@@ -288,7 +288,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Relayers(ctx context.Context, in *QueryRelayersRequest, opts ...grpc.CallOption) (*QueryRelayersResponse, error) {
 	out := new(QueryRelayersResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.relayers.Query/Relayers", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.relayers.Query/Relayers", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -297,7 +297,7 @@ func (c *queryClient) Relayers(ctx context.Context, in *QueryRelayersRequest, op
 
 func (c *queryClient) Threshold(ctx context.Context, in *QueryThresholdRequest, opts ...grpc.CallOption) (*QueryThresholdResponse, error) {
 	out := new(QueryThresholdResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.relayers.Query/Threshold", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.relayers.Query/Threshold", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -337,7 +337,7 @@ func _Query_Relayers_Handler(srv interface{}, ctx context.Context, dec func(inte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.relayers.Query/Relayers",
+		FullMethod: "/furybase.furybase.relayers.Query/Relayers",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Relayers(ctx, req.(*QueryRelayersRequest))
@@ -355,7 +355,7 @@ func _Query_Threshold_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.relayers.Query/Threshold",
+		FullMethod: "/furybase.furybase.relayers.Query/Threshold",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Threshold(ctx, req.(*QueryThresholdRequest))
@@ -364,7 +364,7 @@ func _Query_Threshold_Handler(srv interface{}, ctx context.Context, dec func(int
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.relayers.Query",
+	ServiceName: "furybase.furybase.relayers.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

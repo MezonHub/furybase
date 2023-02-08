@@ -4582,8 +4582,8 @@ paths:
         - Query
   '/cosmos/distribution/v1beta1/delegators/{delegator_address}/validators':
     get:
-      summary: DelegatorValidators queries the validators of a delegator.
-      operationId: CosmosDistributionV1Beta1DelegatorValidators
+      summary: DelegatofValidators queries the validators of a delegator.
+      operationId: CosmosDistributionV1Beta1DelegatofValidators
       responses:
         '200':
           description: A successful response.
@@ -4598,8 +4598,8 @@ paths:
                   validators defines the validators a delegator is delegating
                   for.
             description: |-
-              QueryDelegatorValidatorsResponse is the response type for the
-              Query/DelegatorValidators RPC method.
+              QueryDelegatofValidatorsResponse is the response type for the
+              Query/DelegatofValidators RPC method.
         default:
           description: An unexpected error response.
           schema:
@@ -20906,10 +20906,10 @@ paths:
           format: uint64
       tags:
         - Query
-  /stafihub/stafihub/bridge/banned_denom_list:
+  /furybase/furybase/bridge/banned_denom_list:
     get:
       summary: Queries a list of BannedDenomList items.
-      operationId: StafihubStafihubBridgeBannedDenomList
+      operationId: FurybaseFurybaseBridgeBannedDenomList
       responses:
         '200':
           description: A successful response.
@@ -20946,10 +20946,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/bridge/chaind_ids:
+  /furybase/furybase/bridge/chaind_ids:
     get:
       summary: Queries a list of ChaindIds items.
-      operationId: StafihubStafihubBridgeChaindIds
+      operationId: FurybaseFurybaseBridgeChaindIds
       responses:
         '200':
           description: A successful response.
@@ -20981,10 +20981,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/bridge/get_deposit_count/{chainId}':
+  '/furybase/furybase/bridge/get_deposit_count/{chainId}':
     get:
       summary: Queries a list of GetDepositCount items.
-      operationId: StafihubStafihubBridgeGetDepositCount
+      operationId: FurybaseFurybaseBridgeGetDepositCount
       responses:
         '200':
           description: A successful response.
@@ -21020,10 +21020,10 @@ paths:
           format: int64
       tags:
         - Query
-  /stafihub/stafihub/bridge/params:
+  /furybase/furybase/bridge/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubBridgeParams
+      operationId: FurybaseFurybaseBridgeParams
       responses:
         '200':
           description: A successful response.
@@ -21056,10 +21056,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/bridge/proposal_detail/{chainId}/{depositNonce}/{resourceId}/{amount}/{receiver}':
+  '/furybase/furybase/bridge/proposal_detail/{chainId}/{depositNonce}/{resourceId}/{amount}/{receiver}':
     get:
       summary: Queries a list of ProposalDetail items.
-      operationId: StafihubStafihubBridgeProposalDetail
+      operationId: FurybaseFurybaseBridgeProposalDetail
       responses:
         '200':
           description: A successful response.
@@ -21125,10 +21125,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/bridge/relay_fee/{chainId}':
+  '/furybase/furybase/bridge/relay_fee/{chainId}':
     get:
       summary: Queries a list of RelayFee items.
-      operationId: StafihubStafihubBridgeRelayFee
+      operationId: FurybaseFurybaseBridgeRelayFee
       responses:
         '200':
           description: A successful response.
@@ -21176,10 +21176,10 @@ paths:
           format: int64
       tags:
         - Query
-  /stafihub/stafihub/bridge/relay_fee_receiver:
+  /furybase/furybase/bridge/relay_fee_receiver:
     get:
       summary: Queries a list of RelayFeeReceiver items.
-      operationId: StafihubStafihubBridgeRelayFeeReceiver
+      operationId: FurybaseFurybaseBridgeRelayFeeReceiver
       responses:
         '200':
           description: A successful response.
@@ -21208,10 +21208,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/bridge/resourceid_to_denoms:
+  /furybase/furybase/bridge/resourceid_to_denoms:
     get:
       summary: Queries a list of ResourceidToDenoms items.
-      operationId: StafihubStafihubBridgeResourceidToDenoms
+      operationId: FurybaseFurybaseBridgeResourceidToDenoms
       responses:
         '200':
           description: A successful response.
@@ -21254,10 +21254,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/claim/claim_switch/{round}':
+  '/furybase/furybase/claim/claim_switch/{round}':
     get:
       summary: Queries a list of ClaimSwitch items.
-      operationId: StafihubStafihubClaimClaimSwitch
+      operationId: FurybaseFurybaseClaimClaimSwitch
       responses:
         '200':
           description: A successful response.
@@ -21292,10 +21292,10 @@ paths:
           format: uint64
       tags:
         - Query
-  '/stafihub/stafihub/claim/is_claimed/{round}/{index}':
+  '/furybase/furybase/claim/is_claimed/{round}/{index}':
     get:
       summary: Queries a list of IsClaimed items.
-      operationId: StafihubStafihubClaimIsClaimed
+      operationId: FurybaseFurybaseClaimIsClaimed
       responses:
         '200':
           description: A successful response.
@@ -21335,10 +21335,10 @@ paths:
           format: uint64
       tags:
         - Query
-  /stafihub/stafihub/claim/params:
+  /furybase/furybase/claim/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubClaimParams
+      operationId: FurybaseFurybaseClaimParams
       responses:
         '200':
           description: A successful response.
@@ -21371,10 +21371,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/ledger/bonded_pools_by_denom/{denom}':
+  '/furybase/furybase/ledger/bonded_pools_by_denom/{denom}':
     get:
       summary: Queries a list of bondedPoolsByDenom items.
-      operationId: StafihubStafihubLedgerBondedPoolsByDenom
+      operationId: FurybaseFurybaseLedgerBondedPoolsByDenom
       responses:
         '200':
           description: A successful response.
@@ -21577,10 +21577,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/era_exchange_rate/{denom}/{era}':
+  '/furybase/furybase/ledger/era_exchange_rate/{denom}/{era}':
     get:
       summary: Queries a list of getEraExchangeRate items.
-      operationId: StafihubStafihubLedgerGetEraExchangeRate
+      operationId: FurybaseFurybaseLedgerGetEraExchangeRate
       responses:
         '200':
           description: A successful response.
@@ -21794,10 +21794,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/ledger/era_exchange_rates_by_denom/{denom}':
+  '/furybase/furybase/ledger/era_exchange_rates_by_denom/{denom}':
     get:
       summary: Queries a list of eraExchangeRatesByDenom items.
-      operationId: StafihubStafihubLedgerEraExchangeRatesByDenom
+      operationId: FurybaseFurybaseLedgerEraExchangeRatesByDenom
       responses:
         '200':
           description: A successful response.
@@ -22008,10 +22008,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/exchange_rate/{denom}':
+  '/furybase/furybase/ledger/exchange_rate/{denom}':
     get:
       summary: Queries a list of getExchangeRate items.
-      operationId: StafihubStafihubLedgerGetExchangeRate
+      operationId: FurybaseFurybaseLedgerGetExchangeRate
       responses:
         '200':
           description: A successful response.
@@ -22217,10 +22217,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/ledger/exchange_rate_all:
+  /furybase/furybase/ledger/exchange_rate_all:
     get:
       summary: Queries a list of exchangeRateAll items.
-      operationId: StafihubStafihubLedgerExchangeRateAll
+      operationId: FurybaseFurybaseLedgerExchangeRateAll
       responses:
         '200':
           description: A successful response.
@@ -22423,10 +22423,10 @@ paths:
                         }
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_bond_pipeline/{denom}/{pool}':
+  '/furybase/furybase/ledger/get_bond_pipeline/{denom}/{pool}':
     get:
       summary: Queries a list of getBondPipeline items.
-      operationId: StafihubStafihubLedgerGetBondPipeline
+      operationId: FurybaseFurybaseLedgerGetBondPipeline
       responses:
         '200':
           description: A successful response.
@@ -22645,10 +22645,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_bond_record/{denom}/{txhash}':
+  '/furybase/furybase/ledger/get_bond_record/{denom}/{txhash}':
     get:
       summary: Queries a list of getBondRecord items.
-      operationId: StafihubStafihubLedgerGetBondRecord
+      operationId: FurybaseFurybaseLedgerGetBondRecord
       responses:
         '200':
           description: A successful response.
@@ -22874,10 +22874,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_chain_era/{denom}':
+  '/furybase/furybase/ledger/get_chain_era/{denom}':
     get:
       summary: Queries a list of getChainEra items.
-      operationId: StafihubStafihubLedgerGetChainEra
+      operationId: FurybaseFurybaseLedgerGetChainEra
       responses:
         '200':
           description: A successful response.
@@ -23079,10 +23079,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_current_era_snapshot/{denom}':
+  '/furybase/furybase/ledger/get_current_era_snapshot/{denom}':
     get:
       summary: Queries a list of getCurrentEraSnapshot items.
-      operationId: StafihubStafihubLedgerGetCurrentEraSnapshot
+      operationId: FurybaseFurybaseLedgerGetCurrentEraSnapshot
       responses:
         '200':
           description: A successful response.
@@ -23285,10 +23285,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_era_snapshot/{denom}/{era}':
+  '/furybase/furybase/ledger/get_era_snapshot/{denom}/{era}':
     get:
       summary: Queries a list of getEraSnapshot items.
-      operationId: StafihubStafihubLedgerGetEraSnapshot
+      operationId: FurybaseFurybaseLedgerGetEraSnapshot
       responses:
         '200':
           description: A successful response.
@@ -23496,10 +23496,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_era_unbond_limit/{denom}':
+  '/furybase/furybase/ledger/get_era_unbond_limit/{denom}':
     get:
       summary: Queries a list of getEraUnbondLimit items.
-      operationId: StafihubStafihubLedgerGetEraUnbondLimit
+      operationId: FurybaseFurybaseLedgerGetEraUnbondLimit
       responses:
         '200':
           description: A successful response.
@@ -23701,10 +23701,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_pool_detail/{denom}/{pool}':
+  '/furybase/furybase/ledger/get_pool_detail/{denom}/{pool}':
     get:
       summary: Queries a list of getPoolDetail items.
-      operationId: StafihubStafihubLedgerGetPoolDetail
+      operationId: FurybaseFurybaseLedgerGetPoolDetail
       responses:
         '200':
           description: A successful response.
@@ -23928,10 +23928,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_r_params/{denom}':
+  '/furybase/furybase/ledger/get_r_params/{denom}':
     get:
       summary: Queries a list of GetRParams items.
-      operationId: StafihubStafihubLedgerGetRParams
+      operationId: FurybaseFurybaseLedgerGetRParams
       responses:
         '200':
           description: A successful response.
@@ -24148,10 +24148,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/ledger/get_signature:
+  /furybase/furybase/ledger/get_signature:
     get:
       summary: Queries a list of getSignature items.
-      operationId: StafihubStafihubLedgerGetSignature
+      operationId: FurybaseFurybaseLedgerGetSignature
       responses:
         '200':
           description: A successful response.
@@ -24400,10 +24400,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_snapshot/{shotId}':
+  '/furybase/furybase/ledger/get_snapshot/{shotId}':
     get:
       summary: Queries a list of getSnapshot items.
-      operationId: StafihubStafihubLedgerGetSnapshot
+      operationId: FurybaseFurybaseLedgerGetSnapshot
       responses:
         '200':
           description: A successful response.
@@ -24630,10 +24630,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/ledger/get_staking_reward_commission:
+  /furybase/furybase/ledger/get_staking_reward_commission:
     get:
       summary: Queries a list of getCommission items.
-      operationId: StafihubStafihubLedgerGetStakingRewardCommission
+      operationId: FurybaseFurybaseLedgerGetStakingRewardCommission
       responses:
         '200':
           description: A successful response.
@@ -24834,10 +24834,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_total_expected_active/{denom}/{era}':
+  '/furybase/furybase/ledger/get_total_expected_active/{denom}/{era}':
     get:
       summary: Queries a list of getTotalExpectedActive items.
-      operationId: StafihubStafihubLedgerGetTotalExpectedActive
+      operationId: FurybaseFurybaseLedgerGetTotalExpectedActive
       responses:
         '200':
           description: A successful response.
@@ -25043,10 +25043,10 @@ paths:
           format: int64
       tags:
         - Query
-  /stafihub/stafihub/ledger/get_unbond_commission:
+  /furybase/furybase/ledger/get_unbond_commission:
     get:
       summary: Queries a list of getUnbondCommission items.
-      operationId: StafihubStafihubLedgerGetUnbondCommission
+      operationId: FurybaseFurybaseLedgerGetUnbondCommission
       responses:
         '200':
           description: A successful response.
@@ -25247,10 +25247,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/get_unbond_relay_fee/{denom}':
+  '/furybase/furybase/ledger/get_unbond_relay_fee/{denom}':
     get:
       summary: Queries a list of getUnbondFee items.
-      operationId: StafihubStafihubLedgerGetUnbondRelayFee
+      operationId: FurybaseFurybaseLedgerGetUnbondRelayFee
       responses:
         '200':
           description: A successful response.
@@ -25469,10 +25469,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/ica_pool_list/{denom}':
+  '/furybase/furybase/ledger/ica_pool_list/{denom}':
     get:
       summary: Queries a list of IcaPoolList items.
-      operationId: StafihubStafihubLedgerIcaPoolList
+      operationId: FurybaseFurybaseLedgerIcaPoolList
       responses:
         '200':
           description: A successful response.
@@ -25728,10 +25728,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/interchain_tx_status/{propId}':
+  '/furybase/furybase/ledger/interchain_tx_status/{propId}':
     get:
       summary: Queries a list of InterchainTxStatus items.
-      operationId: StafihubStafihubLedgerInterchainTxStatus
+      operationId: FurybaseFurybaseLedgerInterchainTxStatus
       responses:
         '200':
           description: A successful response.
@@ -25938,10 +25938,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/ledger/pool_unbond_next_sequence/{denom}/{pool}/{unlockEra}':
+  '/furybase/furybase/ledger/pool_unbond_next_sequence/{denom}/{pool}/{unlockEra}':
     get:
       summary: Queries a list of PoolUnbondNextSequence items.
-      operationId: StafihubStafihubLedgerPoolUnbondNextSequence
+      operationId: FurybaseFurybaseLedgerPoolUnbondNextSequence
       responses:
         '200':
           description: A successful response.
@@ -26152,10 +26152,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/ledger/pool_unbondings/{denom}/{pool}/{unlockEra}':
+  '/furybase/furybase/ledger/pool_unbondings/{denom}/{pool}/{unlockEra}':
     get:
       summary: Queries a list of PoolUnbondings items.
-      operationId: StafihubStafihubLedgerPoolUnbondings
+      operationId: FurybaseFurybaseLedgerPoolUnbondings
       responses:
         '200':
           description: A successful response.
@@ -26374,10 +26374,10 @@ paths:
           format: int64
       tags:
         - Query
-  /stafihub/stafihub/ledger/protocol_fee_receiver:
+  /furybase/furybase/ledger/protocol_fee_receiver:
     get:
       summary: Queries a list of getReceiver items.
-      operationId: StafihubStafihubLedgerGetProtocolFeeReceiver
+      operationId: FurybaseFurybaseLedgerGetProtocolFeeReceiver
       responses:
         '200':
           description: A successful response.
@@ -26573,10 +26573,10 @@ paths:
                         }
       tags:
         - Query
-  '/stafihub/stafihub/ledger/relay_fee_receiver/{denom}':
+  '/furybase/furybase/ledger/relay_fee_receiver/{denom}':
     get:
       summary: Queries a list of RelayFeeReceiver items.
-      operationId: StafihubStafihubLedgerRelayFeeReceiver
+      operationId: FurybaseFurybaseLedgerRelayFeeReceiver
       responses:
         '200':
           description: A successful response.
@@ -26777,10 +26777,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/ledger/total_protocol_fee:
+  /furybase/furybase/ledger/total_protocol_fee:
     get:
       summary: Queries a list of TotalFeeList items.
-      operationId: StafihubStafihubLedgerTotalProtocolFee
+      operationId: FurybaseFurybaseLedgerTotalProtocolFee
       responses:
         '200':
           description: A successful response.
@@ -26983,10 +26983,10 @@ paths:
                         }
       tags:
         - Query
-  '/stafihub/stafihub/ledger/unbond_switch/{denom}':
+  '/furybase/furybase/ledger/unbond_switch/{denom}':
     get:
       summary: Queries a list of UnbondSwitch items.
-      operationId: StafihubStafihubLedgerUnbondSwitch
+      operationId: FurybaseFurybaseLedgerUnbondSwitch
       responses:
         '200':
           description: A successful response.
@@ -27187,10 +27187,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/mining/max_reward_pool_number:
+  /furybase/furybase/mining/max_reward_pool_number:
     get:
       summary: Queries a list of MaxRewardPoolNumber items.
-      operationId: StafihubStafihubMiningMaxRewardPoolNumber
+      operationId: FurybaseFurybaseMiningMaxRewardPoolNumber
       responses:
         '200':
           description: A successful response.
@@ -27220,10 +27220,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/max_stake_item_number:
+  /furybase/furybase/mining/max_stake_item_number:
     get:
       summary: Queries a list of MaxStakeItemNumber items.
-      operationId: StafihubStafihubMiningMaxStakeItemNumber
+      operationId: FurybaseFurybaseMiningMaxStakeItemNumber
       responses:
         '200':
           description: A successful response.
@@ -27253,10 +27253,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/mining_provider_list:
+  /furybase/furybase/mining/mining_provider_list:
     get:
       summary: Queries a list of MiningProviderList items.
-      operationId: StafihubStafihubMiningMiningProviderList
+      operationId: FurybaseFurybaseMiningMiningProviderList
       responses:
         '200':
           description: A successful response.
@@ -27287,10 +27287,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/params:
+  /furybase/furybase/mining/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubMiningParams
+      operationId: FurybaseFurybaseMiningParams
       responses:
         '200':
           description: A successful response.
@@ -27323,10 +27323,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/provider_switch:
+  /furybase/furybase/mining/provider_switch:
     get:
       summary: Queries a list of ProviderSwitch items.
-      operationId: StafihubStafihubMiningProviderSwitch
+      operationId: FurybaseFurybaseMiningProviderSwitch
       responses:
         '200':
           description: A successful response.
@@ -27355,10 +27355,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/reward_token_list:
+  /furybase/furybase/mining/reward_token_list:
     get:
       summary: Queries a list of RewardTokenList items.
-      operationId: StafihubStafihubMiningRewardTokenList
+      operationId: FurybaseFurybaseMiningRewardTokenList
       responses:
         '200':
           description: A successful response.
@@ -27396,10 +27396,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/mining/stake_item_list:
+  /furybase/furybase/mining/stake_item_list:
     get:
       summary: Queries a list of StakeItemList items.
-      operationId: StafihubStafihubMiningStakeItemList
+      operationId: FurybaseFurybaseMiningStakeItemList
       responses:
         '200':
           description: A successful response.
@@ -27451,10 +27451,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/mining/stake_pool_info/{stakePoolIndex}':
+  '/furybase/furybase/mining/stake_pool_info/{stakePoolIndex}':
     get:
       summary: Queries a list of StakePoolInfo items.
-      operationId: StafihubStafihubMiningStakePoolInfo
+      operationId: FurybaseFurybaseMiningStakePoolInfo
       responses:
         '200':
           description: A successful response.
@@ -27533,10 +27533,10 @@ paths:
           format: int64
       tags:
         - Query
-  /stafihub/stafihub/mining/stake_pool_list:
+  /furybase/furybase/mining/stake_pool_list:
     get:
       summary: Queries a list of StakePoolList items.
-      operationId: StafihubStafihubMiningStakePoolList
+      operationId: FurybaseFurybaseMiningStakePoolList
       responses:
         '200':
           description: A successful response.
@@ -27611,10 +27611,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/mining/stake_record/{userAddress}/{stakePoolIndex}/{stakeRecordIndex}':
+  '/furybase/furybase/mining/stake_record/{userAddress}/{stakePoolIndex}/{stakeRecordIndex}':
     get:
       summary: Queries a list of StakeRecord items.
-      operationId: StafihubStafihubMiningStakeRecord
+      operationId: FurybaseFurybaseMiningStakeRecord
       responses:
         '200':
           description: A successful response.
@@ -27696,10 +27696,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/mining/stake_record_count/{userAddress}/{stakePoolIndex}':
+  '/furybase/furybase/mining/stake_record_count/{userAddress}/{stakePoolIndex}':
     get:
       summary: Queries a list of StakeRecordCount items.
-      operationId: StafihubStafihubMiningStakeRecordCount
+      operationId: FurybaseFurybaseMiningStakeRecordCount
       responses:
         '200':
           description: A successful response.
@@ -27739,10 +27739,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/mining/stake_record_list/{userAddress}/{stakePoolIndex}':
+  '/furybase/furybase/mining/stake_record_list/{userAddress}/{stakePoolIndex}':
     get:
       summary: Queries a list of StakeRecordList items.
-      operationId: StafihubStafihubMiningStakeRecordList
+      operationId: FurybaseFurybaseMiningStakeRecordList
       responses:
         '200':
           description: A successful response.
@@ -27821,10 +27821,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/mining/stake_reward/{stakeUserAddress}/{stakePoolIndex}/{stakeRecordIndex}':
+  '/furybase/furybase/mining/stake_reward/{stakeUserAddress}/{stakePoolIndex}/{stakeRecordIndex}':
     get:
       summary: Queries a list of StakeReward items.
-      operationId: StafihubStafihubMiningStakeReward
+      operationId: FurybaseFurybaseMiningStakeReward
       responses:
         '200':
           description: A successful response.
@@ -27883,10 +27883,10 @@ paths:
           format: int64
       tags:
         - Query
-  '/stafihub/stafihub/rbank/address_prefix/{denom}':
+  '/furybase/furybase/fbank /address_prefix/{denom}':
     get:
       summary: Queries a list of AddressPrefix items.
-      operationId: StafihubStafihubRbankAddressPrefix
+      operationId: FurybaseFurybaseFbank AddressPrefix
       responses:
         '200':
           description: A successful response.
@@ -27922,10 +27922,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/rbank/params:
+  /furybase/furybase/fbank /params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubRbankParams
+      operationId: FurybaseFurybaseFbank Params
       responses:
         '200':
           description: A successful response.
@@ -27958,10 +27958,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rdex/params:
+  /furybase/furybase/fdex/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubRdexParams
+      operationId: FurybaseFurybaseFdexParams
       responses:
         '200':
           description: A successful response.
@@ -27994,10 +27994,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rdex/pool_creator_list:
+  /furybase/furybase/fdex/pool_creator_list:
     get:
       summary: Queries a list of PoolCreatorList items.
-      operationId: StafihubStafihubRdexPoolCreatorList
+      operationId: FurybaseFurybaseFdexPoolCreatorList
       responses:
         '200':
           description: A successful response.
@@ -28028,10 +28028,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rdex/provider_list:
+  /furybase/furybase/fdex/provider_list:
     get:
       summary: Queries a list of ProviderList items.
-      operationId: StafihubStafihubRdexProviderList
+      operationId: FurybaseFurybaseFdexProviderList
       responses:
         '200':
           description: A successful response.
@@ -28062,10 +28062,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rdex/provider_switch:
+  /furybase/furybase/fdex/provider_switch:
     get:
       summary: Queries a list of ProviderSwitch items.
-      operationId: StafihubStafihubRdexProviderSwitch
+      operationId: FurybaseFurybaseFdexProviderSwitch
       responses:
         '200':
           description: A successful response.
@@ -28094,10 +28094,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/rdex/swap_pool_info/{lpDenom}':
+  '/furybase/furybase/fdex/swap_pool_info/{lpDenom}':
     get:
       summary: Queries a list of SwapPoolInfo items.
-      operationId: StafihubStafihubRdexSwapPoolInfo
+      operationId: FurybaseFurybaseFdexSwapPoolInfo
       responses:
         '200':
           description: A successful response.
@@ -28180,10 +28180,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/rdex/swap_pool_list:
+  /furybase/furybase/fdex/swap_pool_list:
     get:
       summary: Queries a list of SwapPoolList items.
-      operationId: StafihubStafihubRdexSwapPoolList
+      operationId: FurybaseFurybaseFdexSwapPoolList
       responses:
         '200':
           description: A successful response.
@@ -28263,10 +28263,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/relayers/threshold/{arena}/{denom}':
+  '/furybase/furybase/relayers/threshold/{arena}/{denom}':
     get:
       summary: Queries a threshold by denom.
-      operationId: StafihubStafihubRelayersThreshold
+      operationId: FurybaseFurybaseRelayersThreshold
       responses:
         '200':
           description: A successful response.
@@ -28305,10 +28305,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/relayers/{arena}/{denom}':
+  '/furybase/furybase/relayers/{arena}/{denom}':
     get:
       summary: Queries a list of relayersByDenom items.
-      operationId: StafihubStafihubRelayersRelayers
+      operationId: FurybaseFurybaseRelayersRelayers
       responses:
         '200':
           description: A successful response.
@@ -28348,10 +28348,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/act_current_cycle/{denom}':
+  '/furybase/furybase/fmintreward/act_current_cycle/{denom}':
     get:
       summary: Queries a list of ActCurrentCycle items.
-      operationId: StafihubStafihubRmintrewardActCurrentCycle
+      operationId: FurybaseFurybaseFmintrewardActCurrentCycle
       responses:
         '200':
           description: A successful response.
@@ -28386,10 +28386,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/act_detail/{denom}/{cycle}':
+  '/furybase/furybase/fmintreward/act_detail/{denom}/{cycle}':
     get:
       summary: Queries a list of ActDetail items.
-      operationId: StafihubStafihubRmintrewardActDetail
+      operationId: FurybaseFurybaseFmintrewardActDetail
       responses:
         '200':
           description: A successful response.
@@ -28457,10 +28457,10 @@ paths:
           format: uint64
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/act_latest_cycle/{denom}':
+  '/furybase/furybase/fmintreward/act_latest_cycle/{denom}':
     get:
       summary: Queries a list of ActLatestCycle items.
-      operationId: StafihubStafihubRmintrewardActLatestCycle
+      operationId: FurybaseFurybaseFmintrewardActLatestCycle
       responses:
         '200':
           description: A successful response.
@@ -28495,10 +28495,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/claim_info_detail/{address}/{denom}/{cycle}/{mintIndex}':
+  '/furybase/furybase/fmintreward/claim_info_detail/{address}/{denom}/{cycle}/{mintIndex}':
     get:
       summary: Queries a list of ClaimInfoDetail items.
-      operationId: StafihubStafihubRmintrewardClaimInfoDetail
+      operationId: FurybaseFurybaseFmintrewardClaimInfoDetail
       responses:
         '200':
           description: A successful response.
@@ -28568,10 +28568,10 @@ paths:
           format: uint64
       tags:
         - Query
-  /stafihub/stafihub/rmintreward/params:
+  /furybase/furybase/fmintreward/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubRmintrewardParams
+      operationId: FurybaseFurybaseFmintrewardParams
       responses:
         '200':
           description: A successful response.
@@ -28604,10 +28604,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/user_acts/{address}/{denom}':
+  '/furybase/furybase/fmintreward/user_acts/{address}/{denom}':
     get:
       summary: Queries a list of UserActs items.
-      operationId: StafihubStafihubRmintrewardUserActs
+      operationId: FurybaseFurybaseFmintrewardUserActs
       responses:
         '200':
           description: A successful response.
@@ -28651,10 +28651,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rmintreward/user_mint_count/{address}/{denom}/{cycle}':
+  '/furybase/furybase/fmintreward/user_mint_count/{address}/{denom}/{cycle}':
     get:
       summary: Queries a list of UserMintCount items.
-      operationId: StafihubStafihubRmintrewardUserMintCount
+      operationId: FurybaseFurybaseFmintrewardUserMintCount
       responses:
         '200':
           description: A successful response.
@@ -28698,10 +28698,10 @@ paths:
           format: uint64
       tags:
         - Query
-  /stafihub/stafihub/rstaking/delegator_whitelist:
+  /furybase/furybase/fstaking/delegator_whitelist:
     get:
       summary: Queries a list of DelegatorWhitelist items.
-      operationId: StafihubStafihubRstakingDelegatorWhitelist
+      operationId: FurybaseFurybaseFStakingDelegatorWhitelist
       responses:
         '200':
           description: A successful response.
@@ -28732,10 +28732,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rstaking/delegator_whitelist_switch:
+  /furybase/furybase/fstaking/delegator_whitelist_switch:
     get:
       summary: Queries a list of DelegatorWhitelistSwitch items.
-      operationId: StafihubStafihubRstakingDelegatorWhitelistSwitch
+      operationId: FurybaseFurybaseFStakingDelegatorWhitelistSwitch
       responses:
         '200':
           description: A successful response.
@@ -28764,10 +28764,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rstaking/inflation_base:
+  /furybase/furybase/fstaking/inflation_base:
     get:
       summary: Queries a list of InflationBase items.
-      operationId: StafihubStafihubRstakingInflationBase
+      operationId: FurybaseFurybaseFStakingInflationBase
       responses:
         '200':
           description: A successful response.
@@ -28796,10 +28796,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rstaking/params:
+  /furybase/furybase/fstaking/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubRstakingParams
+      operationId: FurybaseFurybaseFStakingParams
       responses:
         '200':
           description: A successful response.
@@ -28832,10 +28832,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rstaking/validator_whitelist:
+  /furybase/furybase/fstaking/validator_whitelist:
     get:
       summary: Queries a list of ValidatorWhitelist items.
-      operationId: StafihubStafihubRstakingValidatorWhitelist
+      operationId: FurybaseFurybaseFStakingValidatorWhitelist
       responses:
         '200':
           description: A successful response.
@@ -28866,10 +28866,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  /stafihub/stafihub/rstaking/validator_whitelist_switch:
+  /furybase/furybase/fstaking/validator_whitelist_switch:
     get:
       summary: Queries a list of WhitelistSwitch items.
-      operationId: StafihubStafihubRstakingValidatorWhitelistSwitch
+      operationId: FurybaseFurybaseFStakingValidatorWhitelistSwitch
       responses:
         '200':
           description: A successful response.
@@ -28898,10 +28898,10 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/rvalidator/cycle_seconds/{denom}':
+  '/furybase/furybase/fvalidator/cycle_seconds/{denom}':
     get:
       summary: Queries a list of CycleSeconds items.
-      operationId: StafihubStafihubRvalidatorCycleSeconds
+      operationId: FurybaseFurybaseFvalidatorCycleSeconds
       responses:
         '200':
           description: A successful response.
@@ -28944,10 +28944,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rvalidator/latest_dealed_cycle/{denom}/{poolAddress}':
+  '/furybase/furybase/fvalidator/latest_dealed_cycle/{denom}/{poolAddress}':
     get:
       summary: Queries a list of LatestDealedCycle items.
-      operationId: StafihubStafihubRvalidatorLatestDealedCycle
+      operationId: FurybaseFurybaseFvalidatorLatestDealedCycle
       responses:
         '200':
           description: A successful response.
@@ -28996,10 +28996,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rvalidator/latest_voted_cycle/{denom}/{poolAddress}':
+  '/furybase/furybase/fvalidator/latest_voted_cycle/{denom}/{poolAddress}':
     get:
       summary: Queries a list of LatestVotedCycle items.
-      operationId: StafihubStafihubRvalidatorLatestVotedCycle
+      operationId: FurybaseFurybaseFvalidatorLatestVotedCycle
       responses:
         '200':
           description: A successful response.
@@ -29048,10 +29048,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/rvalidator/params:
+  /furybase/furybase/fvalidator/params:
     get:
       summary: Parameters queries the parameters of the module.
-      operationId: StafihubStafihubRvalidatorParams
+      operationId: FurybaseFurybaseFvalidatorParams
       responses:
         '200':
           description: A successful response.
@@ -29084,17 +29084,17 @@ paths:
                   additionalProperties: {}
       tags:
         - Query
-  '/stafihub/stafihub/rvalidator/r_validator_list/{denom}/{poolAddress}':
+  '/furybase/furybase/fvalidator/r_validator_list/{denom}/{poolAddress}':
     get:
-      summary: Queries a list of RValidatorList items.
-      operationId: StafihubStafihubRvalidatorRValidatorList
+      summary: Queries a list of FValidatorList items.
+      operationId: FurybaseFurybaseFvalidatorFValidatorList
       responses:
         '200':
           description: A successful response.
           schema:
             type: object
             properties:
-              rValidatorList:
+              fValidatorList:
                 type: array
                 items:
                   type: string
@@ -29127,10 +29127,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rvalidator/shuffle_seconds/{denom}':
+  '/furybase/furybase/fvalidator/shuffle_seconds/{denom}':
     get:
       summary: Queries a list of ShuffleSeconds items.
-      operationId: StafihubStafihubRvalidatorShuffleSeconds
+      operationId: FurybaseFurybaseFvalidatorShuffleSeconds
       responses:
         '200':
           description: A successful response.
@@ -29173,10 +29173,10 @@ paths:
           type: string
       tags:
         - Query
-  '/stafihub/stafihub/rvote/get_proposal/{propId}':
+  '/furybase/furybase/fvote/get_proposal/{propId}':
     get:
       summary: Queries a list of getProposal items.
-      operationId: StafihubStafihubRvoteGetProposal
+      operationId: FurybaseFurybaseFvoteGetProposal
       responses:
         '200':
           description: A successful response.
@@ -29377,10 +29377,10 @@ paths:
           type: string
       tags:
         - Query
-  /stafihub/stafihub/rvote/get_proposal_life:
+  /furybase/furybase/fvote/get_proposal_life:
     get:
       summary: Queries a list of getProposalLife items.
-      operationId: StafihubStafihubRvoteGetProposalLife
+      operationId: FurybaseFurybaseFvoteGetProposalLife
       responses:
         '200':
           description: A successful response.
@@ -29577,10 +29577,10 @@ paths:
                         }
       tags:
         - Query
-  /stafihub/stafihub/sudo/admin:
+  /furybase/furybase/sudo/admin:
     get:
       summary: Queries a list of admin items.
-      operationId: StafihubStafihubSudoAdmin
+      operationId: FurybaseFurybaseSudoAdmin
       responses:
         '200':
           description: A successful response.
@@ -34954,7 +34954,7 @@ definitions:
     description: |-
       QueryDelegationTotalRewardsResponse is the response type for the
       Query/DelegationTotalRewards RPC method.
-  cosmos.distribution.v1beta1.QueryDelegatorValidatorsResponse:
+  cosmos.distribution.v1beta1.QueryDelegatofValidatorsResponse:
     type: object
     properties:
       validators:
@@ -34963,8 +34963,8 @@ definitions:
           type: string
         description: validators defines the validators a delegator is delegating for.
     description: |-
-      QueryDelegatorValidatorsResponse is the response type for the
-      Query/DelegatorValidators RPC method.
+      QueryDelegatofValidatorsResponse is the response type for the
+      Query/DelegatofValidators RPC method.
   cosmos.distribution.v1beta1.QueryDelegatorWithdrawAddressResponse:
     type: object
     properties:
@@ -45368,7 +45368,7 @@ definitions:
     description: |-
       Version defines the versioning scheme used to negotiate the IBC verison in
       the connection handshake.
-  stafihub.stafihub.bridge.BannedDenom:
+  furybase.furybase.bridge.BannedDenom:
     type: object
     properties:
       chainId:
@@ -45376,35 +45376,35 @@ definitions:
         format: int64
       denom:
         type: string
-  stafihub.stafihub.bridge.DenomType:
+  furybase.furybase.bridge.DenomType:
     type: string
     enum:
       - UNSPECIFIED
       - NATIVE
       - EXTERNAL
     default: UNSPECIFIED
-  stafihub.stafihub.bridge.MsgAddBannedDenomResponse:
+  furybase.furybase.bridge.MsgAddBannedDenomResponse:
     type: object
-  stafihub.stafihub.bridge.MsgAddChainIdResponse:
+  furybase.furybase.bridge.MsgAddChainIdResponse:
     type: object
-  stafihub.stafihub.bridge.MsgDepositResponse:
+  furybase.furybase.bridge.MsgDepositResponse:
     type: object
-  stafihub.stafihub.bridge.MsgRmBannedDenomResponse:
+  furybase.furybase.bridge.MsgRmBannedDenomResponse:
     type: object
-  stafihub.stafihub.bridge.MsgRmChainIdResponse:
+  furybase.furybase.bridge.MsgRmChainIdResponse:
     type: object
-  stafihub.stafihub.bridge.MsgSetRelayFeeReceiverResponse:
+  furybase.furybase.bridge.MsgSetRelayFeeReceiverResponse:
     type: object
-  stafihub.stafihub.bridge.MsgSetRelayFeeResponse:
+  furybase.furybase.bridge.MsgSetRelayFeeResponse:
     type: object
-  stafihub.stafihub.bridge.MsgSetResourceidToDenomResponse:
+  furybase.furybase.bridge.MsgSetResourceidToDenomResponse:
     type: object
-  stafihub.stafihub.bridge.MsgVoteProposalResponse:
+  furybase.furybase.bridge.MsgVoteProposalResponse:
     type: object
-  stafihub.stafihub.bridge.Params:
+  furybase.furybase.bridge.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.bridge.Proposal:
+  furybase.furybase.bridge.Proposal:
     type: object
     properties:
       content:
@@ -45420,14 +45420,14 @@ definitions:
         type: array
         items:
           type: string
-  stafihub.stafihub.bridge.ProposalContent:
+  furybase.furybase.bridge.ProposalContent:
     type: object
     properties:
       amount:
         type: string
       receiver:
         type: string
-  stafihub.stafihub.bridge.QueryBannedDenomListResponse:
+  furybase.furybase.bridge.QueryBannedDenomListResponse:
     type: object
     properties:
       list:
@@ -45440,7 +45440,7 @@ definitions:
               format: int64
             denom:
               type: string
-  stafihub.stafihub.bridge.QueryChaindIdsResponse:
+  furybase.furybase.bridge.QueryChaindIdsResponse:
     type: object
     properties:
       chainId:
@@ -45448,20 +45448,20 @@ definitions:
         items:
           type: integer
           format: int64
-  stafihub.stafihub.bridge.QueryGetDepositCountResponse:
+  furybase.furybase.bridge.QueryGetDepositCountResponse:
     type: object
     properties:
       count:
         type: integer
         format: int64
-  stafihub.stafihub.bridge.QueryParamsResponse:
+  furybase.furybase.bridge.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.bridge.QueryProposalDetailResponse:
+  furybase.furybase.bridge.QueryProposalDetailResponse:
     type: object
     properties:
       proposal:
@@ -45480,12 +45480,12 @@ definitions:
             type: array
             items:
               type: string
-  stafihub.stafihub.bridge.QueryRelayFeeReceiverResponse:
+  furybase.furybase.bridge.QueryRelayFeeReceiverResponse:
     type: object
     properties:
       receiver:
         type: string
-  stafihub.stafihub.bridge.QueryRelayFeeResponse:
+  furybase.furybase.bridge.QueryRelayFeeResponse:
     type: object
     properties:
       value:
@@ -45500,7 +45500,7 @@ definitions:
 
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
-  stafihub.stafihub.bridge.QueryResourceidToDenomsResponse:
+  furybase.furybase.bridge.QueryResourceidToDenomsResponse:
     type: object
     properties:
       resourceidToDenoms:
@@ -45519,7 +45519,7 @@ definitions:
                 - NATIVE
                 - EXTERNAL
               default: UNSPECIFIED
-  stafihub.stafihub.bridge.ResourceIdToDenom:
+  furybase.furybase.bridge.ResourceIdToDenom:
     type: object
     properties:
       resourceId:
@@ -45533,37 +45533,37 @@ definitions:
           - NATIVE
           - EXTERNAL
         default: UNSPECIFIED
-  stafihub.stafihub.claim.MsgClaimResponse:
+  furybase.furybase.claim.MsgClaimResponse:
     type: object
-  stafihub.stafihub.claim.MsgProvideTokenResponse:
+  furybase.furybase.claim.MsgProvideTokenResponse:
     type: object
-  stafihub.stafihub.claim.MsgSetMerkleRootResponse:
+  furybase.furybase.claim.MsgSetMerkleRootResponse:
     type: object
-  stafihub.stafihub.claim.MsgToggleClaimSwitchResponse:
+  furybase.furybase.claim.MsgToggleClaimSwitchResponse:
     type: object
-  stafihub.stafihub.claim.MsgWithdrawTokenResponse:
+  furybase.furybase.claim.MsgWithdrawTokenResponse:
     type: object
-  stafihub.stafihub.claim.Params:
+  furybase.furybase.claim.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.claim.QueryClaimSwitchResponse:
+  furybase.furybase.claim.QueryClaimSwitchResponse:
     type: object
     properties:
       isOpen:
         type: boolean
-  stafihub.stafihub.claim.QueryIsClaimedResponse:
+  furybase.furybase.claim.QueryIsClaimedResponse:
     type: object
     properties:
       isClaimed:
         type: boolean
-  stafihub.stafihub.claim.QueryParamsResponse:
+  furybase.furybase.claim.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.ledger.BondPipeline:
+  furybase.furybase.ledger.BondPipeline:
     type: object
     properties:
       denom:
@@ -45579,7 +45579,7 @@ definitions:
             type: string
           active:
             type: string
-  stafihub.stafihub.ledger.BondRecord:
+  furybase.furybase.ledger.BondRecord:
     type: object
     properties:
       denom:
@@ -45602,7 +45602,7 @@ definitions:
           - LIQUIDITY_BOND_STATE_AMOUNT_UNMATCH
           - LIQUIDITY_BOND_STATE_MEMO_UNMATCH
         default: LIQUIDITY_BOND_STATE_VERIFY_OK
-  stafihub.stafihub.ledger.BondSnapshot:
+  furybase.furybase.ledger.BondSnapshot:
     type: object
     properties:
       denom:
@@ -45630,7 +45630,7 @@ definitions:
           - TRANSFER_SKIPPED
           - TRANSFER_REPORTED
         default: ERA_UPDATED
-  stafihub.stafihub.ledger.EraExchangeRate:
+  furybase.furybase.ledger.EraExchangeRate:
     type: object
     properties:
       denom:
@@ -45640,14 +45640,14 @@ definitions:
         format: int64
       value:
         type: string
-  stafihub.stafihub.ledger.ExchangeRate:
+  furybase.furybase.ledger.ExchangeRate:
     type: object
     properties:
       denom:
         type: string
       value:
         type: string
-  stafihub.stafihub.ledger.IcaAccount:
+  furybase.furybase.ledger.IcaAccount:
     type: object
     properties:
       owner:
@@ -45666,7 +45666,7 @@ definitions:
         type: string
       hostChannelId:
         type: string
-  stafihub.stafihub.ledger.IcaPoolDetail:
+  furybase.furybase.ledger.IcaPoolDetail:
     type: object
     properties:
       denom:
@@ -45721,7 +45721,7 @@ definitions:
             type: string
           hostChannelId:
             type: string
-  stafihub.stafihub.ledger.IcaPoolStatus:
+  furybase.furybase.ledger.IcaPoolStatus:
     type: string
     enum:
       - ICA_POOL_STATUS_UNSPECIFIED
@@ -45730,7 +45730,7 @@ definitions:
       - ICA_POOL_STATUS_CREATE_TWO
       - ICA_POOL_STATUS_SET_WITHDRAWAL
     default: ICA_POOL_STATUS_UNSPECIFIED
-  stafihub.stafihub.ledger.InterchainTxStatus:
+  furybase.furybase.ledger.InterchainTxStatus:
     type: string
     enum:
       - INTERCHAIN_TX_STATUS_UNSPECIFIED
@@ -45738,7 +45738,7 @@ definitions:
       - INTERCHAIN_TX_STATUS_SUCCESS
       - INTERCHAIN_TX_STATUS_FAILED
     default: INTERCHAIN_TX_STATUS_UNSPECIFIED
-  stafihub.stafihub.ledger.LinkChunk:
+  furybase.furybase.ledger.LinkChunk:
     type: object
     properties:
       bond:
@@ -45747,7 +45747,7 @@ definitions:
         type: string
       active:
         type: string
-  stafihub.stafihub.ledger.LiquidityBondState:
+  furybase.furybase.ledger.LiquidityBondState:
     type: string
     enum:
       - LIQUIDITY_BOND_STATE_VERIFY_OK
@@ -45757,53 +45757,53 @@ definitions:
       - LIQUIDITY_BOND_STATE_AMOUNT_UNMATCH
       - LIQUIDITY_BOND_STATE_MEMO_UNMATCH
     default: LIQUIDITY_BOND_STATE_VERIFY_OK
-  stafihub.stafihub.ledger.MsgClearCurrentEraSnapShotsResponse:
+  furybase.furybase.ledger.MsgClearCurrentEraSnapShotsResponse:
     type: object
-  stafihub.stafihub.ledger.MsgInitPoolResponse:
+  furybase.furybase.ledger.MsgInitPoolResponse:
     type: object
-  stafihub.stafihub.ledger.MsgLiquidityUnbondResponse:
+  furybase.furybase.ledger.MsgLiquidityUnbondResponse:
     type: object
-  stafihub.stafihub.ledger.MsgMigrateInitResponse:
+  furybase.furybase.ledger.MsgMigrateInitResponse:
     type: object
-  stafihub.stafihub.ledger.MsgMigrateUnbondingsResponse:
+  furybase.furybase.ledger.MsgMigrateUnbondingsResponse:
     type: object
-  stafihub.stafihub.ledger.MsgRegisterIcaPoolResponse:
+  furybase.furybase.ledger.MsgRegisterIcaPoolResponse:
     type: object
-  stafihub.stafihub.ledger.MsgRmBondedPoolResponse:
+  furybase.furybase.ledger.MsgRmBondedPoolResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetEraSecondsResponse:
+  furybase.furybase.ledger.MsgSetEraSecondsResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetEraUnbondLimitResponse:
+  furybase.furybase.ledger.MsgSetEraUnbondLimitResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetLeastBondResponse:
+  furybase.furybase.ledger.MsgSetLeastBondResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetPoolDetailResponse:
+  furybase.furybase.ledger.MsgSetPoolDetailResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetPoolStatusResponse:
+  furybase.furybase.ledger.MsgSetPoolStatusResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetProtocolFeeReceiverResponse:
+  furybase.furybase.ledger.MsgSetProtocolFeeReceiverResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetRParamsResponse:
+  furybase.furybase.ledger.MsgSetRParamsResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetRelayFeeReceiverResponse:
+  furybase.furybase.ledger.MsgSetRelayFeeReceiverResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetRelayGasPriceResponse:
+  furybase.furybase.ledger.MsgSetRelayGasPriceResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetStakingRewardCommissionResponse:
+  furybase.furybase.ledger.MsgSetStakingRewardCommissionResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetUnbondCommissionResponse:
+  furybase.furybase.ledger.MsgSetUnbondCommissionResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetUnbondRelayFeeResponse:
+  furybase.furybase.ledger.MsgSetUnbondRelayFeeResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSetWithdrawalAddrResponse:
+  furybase.furybase.ledger.MsgSetWithdrawalAddrResponse:
     type: object
-  stafihub.stafihub.ledger.MsgSubmitSignatureResponse:
+  furybase.furybase.ledger.MsgSubmitSignatureResponse:
     type: object
-  stafihub.stafihub.ledger.MsgToggleUnbondSwitchResponse:
+  furybase.furybase.ledger.MsgToggleUnbondSwitchResponse:
     type: object
-  stafihub.stafihub.ledger.MsgUnsealMigrateInitResponse:
+  furybase.furybase.ledger.MsgUnsealMigrateInitResponse:
     type: object
-  stafihub.stafihub.ledger.OriginalTxType:
+  furybase.furybase.ledger.OriginalTxType:
     type: string
     enum:
       - ORIGINAL_TX_TYPE_DEAL_ERAUPDATED
@@ -45813,7 +45813,7 @@ definitions:
       - ORIGINAL_TX_TYPE_RESERVED
     default: ORIGINAL_TX_TYPE_DEAL_ERAUPDATED
     description: OriginalTxType enumerates the tx type of a signature.
-  stafihub.stafihub.ledger.PoolBondState:
+  furybase.furybase.ledger.PoolBondState:
     type: string
     enum:
       - ERA_UPDATED
@@ -45822,7 +45822,7 @@ definitions:
       - TRANSFER_SKIPPED
       - TRANSFER_REPORTED
     default: ERA_UPDATED
-  stafihub.stafihub.ledger.PoolDetail:
+  furybase.furybase.ledger.PoolDetail:
     type: object
     properties:
       denom:
@@ -45843,21 +45843,21 @@ definitions:
           - NOT_ACTIVE
           - RESERVED
         default: ACTIVE
-  stafihub.stafihub.ledger.PoolStatus:
+  furybase.furybase.ledger.PoolStatus:
     type: string
     enum:
       - ACTIVE
       - NOT_ACTIVE
       - RESERVED
     default: ACTIVE
-  stafihub.stafihub.ledger.QueryBondedPoolsByDenomResponse:
+  furybase.furybase.ledger.QueryBondedPoolsByDenomResponse:
     type: object
     properties:
       addrs:
         type: array
         items:
           type: string
-  stafihub.stafihub.ledger.QueryEraExchangeRatesByDenomResponse:
+  furybase.furybase.ledger.QueryEraExchangeRatesByDenomResponse:
     type: object
     properties:
       eraExchangeRates:
@@ -45872,7 +45872,7 @@ definitions:
               format: int64
             value:
               type: string
-  stafihub.stafihub.ledger.QueryExchangeRateAllResponse:
+  furybase.furybase.ledger.QueryExchangeRateAllResponse:
     type: object
     properties:
       exchangeRates:
@@ -45884,7 +45884,7 @@ definitions:
               type: string
             value:
               type: string
-  stafihub.stafihub.ledger.QueryGetBondPipelineResponse:
+  furybase.furybase.ledger.QueryGetBondPipelineResponse:
     type: object
     properties:
       pipeline:
@@ -45903,7 +45903,7 @@ definitions:
                 type: string
               active:
                 type: string
-  stafihub.stafihub.ledger.QueryGetBondRecordResponse:
+  furybase.furybase.ledger.QueryGetBondRecordResponse:
     type: object
     properties:
       bondRecord:
@@ -45929,20 +45929,20 @@ definitions:
               - LIQUIDITY_BOND_STATE_AMOUNT_UNMATCH
               - LIQUIDITY_BOND_STATE_MEMO_UNMATCH
             default: LIQUIDITY_BOND_STATE_VERIFY_OK
-  stafihub.stafihub.ledger.QueryGetChainEraResponse:
+  furybase.furybase.ledger.QueryGetChainEraResponse:
     type: object
     properties:
       era:
         type: integer
         format: int64
-  stafihub.stafihub.ledger.QueryGetCurrentEraSnapshotResponse:
+  furybase.furybase.ledger.QueryGetCurrentEraSnapshotResponse:
     type: object
     properties:
       shotIds:
         type: array
         items:
           type: string
-  stafihub.stafihub.ledger.QueryGetEraExchangeRateResponse:
+  furybase.furybase.ledger.QueryGetEraExchangeRateResponse:
     type: object
     properties:
       eraExchangeRate:
@@ -45955,20 +45955,20 @@ definitions:
             format: int64
           value:
             type: string
-  stafihub.stafihub.ledger.QueryGetEraSnapshotResponse:
+  furybase.furybase.ledger.QueryGetEraSnapshotResponse:
     type: object
     properties:
       shotIds:
         type: array
         items:
           type: string
-  stafihub.stafihub.ledger.QueryGetEraUnbondLimitResponse:
+  furybase.furybase.ledger.QueryGetEraUnbondLimitResponse:
     type: object
     properties:
       limit:
         type: integer
         format: int64
-  stafihub.stafihub.ledger.QueryGetExchangeRateResponse:
+  furybase.furybase.ledger.QueryGetExchangeRateResponse:
     type: object
     properties:
       exchangeRate:
@@ -45978,7 +45978,7 @@ definitions:
             type: string
           value:
             type: string
-  stafihub.stafihub.ledger.QueryGetPoolDetailResponse:
+  furybase.furybase.ledger.QueryGetPoolDetailResponse:
     type: object
     properties:
       detail:
@@ -46002,12 +46002,12 @@ definitions:
               - NOT_ACTIVE
               - RESERVED
             default: ACTIVE
-  stafihub.stafihub.ledger.QueryGetProtocolFeeReceiverResponse:
+  furybase.furybase.ledger.QueryGetProtocolFeeReceiverResponse:
     type: object
     properties:
       receiver:
         type: string
-  stafihub.stafihub.ledger.QueryGetRParamsResponse:
+  furybase.furybase.ledger.QueryGetRParamsResponse:
     type: object
     properties:
       rParams:
@@ -46028,7 +46028,7 @@ definitions:
             format: int64
           leastBond:
             type: string
-  stafihub.stafihub.ledger.QueryGetSignatureResponse:
+  furybase.furybase.ledger.QueryGetSignatureResponse:
     type: object
     properties:
       signature:
@@ -46057,7 +46057,7 @@ definitions:
             type: array
             items:
               type: string
-  stafihub.stafihub.ledger.QueryGetSnapshotResponse:
+  furybase.furybase.ledger.QueryGetSnapshotResponse:
     type: object
     properties:
       shot:
@@ -46088,22 +46088,22 @@ definitions:
               - TRANSFER_SKIPPED
               - TRANSFER_REPORTED
             default: ERA_UPDATED
-  stafihub.stafihub.ledger.QueryGetStakingRewardCommissionResponse:
+  furybase.furybase.ledger.QueryGetStakingRewardCommissionResponse:
     type: object
     properties:
       commission:
         type: string
-  stafihub.stafihub.ledger.QueryGetTotalExpectedActiveResponse:
+  furybase.furybase.ledger.QueryGetTotalExpectedActiveResponse:
     type: object
     properties:
       active:
         type: string
-  stafihub.stafihub.ledger.QueryGetUnbondCommissionResponse:
+  furybase.furybase.ledger.QueryGetUnbondCommissionResponse:
     type: object
     properties:
       commission:
         type: string
-  stafihub.stafihub.ledger.QueryGetUnbondRelayFeeResponse:
+  furybase.furybase.ledger.QueryGetUnbondRelayFeeResponse:
     type: object
     properties:
       fee:
@@ -46126,7 +46126,7 @@ definitions:
               method
 
               signatures required by gogoproto.
-  stafihub.stafihub.ledger.QueryIcaPoolListResponse:
+  furybase.furybase.ledger.QueryIcaPoolListResponse:
     type: object
     properties:
       icaPoolList:
@@ -46186,7 +46186,7 @@ definitions:
                   type: string
                 hostChannelId:
                   type: string
-  stafihub.stafihub.ledger.QueryInterchainTxStatusResponse:
+  furybase.furybase.ledger.QueryInterchainTxStatusResponse:
     type: object
     properties:
       interchainTxStatus:
@@ -46197,13 +46197,13 @@ definitions:
           - INTERCHAIN_TX_STATUS_SUCCESS
           - INTERCHAIN_TX_STATUS_FAILED
         default: INTERCHAIN_TX_STATUS_UNSPECIFIED
-  stafihub.stafihub.ledger.QueryPoolUnbondNextSequenceResponse:
+  furybase.furybase.ledger.QueryPoolUnbondNextSequenceResponse:
     type: object
     properties:
       nextSequence:
         type: integer
         format: int64
-  stafihub.stafihub.ledger.QueryPoolUnbondingsResponse:
+  furybase.furybase.ledger.QueryPoolUnbondingsResponse:
     type: object
     properties:
       unbondings:
@@ -46217,12 +46217,12 @@ definitions:
               type: string
             recipient:
               type: string
-  stafihub.stafihub.ledger.QueryRelayFeeReceiverResponse:
+  furybase.furybase.ledger.QueryRelayFeeReceiverResponse:
     type: object
     properties:
       receiver:
         type: string
-  stafihub.stafihub.ledger.QueryTotalProtocolFeeResponse:
+  furybase.furybase.ledger.QueryTotalProtocolFeeResponse:
     type: object
     properties:
       totalProtocolFeeList:
@@ -46234,12 +46234,12 @@ definitions:
               type: string
             value:
               type: string
-  stafihub.stafihub.ledger.QueryUnbondSwitchResponse:
+  furybase.furybase.ledger.QueryUnbondSwitchResponse:
     type: object
     properties:
       isOpen:
         type: boolean
-  stafihub.stafihub.ledger.RParams:
+  furybase.furybase.ledger.RParams:
     type: object
     properties:
       denom:
@@ -46257,7 +46257,7 @@ definitions:
         format: int64
       leastBond:
         type: string
-  stafihub.stafihub.ledger.Signature:
+  furybase.furybase.ledger.Signature:
     type: object
     properties:
       denom:
@@ -46283,14 +46283,14 @@ definitions:
         type: array
         items:
           type: string
-  stafihub.stafihub.ledger.TotalProtocolFee:
+  furybase.furybase.ledger.TotalProtocolFee:
     type: object
     properties:
       denom:
         type: string
       value:
         type: string
-  stafihub.stafihub.ledger.UnbondRelayFee:
+  furybase.furybase.ledger.UnbondRelayFee:
     type: object
     properties:
       denom:
@@ -46307,7 +46307,7 @@ definitions:
 
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
-  stafihub.stafihub.ledger.Unbonding:
+  furybase.furybase.ledger.Unbonding:
     type: object
     properties:
       unbonder:
@@ -46316,7 +46316,7 @@ definitions:
         type: string
       recipient:
         type: string
-  stafihub.stafihub.mining.CreateRewardPoolInfo:
+  furybase.furybase.mining.CreateRewardPoolInfo:
     type: object
     properties:
       rewardTokenDenom:
@@ -46328,7 +46328,7 @@ definitions:
       startTimestamp:
         type: string
         format: uint64
-  stafihub.stafihub.mining.CreateStakeItemInfo:
+  furybase.furybase.mining.CreateStakeItemInfo:
     type: object
     properties:
       lockSecond:
@@ -46337,85 +46337,85 @@ definitions:
       powerRewardRate:
         type: string
         title: user stakedPower = powerRewardRate * stakedAmount
-  stafihub.stafihub.mining.MsgAddMiningProviderResponse:
+  furybase.furybase.mining.MsgAddMiningProviderResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddRewardPoolResponse:
+  furybase.furybase.mining.MsgAddRewardPoolResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddRewardResponse:
+  furybase.furybase.mining.MsgAddRewardResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddRewardTokenResponse:
+  furybase.furybase.mining.MsgAddRewardTokenResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddStakeItemResponse:
+  furybase.furybase.mining.MsgAddStakeItemResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddStakePoolResponse:
+  furybase.furybase.mining.MsgAddStakePoolResponse:
     type: object
-  stafihub.stafihub.mining.MsgAddStakeTokenResponse:
+  furybase.furybase.mining.MsgAddStakeTokenResponse:
     type: object
-  stafihub.stafihub.mining.MsgClaimRewardResponse:
+  furybase.furybase.mining.MsgClaimRewardResponse:
     type: object
-  stafihub.stafihub.mining.MsgEmergencyWithdrawResponse:
+  furybase.furybase.mining.MsgEmergencyWithdrawResponse:
     type: object
-  stafihub.stafihub.mining.MsgRmMiningProviderResponse:
+  furybase.furybase.mining.MsgRmMiningProviderResponse:
     type: object
-  stafihub.stafihub.mining.MsgRmRewardTokenResponse:
+  furybase.furybase.mining.MsgRmRewardTokenResponse:
     type: object
-  stafihub.stafihub.mining.MsgRmStakeTokenResponse:
+  furybase.furybase.mining.MsgRmStakeTokenResponse:
     type: object
-  stafihub.stafihub.mining.MsgSetMaxRewardPoolNumberResponse:
+  furybase.furybase.mining.MsgSetMaxRewardPoolNumberResponse:
     type: object
-  stafihub.stafihub.mining.MsgSetMaxStakeItemNumberResponse:
+  furybase.furybase.mining.MsgSetMaxStakeItemNumberResponse:
     type: object
-  stafihub.stafihub.mining.MsgSetStakeItemLimitResponse:
+  furybase.furybase.mining.MsgSetStakeItemLimitResponse:
     type: object
-  stafihub.stafihub.mining.MsgStakeResponse:
+  furybase.furybase.mining.MsgStakeResponse:
     type: object
-  stafihub.stafihub.mining.MsgToggleEmergencySwitchResponse:
+  furybase.furybase.mining.MsgToggleEmergencySwitchResponse:
     type: object
-  stafihub.stafihub.mining.MsgToggleProviderSwitchResponse:
+  furybase.furybase.mining.MsgToggleProviderSwitchResponse:
     type: object
-  stafihub.stafihub.mining.MsgUpdateRewardPoolResponse:
+  furybase.furybase.mining.MsgUpdateRewardPoolResponse:
     type: object
-  stafihub.stafihub.mining.MsgUpdateStakeItemResponse:
+  furybase.furybase.mining.MsgUpdateStakeItemResponse:
     type: object
-  stafihub.stafihub.mining.MsgWithdrawResponse:
+  furybase.furybase.mining.MsgWithdrawResponse:
     type: object
-  stafihub.stafihub.mining.MsgWithdrawRewardTokenResponse:
+  furybase.furybase.mining.MsgWithdrawRewardTokenResponse:
     type: object
-  stafihub.stafihub.mining.Params:
+  furybase.furybase.mining.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.mining.QueryMaxRewardPoolNumberResponse:
+  furybase.furybase.mining.QueryMaxRewardPoolNumberResponse:
     type: object
     properties:
       number:
         type: integer
         format: int64
-  stafihub.stafihub.mining.QueryMaxStakeItemNumberResponse:
+  furybase.furybase.mining.QueryMaxStakeItemNumberResponse:
     type: object
     properties:
       number:
         type: integer
         format: int64
-  stafihub.stafihub.mining.QueryMiningProviderListResponse:
+  furybase.furybase.mining.QueryMiningProviderListResponse:
     type: object
     properties:
       miningProviderList:
         type: array
         items:
           type: string
-  stafihub.stafihub.mining.QueryParamsResponse:
+  furybase.furybase.mining.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.mining.QueryProviderSwitchResponse:
+  furybase.furybase.mining.QueryProviderSwitchResponse:
     type: object
     properties:
       providerSwitch:
         type: boolean
-  stafihub.stafihub.mining.QueryRewardTokenListResponse:
+  furybase.furybase.mining.QueryRewardTokenListResponse:
     type: object
     properties:
       rewardTokenList:
@@ -46429,7 +46429,7 @@ definitions:
               type: string
             minRewardPerSecond:
               type: string
-  stafihub.stafihub.mining.QueryStakeItemListResponse:
+  furybase.furybase.mining.QueryStakeItemListResponse:
     type: object
     properties:
       stakeItemList:
@@ -46451,7 +46451,7 @@ definitions:
               title: user stakedPower = powerRewardRate * stakedAmount
             enable:
               type: boolean
-  stafihub.stafihub.mining.QueryStakePoolInfoResponse:
+  furybase.furybase.mining.QueryStakePoolInfoResponse:
     type: object
     properties:
       stakePool:
@@ -46500,7 +46500,7 @@ definitions:
             type: boolean
           creator:
             type: string
-  stafihub.stafihub.mining.QueryStakePoolListResponse:
+  furybase.furybase.mining.QueryStakePoolListResponse:
     type: object
     properties:
       stakePoolList:
@@ -46551,13 +46551,13 @@ definitions:
               type: boolean
             creator:
               type: string
-  stafihub.stafihub.mining.QueryStakeRecordCountResponse:
+  furybase.furybase.mining.QueryStakeRecordCountResponse:
     type: object
     properties:
       count:
         type: integer
         format: int64
-  stafihub.stafihub.mining.QueryStakeRecordListResponse:
+  furybase.furybase.mining.QueryStakeRecordListResponse:
     type: object
     properties:
       stakeRecordList:
@@ -46602,7 +46602,7 @@ definitions:
             stakeItemIndex:
               type: integer
               format: int64
-  stafihub.stafihub.mining.QueryStakeRecordResponse:
+  furybase.furybase.mining.QueryStakeRecordResponse:
     type: object
     properties:
       stakeRecord:
@@ -46645,7 +46645,7 @@ definitions:
           stakeItemIndex:
             type: integer
             format: int64
-  stafihub.stafihub.mining.QueryStakeRewardResponse:
+  furybase.furybase.mining.QueryStakeRewardResponse:
     type: object
     properties:
       rewardTokens:
@@ -46662,7 +46662,7 @@ definitions:
 
             NOTE: The amount field is an Int which implements the custom method
             signatures required by gogoproto.
-  stafihub.stafihub.mining.RewardPool:
+  furybase.furybase.mining.RewardPool:
     type: object
     properties:
       index:
@@ -46688,7 +46688,7 @@ definitions:
         type: string
       totalClaimedAmount:
         type: string
-  stafihub.stafihub.mining.RewardToken:
+  furybase.furybase.mining.RewardToken:
     type: object
     properties:
       rewardTokenDenom:
@@ -46697,7 +46697,7 @@ definitions:
         type: string
       minRewardPerSecond:
         type: string
-  stafihub.stafihub.mining.StakeItem:
+  furybase.furybase.mining.StakeItem:
     type: object
     properties:
       index:
@@ -46714,7 +46714,7 @@ definitions:
         title: user stakedPower = powerRewardRate * stakedAmount
       enable:
         type: boolean
-  stafihub.stafihub.mining.StakePool:
+  furybase.furybase.mining.StakePool:
     type: object
     properties:
       index:
@@ -46760,7 +46760,7 @@ definitions:
         type: boolean
       creator:
         type: string
-  stafihub.stafihub.mining.UserRewardInfo:
+  furybase.furybase.mining.UserRewardInfo:
     type: object
     properties:
       rewardPoolIndex:
@@ -46772,7 +46772,7 @@ definitions:
         type: string
       claimedAmount:
         type: string
-  stafihub.stafihub.mining.UserStakeRecord:
+  furybase.furybase.mining.UserStakeRecord:
     type: object
     properties:
       userAddress:
@@ -46906,73 +46906,73 @@ definitions:
     description: |-
       Metadata represents a struct that describes
       a basic token.
-  stafihub.stafihub.rbank.MsgAddDenomResponse:
+  furybase.furybase.fbank .MsgAddDenomResponse:
     type: object
-  stafihub.stafihub.rbank.Params:
+  furybase.furybase.fbank .Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.rbank.QueryAddressPrefixResponse:
+  furybase.furybase.fbank .QueryAddressPrefixResponse:
     type: object
     properties:
       accAddressPrefix:
         type: string
       valAddressPrefix:
         type: string
-  stafihub.stafihub.rbank.QueryParamsResponse:
+  furybase.furybase.fbank .QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.rdex.MsgAddLiquidityResponse:
+  furybase.furybase.fdex.MsgAddLiquidityResponse:
     type: object
-  stafihub.stafihub.rdex.MsgAddPoolCreatorResponse:
+  furybase.furybase.fdex.MsgAddPoolCreatorResponse:
     type: object
-  stafihub.stafihub.rdex.MsgAddProviderResponse:
+  furybase.furybase.fdex.MsgAddProviderResponse:
     type: object
-  stafihub.stafihub.rdex.MsgCreatePoolResponse:
+  furybase.furybase.fdex.MsgCreatePoolResponse:
     type: object
-  stafihub.stafihub.rdex.MsgRemoveLiquidityResponse:
+  furybase.furybase.fdex.MsgRemoveLiquidityResponse:
     type: object
-  stafihub.stafihub.rdex.MsgRmPoolCreatorResponse:
+  furybase.furybase.fdex.MsgRmPoolCreatorResponse:
     type: object
-  stafihub.stafihub.rdex.MsgRmProviderResponse:
+  furybase.furybase.fdex.MsgRmProviderResponse:
     type: object
-  stafihub.stafihub.rdex.MsgSwapResponse:
+  furybase.furybase.fdex.MsgSwapResponse:
     type: object
-  stafihub.stafihub.rdex.MsgToggleProviderSwitchResponse:
+  furybase.furybase.fdex.MsgToggleProviderSwitchResponse:
     type: object
-  stafihub.stafihub.rdex.Params:
+  furybase.furybase.fdex.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.rdex.QueryParamsResponse:
+  furybase.furybase.fdex.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.rdex.QueryPoolCreatorListResponse:
+  furybase.furybase.fdex.QueryPoolCreatorListResponse:
     type: object
     properties:
       poolCreatorList:
         type: array
         items:
           type: string
-  stafihub.stafihub.rdex.QueryProviderListResponse:
+  furybase.furybase.fdex.QueryProviderListResponse:
     type: object
     properties:
       providerList:
         type: array
         items:
           type: string
-  stafihub.stafihub.rdex.QueryProviderSwitchResponse:
+  furybase.furybase.fdex.QueryProviderSwitchResponse:
     type: object
     properties:
       providerSwitch:
         type: boolean
-  stafihub.stafihub.rdex.QuerySwapPoolInfoResponse:
+  furybase.furybase.fdex.QuerySwapPoolInfoResponse:
     type: object
     properties:
       swapPool:
@@ -47026,7 +47026,7 @@ definitions:
               method
 
               signatures required by gogoproto.
-  stafihub.stafihub.rdex.QuerySwapPoolListResponse:
+  furybase.furybase.fdex.QuerySwapPoolListResponse:
     type: object
     properties:
       swapPoolList:
@@ -47082,7 +47082,7 @@ definitions:
                 method
 
                 signatures required by gogoproto.
-  stafihub.stafihub.rdex.SwapPool:
+  furybase.furybase.fdex.SwapPool:
     type: object
     properties:
       index:
@@ -47124,26 +47124,26 @@ definitions:
 
           NOTE: The amount field is an Int which implements the custom method
           signatures required by gogoproto.
-  stafihub.stafihub.relayers.MsgAddRelayerResponse:
+  furybase.furybase.relayers.MsgAddRelayerResponse:
     type: object
-  stafihub.stafihub.relayers.MsgDeleteRelayerResponse:
+  furybase.furybase.relayers.MsgDeleteRelayerResponse:
     type: object
-  stafihub.stafihub.relayers.MsgSetThresholdResponse:
+  furybase.furybase.relayers.MsgSetThresholdResponse:
     type: object
-  stafihub.stafihub.relayers.QueryRelayersResponse:
+  furybase.furybase.relayers.QueryRelayersResponse:
     type: object
     properties:
       relayers:
         type: array
         items:
           type: string
-  stafihub.stafihub.relayers.QueryThresholdResponse:
+  furybase.furybase.relayers.QueryThresholdResponse:
     type: object
     properties:
       threshold:
         type: integer
         format: int64
-  stafihub.stafihub.rmintreward.Acts:
+  furybase.furybase.fmintreward.Acts:
     type: object
     properties:
       acts:
@@ -47151,7 +47151,7 @@ definitions:
         items:
           type: string
           format: uint64
-  stafihub.stafihub.rmintreward.MintRewardAct:
+  furybase.furybase.fmintreward.MintRewardAct:
     type: object
     properties:
       begin:
@@ -47182,7 +47182,7 @@ definitions:
               type: string
             userLimit:
               type: string
-  stafihub.stafihub.rmintreward.MintRewardActPost:
+  furybase.furybase.fmintreward.MintRewardActPost:
     type: object
     properties:
       begin:
@@ -47207,24 +47207,24 @@ definitions:
               type: string
             userLimit:
               type: string
-  stafihub.stafihub.rmintreward.MsgAddMintRewardActResponse:
+  furybase.furybase.fmintreward.MsgAddMintRewardActResponse:
     type: object
-  stafihub.stafihub.rmintreward.MsgClaimMintRewardResponse:
+  furybase.furybase.fmintreward.MsgClaimMintRewardResponse:
     type: object
-  stafihub.stafihub.rmintreward.MsgProvideRewardTokenResponse:
+  furybase.furybase.fmintreward.MsgProvideRewardTokenResponse:
     type: object
-  stafihub.stafihub.rmintreward.MsgUpdateMintRewardActResponse:
+  furybase.furybase.fmintreward.MsgUpdateMintRewardActResponse:
     type: object
-  stafihub.stafihub.rmintreward.Params:
+  furybase.furybase.fmintreward.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.rmintreward.QueryActCurrentCycleResponse:
+  furybase.furybase.fmintreward.QueryActCurrentCycleResponse:
     type: object
     properties:
       currentCycle:
         type: string
         format: uint64
-  stafihub.stafihub.rmintreward.QueryActDetailResponse:
+  furybase.furybase.fmintreward.QueryActDetailResponse:
     type: object
     properties:
       act:
@@ -47258,13 +47258,13 @@ definitions:
                   type: string
                 userLimit:
                   type: string
-  stafihub.stafihub.rmintreward.QueryActLatestCycleResponse:
+  furybase.furybase.fmintreward.QueryActLatestCycleResponse:
     type: object
     properties:
       latestCycle:
         type: string
         format: uint64
-  stafihub.stafihub.rmintreward.QueryClaimInfoDetailResponse:
+  furybase.furybase.fmintreward.QueryClaimInfoDetailResponse:
     type: object
     properties:
       claimInfo:
@@ -47291,14 +47291,14 @@ definitions:
                   type: string
                 totalClaimedAmount:
                   type: string
-  stafihub.stafihub.rmintreward.QueryParamsResponse:
+  furybase.furybase.fmintreward.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.rmintreward.QueryUserActsResponse:
+  furybase.furybase.fmintreward.QueryUserActsResponse:
     type: object
     properties:
       acts:
@@ -47309,13 +47309,13 @@ definitions:
             items:
               type: string
               format: uint64
-  stafihub.stafihub.rmintreward.QueryUserMintCountResponse:
+  furybase.furybase.fmintreward.QueryUserMintCountResponse:
     type: object
     properties:
       count:
         type: string
         format: uint64
-  stafihub.stafihub.rmintreward.TokenClaimInfo:
+  furybase.furybase.fmintreward.TokenClaimInfo:
     type: object
     properties:
       denom:
@@ -47324,7 +47324,7 @@ definitions:
         type: string
       totalClaimedAmount:
         type: string
-  stafihub.stafihub.rmintreward.TokenRewardInfo:
+  furybase.furybase.fmintreward.TokenRewardInfo:
     type: object
     properties:
       denom:
@@ -47337,7 +47337,7 @@ definitions:
         type: string
       userLimit:
         type: string
-  stafihub.stafihub.rmintreward.TokenRewardInfoPost:
+  furybase.furybase.fmintreward.TokenRewardInfoPost:
     type: object
     properties:
       denom:
@@ -47348,7 +47348,7 @@ definitions:
         type: string
       userLimit:
         type: string
-  stafihub.stafihub.rmintreward.UserClaimInfo:
+  furybase.furybase.fmintreward.UserClaimInfo:
     type: object
     properties:
       mintRTokenAmount:
@@ -47372,62 +47372,62 @@ definitions:
               type: string
             totalClaimedAmount:
               type: string
-  stafihub.stafihub.rstaking.MsgAddDelegatorToWhitelistResponse:
+  furybase.furybase.fstaking.MsgAddDelegatorToWhitelistResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgAddValToWhitelistResponse:
+  furybase.furybase.fstaking.MsgAddValToWhitelistResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgProvideTokenResponse:
+  furybase.furybase.fstaking.MsgProvideTokenResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgRmDelegatorFromWhitelistResponse:
+  furybase.furybase.fstaking.MsgRmDelegatorFromWhitelistResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgSetInflationBaseResponse:
+  furybase.furybase.fstaking.MsgSetInflationBaseResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgToggleDelegatorWhitelistSwitchResponse:
+  furybase.furybase.fstaking.MsgToggleDelegatorWhitelistSwitchResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgToggleValidatorWhitelistSwitchResponse:
+  furybase.furybase.fstaking.MsgToggleValidatorWhitelistSwitchResponse:
     type: object
-  stafihub.stafihub.rstaking.MsgWithdrawResponse:
+  furybase.furybase.fstaking.MsgWithdrawResponse:
     type: object
-  stafihub.stafihub.rstaking.Params:
+  furybase.furybase.fstaking.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.rstaking.QueryDelegatorWhitelistResponse:
+  furybase.furybase.fstaking.QueryDelegatorWhitelistResponse:
     type: object
     properties:
       delegatorAddress:
         type: array
         items:
           type: string
-  stafihub.stafihub.rstaking.QueryDelegatorWhitelistSwitchResponse:
+  furybase.furybase.fstaking.QueryDelegatorWhitelistSwitchResponse:
     type: object
     properties:
       isOpen:
         type: boolean
-  stafihub.stafihub.rstaking.QueryInflationBaseResponse:
+  furybase.furybase.fstaking.QueryInflationBaseResponse:
     type: object
     properties:
       inflationBase:
         type: string
-  stafihub.stafihub.rstaking.QueryParamsResponse:
+  furybase.furybase.fstaking.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.rstaking.QueryValidatorWhitelistResponse:
+  furybase.furybase.fstaking.QueryValidatorWhitelistResponse:
     type: object
     properties:
       valAddress:
         type: array
         items:
           type: string
-  stafihub.stafihub.rstaking.QueryValidatorWhitelistSwitchResponse:
+  furybase.furybase.fstaking.QueryValidatorWhitelistSwitchResponse:
     type: object
     properties:
       isOpen:
         type: boolean
-  stafihub.stafihub.rvalidator.Cycle:
+  furybase.furybase.fvalidator.Cycle:
     type: object
     properties:
       denom:
@@ -47440,7 +47440,7 @@ definitions:
       number:
         type: string
         format: uint64
-  stafihub.stafihub.rvalidator.CycleSeconds:
+  furybase.furybase.fvalidator.CycleSeconds:
     type: object
     properties:
       denom:
@@ -47451,20 +47451,20 @@ definitions:
       seconds:
         type: string
         format: uint64
-  stafihub.stafihub.rvalidator.MsgAddRValidatorResponse:
+  furybase.furybase.fvalidator.MsgAddFValidatorResponse:
     type: object
-  stafihub.stafihub.rvalidator.MsgInitRValidatorResponse:
+  furybase.furybase.fvalidator.MsgInitFValidatorResponse:
     type: object
-  stafihub.stafihub.rvalidator.MsgRmRValidatorResponse:
+  furybase.furybase.fvalidator.MsgRmFValidatorResponse:
     type: object
-  stafihub.stafihub.rvalidator.MsgSetCycleSecondsResponse:
+  furybase.furybase.fvalidator.MsgSetCycleSecondsResponse:
     type: object
-  stafihub.stafihub.rvalidator.MsgSetShuffleSecondsResponse:
+  furybase.furybase.fvalidator.MsgSetShuffleSecondsResponse:
     type: object
-  stafihub.stafihub.rvalidator.Params:
+  furybase.furybase.fvalidator.Params:
     type: object
     description: Params defines the parameters for the module.
-  stafihub.stafihub.rvalidator.QueryCycleSecondsResponse:
+  furybase.furybase.fvalidator.QueryCycleSecondsResponse:
     type: object
     properties:
       cycleSeconds:
@@ -47478,7 +47478,7 @@ definitions:
           seconds:
             type: string
             format: uint64
-  stafihub.stafihub.rvalidator.QueryLatestDealedCycleResponse:
+  furybase.furybase.fvalidator.QueryLatestDealedCycleResponse:
     type: object
     properties:
       latestDealedCycle:
@@ -47494,7 +47494,7 @@ definitions:
           number:
             type: string
             format: uint64
-  stafihub.stafihub.rvalidator.QueryLatestVotedCycleResponse:
+  furybase.furybase.fvalidator.QueryLatestVotedCycleResponse:
     type: object
     properties:
       latestVotedCycle:
@@ -47510,21 +47510,21 @@ definitions:
           number:
             type: string
             format: uint64
-  stafihub.stafihub.rvalidator.QueryParamsResponse:
+  furybase.furybase.fvalidator.QueryParamsResponse:
     type: object
     properties:
       params:
         description: params holds all the parameters of this module.
         type: object
     description: QueryParamsResponse is response type for the Query/Params RPC method.
-  stafihub.stafihub.rvalidator.QueryRValidatorListResponse:
+  furybase.furybase.fvalidator.QueryFValidatorListResponse:
     type: object
     properties:
-      rValidatorList:
+      fValidatorList:
         type: array
         items:
           type: string
-  stafihub.stafihub.rvalidator.QueryShuffleSecondsResponse:
+  furybase.furybase.fvalidator.QueryShuffleSecondsResponse:
     type: object
     properties:
       shuffleSeconds:
@@ -47538,7 +47538,7 @@ definitions:
           seconds:
             type: string
             format: uint64
-  stafihub.stafihub.rvalidator.ShuffleSeconds:
+  furybase.furybase.fvalidator.ShuffleSeconds:
     type: object
     properties:
       denom:
@@ -47549,9 +47549,9 @@ definitions:
       seconds:
         type: string
         format: uint64
-  stafihub.stafihub.rvote.MsgSetProposalLifeResponse:
+  furybase.furybase.fvote.MsgSetProposalLifeResponse:
     type: object
-  stafihub.stafihub.rvote.MsgSubmitProposalResponse:
+  furybase.furybase.fvote.MsgSubmitProposalResponse:
     type: object
     properties:
       propId:
@@ -47564,7 +47564,7 @@ definitions:
           - PROPOSAL_STATUS_EXPIRED
         default: PROPOSAL_STATUS_INITIATED
         description: ProposalStatus enumerates the valid statuses of a proposal.
-  stafihub.stafihub.rvote.ProposalStatus:
+  furybase.furybase.fvote.ProposalStatus:
     type: string
     enum:
       - PROPOSAL_STATUS_INITIATED
@@ -47572,20 +47572,20 @@ definitions:
       - PROPOSAL_STATUS_EXPIRED
     default: PROPOSAL_STATUS_INITIATED
     description: ProposalStatus enumerates the valid statuses of a proposal.
-  stafihub.stafihub.rvote.QueryGetProposalLifeResponse:
+  furybase.furybase.fvote.QueryGetProposalLifeResponse:
     type: object
     properties:
       proposalLife:
         type: string
         format: int64
-  stafihub.stafihub.rvote.QueryGetProposalResponse:
+  furybase.furybase.fvote.QueryGetProposalResponse:
     type: object
     properties:
       proposal:
         type: string
-  stafihub.stafihub.sudo.MsgUpdateAdminResponse:
+  furybase.furybase.sudo.MsgUpdateAdminResponse:
     type: object
-  stafihub.stafihub.sudo.QueryAdminResponse:
+  furybase.furybase.sudo.QueryAdminResponse:
     type: object
     properties:
       address:

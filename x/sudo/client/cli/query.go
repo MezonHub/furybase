@@ -6,7 +6,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/spf13/cobra"
-	"github.com/stafihub/stafihub/x/sudo/types"
+	"github.com/furybase/furybase/x/sudo/types"
 )
 
 // GetQueryCmd returns the cli query commands for this module

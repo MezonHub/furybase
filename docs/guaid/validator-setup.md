@@ -1,4 +1,4 @@
-# Run a Validator on the Stafihub Mainnet
+# Run a Validator on the Furybase Mainnet
 
 Before setting up your validator node, make sure you've already gone through the [Full Node Setup](./join-mainnet.md) guide.
 
@@ -14,10 +14,10 @@ You may want to skip the next section if you have already [set up a full-node](.
 
 ## Create Your Validator
 
-Your `stafivalconspub` can be used to create a new validator by staking tokens. You can find your validator pubkey by running:
+Your `did:fury:valconspub` can be used to create a new validator by staking tokens. You can find your validator pubkey by running:
 
 ```bash
-stafihubd tendermint show-validator
+base tendermint show-validator
 ```
 
 To create your validator, just use the following command:
@@ -27,9 +27,9 @@ Don't use more `ufis` than you have!
 :::
 
 ```bash
-stafihubd tx staking create-validator \
+base tx staking create-validator \
   --amount=1000000ufis \
-  --pubkey=$(stafihubd tendermint show-validator) \
+  --pubkey=$(base tendermint show-validator) \
   --moniker="choose a moniker" \
   --chain-id=<chain_id> \
   --commission-rate="0.10" \
@@ -54,19 +54,19 @@ You can confirm that you are in the validator set by using a third party explore
 ## Participate in Genesis as a Validator
 
 ::: warning
-The genesis ceremony for the Stafihub mainnet is closed. Please skip to the next section.
+The genesis ceremony for the Furybase mainnet is closed. Please skip to the next section.
 :::
 
 If you want to participate in genesis as a validator, you need to justify that
 you have some stake at genesis, create one (or multiple) transactions to bond this stake to your validator address, and include this transaction in the genesis file.
 
-Your `stafivalconspub` can be used to create a new validator by staking tokens. You can find your validator pubkey by running:
+Your `did:fury:valconspub` can be used to create a new validator by staking tokens. You can find your validator pubkey by running:
 
 ```bash
-stafihubd tendermint show-validator
+base tendermint show-validator
 ```
 
-Next, craft your `stafihubd gentx` command.
+Next, craft your `base gentx` command.
 
 ::: tip
 A `gentx` is a JSON file carrying a self-delegation. All genesis transactions are collected by a `genesis coordinator` and validated against an initial `genesis.json`.
@@ -77,7 +77,7 @@ Don't use more `ufis` than you have!
 :::
 
 ```bash
-stafihubd gentx \
+base gentx \
   --amount <amount_of_delegation_ufis> \
   --commission-rate <commission_rate> \
   --commission-max-rate <commission_max_rate> \
@@ -90,7 +90,7 @@ stafihubd gentx \
 When specifying commission parameters, the `commission-max-change-rate` is used to measure % _point_ change over the `commission-rate`. E.g. 1% to 2% is a 100% rate increase, but only 1 percentage point.
 :::
 
-You can then submit your `gentx` on the [repository](https://github.com/stafihub/network). These `gentx` will be used to form the final genesis file.
+You can then submit your `gentx` on the [repository](https://github.com/furybase/network). These `gentx` will be used to form the final genesis file.
 
 ## Edit Validator Description
 
@@ -101,9 +101,9 @@ The <key_name> specifies which validator you are editing. If you choose to not i
 The `--identity` can be used as to verify identity with systems like Keybase or UPort. When using with Keybase `--identity` should be populated with a 16-digit string that is generated with a [keybase.io](https://keybase.io) account. It's a cryptographically secure method of verifying your identity across multiple online networks. The Keybase API allows us to retrieve your Keybase avatar. This is how you can add a logo to your validator profile.
 
 ```bash
-stafihubd tx staking edit-validator
+base tx staking edit-validator
   --new-moniker="choose a moniker" \
-  --website="https://stafihub.io" \
+  --website="https://furybase.io" \
   --details="To infinity and beyond!" \
   --chain-id=<chain_id> \
   --gas="auto" \
@@ -124,7 +124,7 @@ __Note__: The `commission-rate` value must adhere to the following invariants:
 View the validator's information with this command:
 
 ```bash
-stafihubd query staking validator <account_stafihub>
+base query staking validator <account_furybase>
 ```
 
 ## Track Validator Signing Information
@@ -132,7 +132,7 @@ stafihubd query staking validator <account_stafihub>
 In order to keep track of a validator's signatures in the past you can do so by using the `signing-info` command:
 
 ```bash
-stafihubd query slashing signing-info <validator-pubkey>\
+base query slashing signing-info <validator-pubkey>\
   --chain-id=<chain_id>
 ```
 
@@ -141,7 +141,7 @@ stafihubd query slashing signing-info <validator-pubkey>\
 When a validator is "jailed" for downtime, you must submit an `Unjail` transaction from the operator account in order to be able to get block proposer rewards again (depends on the zone fee distribution).
 
 ```bash
-stafihubd tx slashing unjail \
+base tx slashing unjail \
  --from=<key_name> \
  --chain-id=<chain_id>
 ```
@@ -151,10 +151,10 @@ stafihubd tx slashing unjail \
 Your validator is active if the following command returns anything:
 
 ```bash
-stafihubd query tendermint-validator-set | grep "$(stafihubd tendermint show-address)"
+base query tendermint-validator-set | grep "$(base tendermint show-address)"
 ```
 
-You should now see your validator in one of the Stafihub explorers. You are looking for the `bech32` encoded `address` in the `~/.stafihub/config/priv_validator.json` file.
+You should now see your validator in one of the Furybase explorers. You are looking for the `bech32` encoded `address` in the `~/.furybase/config/priv_validator.json` file.
 
 ::: warning Note
 To be in the validator set, you need to have more total voting power than the 100th validator.
@@ -165,7 +165,7 @@ To be in the validator set, you need to have more total voting power than the 10
 When attempting to perform routine maintenance or planning for an upcoming coordinated
 upgrade, it can be useful to have your validator systematically and gracefully halt.
 You can achieve this by either setting the `halt-height` to the height at which
-you want your node to shutdown or by passing the `--halt-height` flag to `stafihubd`.
+you want your node to shutdown or by passing the `--halt-height` flag to `base`.
 The node will shutdown with a zero exit code at that given height after committing
 the block.
 
@@ -175,10 +175,10 @@ the block.
 
 Your validator has become jailed. Validators get jailed, i.e. get removed from the active validator set, if they do not vote on `500` of the last `10000` blocks, or if they double sign.
 
-If you got jailed for downtime, you can get your voting power back to your validator. First, if `stafihubd` is not running, start it up again:
+If you got jailed for downtime, you can get your voting power back to your validator. First, if `base` is not running, start it up again:
 
 ```bash
-stafihubd start
+base start
 ```
 
 Wait for your full node to catch up to the latest block. Then, you can [unjail your validator](#unjail-validator)
@@ -186,26 +186,26 @@ Wait for your full node to catch up to the latest block. Then, you can [unjail y
 Lastly, check your validator again to see if your voting power is back.
 
 ```bash
-stafihubd status
+base status
 ```
 
 You may notice that your voting power is less than it used to be. That's because you got slashed for downtime!
 
-### Problem #2: My `stafihubd` crashes because of `too many open files`
+### Problem #2: My `base` crashes because of `too many open files`
 
-The default number of files Linux can open (per-process) is `1024`. `stafihubd` is known to open more than `1024` files. This causes the process to crash. A quick fix is to run `ulimit -n 4096` (increase the number of open files allowed) and then restart the process with `stafihubd start`. If you are using `systemd` or another process manager to launch `stafihubd` this may require some configuration at that level. A sample `systemd` file to fix this issue is below:
+The default number of files Linux can open (per-process) is `1024`. `base` is known to open more than `1024` files. This causes the process to crash. A quick fix is to run `ulimit -n 4096` (increase the number of open files allowed) and then restart the process with `base start`. If you are using `systemd` or another process manager to launch `base` this may require some configuration at that level. A sample `systemd` file to fix this issue is below:
 
 ```toml
-# /etc/systemd/system/stafihubd.service
+# /etc/systemd/system/base.service
 [Unit]
-Description=Stafihub Node
+Description=Furybase Node
 After=network.target
 
 [Service]
 Type=simple
 User=ubuntu
 WorkingDirectory=/home/ubuntu
-ExecStart=/home/ubuntu/go/bin/stafihubd start
+ExecStart=/home/ubuntu/go/bin/base start
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=4096

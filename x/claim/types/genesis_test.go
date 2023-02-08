@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/stafihub/stafihub/x/claim/types"
+	"github.com/furybase/furybase/x/claim/types"
 	"github.com/stretchr/testify/require"
 )
 

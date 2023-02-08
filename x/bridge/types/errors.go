@@ -21,7 +21,7 @@ var (
 	ErrReceiverFormatNotRight   = sdkerrors.Register(ModuleName, 1110, "receiver format not right")
 	ErrResourceIdFormatNotRight = sdkerrors.Register(ModuleName, 1111, "resource id format not right")
 	ErrDepositAmountZero        = sdkerrors.Register(ModuleName, 1112, "deposit amount zero")
-	ErrVoteProposalAmountZero   = sdkerrors.Register(ModuleName, 1113, "vote proposal amount zero")
+	ErfVoteProposalAmountZero   = sdkerrors.Register(ModuleName, 1113, "vote proposal amount zero")
 	ErrBannedDenom              = sdkerrors.Register(ModuleName, 1114, "banned denom")
 	ErrDenomTypeUnmatch         = sdkerrors.Register(ModuleName, 1115, "denom type unmatch")
 )

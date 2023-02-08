@@ -1,5 +1,5 @@
 syntax = "proto3";
-package stafihub.stafihub.ledger;
+package furybase.furybase.ledger;
 
 import "google/protobuf/any.proto";
 import "gogoproto/gogo.proto";
@@ -7,7 +7,7 @@ import "ledger/ledger.proto";
 import "cosmos/base/v1beta1/coin.proto";
 // this line is used by starport scaffolding # proto/tx/import
 
-option go_package = "github.com/stafihub/stafihub/x/ledger/types";
+option go_package = "github.com/furybase/furybase/x/ledger/types";
 
 // Msg defines the Msg service.
 service Msg {
@@ -77,7 +77,7 @@ message MsgClearCurrentEraSnapShotsResponse {
 message MsgSetStakingRewardCommission {
   string creator = 1;
   string denom = 2;
-  string commission = 3 [(gogoproto.customtype) = "github.com/stafihub/stafihub/utils.Dec", (gogoproto.nullable) = false];
+  string commission = 3 [(gogoproto.customtype) = "github.com/furybase/furybase/utils.Dec", (gogoproto.nullable) = false];
 }
 
 message MsgSetStakingRewardCommissionResponse {
@@ -113,7 +113,7 @@ message MsgLiquidityUnbondResponse {
 message MsgSetUnbondCommission {
   string creator = 1;
   string denom = 2;
-  string commission = 3 [(gogoproto.customtype) = "github.com/stafihub/stafihub/utils.Dec", (gogoproto.nullable) = false];
+  string commission = 3 [(gogoproto.customtype) = "github.com/furybase/furybase/utils.Dec", (gogoproto.nullable) = false];
 }
 
 message MsgSetUnbondCommissionResponse {
@@ -191,7 +191,7 @@ message MsgMigrateInit {
   string active = 5 [(gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (gogoproto.nullable) = false];
   string bond = 6 [(gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (gogoproto.nullable) = false];
   string unbond = 7 [(gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (gogoproto.nullable) = false];
-  string exchangeRate = 8 [(gogoproto.customtype) = "github.com/stafihub/stafihub/utils.Dec", (gogoproto.nullable) = false];
+  string exchangeRate = 8 [(gogoproto.customtype) = "github.com/furybase/furybase/utils.Dec", (gogoproto.nullable) = false];
   string totalProtocolFee = 9 [(gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int", (gogoproto.nullable) = false];
 }
 

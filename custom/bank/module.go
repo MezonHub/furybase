@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/x/bank"
 	"github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/stafihub/stafihub/utils"
+	"github.com/furybase/furybase/utils"
 )
 
 var (
@@ -24,7 +24,7 @@ type AppModuleBasic struct {
 func (am AppModuleBasic) DefaultGenesis(cdc codec.JSONCodec) json.RawMessage {
 	defaultGenesisState := types.DefaultGenesisState()
 	// {
-	//     "description": "The native staking token of the StaFi Hub",
+	//     "description": "The native staking token of the FuRy Hub",
 	//     "denom_units": [
 	//         {
 	//             "denom": "ufis",
@@ -52,7 +52,7 @@ func (am AppModuleBasic) DefaultGenesis(cdc codec.JSONCodec) json.RawMessage {
 	// }
 	defaultGenesisState.DenomMetadata = append(defaultGenesisState.DenomMetadata,
 		types.Metadata{
-			Description: "The native staking token of the StaFi Hub",
+			Description: "The native staking token of the FuRy Hub",
 			DenomUnits: []*types.DenomUnit{
 				{
 					Denom:    utils.FisDenom,

@@ -1,0 +1,99 @@
+syntax = "proto3";
+package furybase.furybase.fvalidator;
+
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+import "cosmos/base/query/v1beta1/pagination.proto";
+import "fvalidator/params.proto";
+import "fvalidator/genesis.proto";
+// this line is used by starport scaffolding # 1
+
+option go_package = "github.com/furybase/furybase/x/fvalidator/types";
+
+// Query defines the gRPC querier service.
+service Query {
+  // Parameters queries the parameters of the module.
+  rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
+    option (google.api.http).get = "/furybase/furybase/fvalidator/params";
+  }
+  // Queries a list of FValidatorList items.
+	rpc FValidatorList(QueryFValidatorListRequest) returns (QueryFValidatorListResponse) {
+		option (google.api.http).get = "/furybase/furybase/fvalidator/r_validator_list/{denom}/{poolAddress}";
+	}
+
+// Queries a list of CycleSeconds items.
+	rpc CycleSeconds(QueryCycleSecondsRequest) returns (QueryCycleSecondsResponse) {
+		option (google.api.http).get = "/furybase/furybase/fvalidator/cycle_seconds/{denom}";
+	}
+
+// Queries a list of ShuffleSeconds items.
+	rpc ShuffleSeconds(QueryShuffleSecondsRequest) returns (QueryShuffleSecondsResponse) {
+		option (google.api.http).get = "/furybase/furybase/fvalidator/shuffle_seconds/{denom}";
+	}
+
+// Queries a list of LatestVotedCycle items.
+	rpc LatestVotedCycle(QueryLatestVotedCycleRequest) returns (QueryLatestVotedCycleResponse) {
+		option (google.api.http).get = "/furybase/furybase/fvalidator/latest_voted_cycle/{denom}/{poolAddress}";
+	}
+
+// Queries a list of LatestDealedCycle items.
+	rpc LatestDealedCycle(QueryLatestDealedCycleRequest) returns (QueryLatestDealedCycleResponse) {
+		option (google.api.http).get = "/furybase/furybase/fvalidator/latest_dealed_cycle/{denom}/{poolAddress}";
+	}
+
+// this line is used by starport scaffolding # 2
+}
+
+// QueryParamsRequest is request type for the Query/Params RPC method.
+message QueryParamsRequest {}
+
+// QueryParamsResponse is response type for the Query/Params RPC method.
+message QueryParamsResponse {
+  // params holds all the parameters of this module.
+  Params params = 1 [(gogoproto.nullable) = false];
+}
+
+message QueryFValidatorListRequest {
+  string denom = 1;
+  string poolAddress = 2;
+}
+
+message QueryFValidatorListResponse {
+  repeated string fValidatorList = 1;
+}
+
+message QueryCycleSecondsRequest {
+  string denom = 1;
+}
+
+message QueryCycleSecondsResponse {
+  CycleSeconds cycleSeconds = 1;
+}
+
+message QueryShuffleSecondsRequest {
+  string denom = 1;
+}
+
+message QueryShuffleSecondsResponse {
+  ShuffleSeconds shuffleSeconds = 1;
+}
+
+message QueryLatestVotedCycleRequest {
+  string denom = 1;
+  string poolAddress = 2;
+}
+
+message QueryLatestVotedCycleResponse {
+  Cycle latestVotedCycle = 1;
+}
+
+message QueryLatestDealedCycleRequest {
+  string denom = 1;
+  string poolAddress = 2;
+}
+
+message QueryLatestDealedCycleResponse {
+  Cycle latestDealedCycle = 1;
+}
+
+// this line is used by starport scaffolding # 3

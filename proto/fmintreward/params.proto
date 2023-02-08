@@ -1,0 +1,12 @@
+syntax = "proto3";
+package furybase.furybase.fmintreward;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/furybase/furybase/x/fmintreward/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

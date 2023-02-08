@@ -298,12 +298,12 @@ func (m *QueryClaimSwitchResponse) GetIsOpen() bool {
 }
 
 func init() {
-	proto.RegisterType((*QueryParamsRequest)(nil), "stafihub.stafihub.claim.QueryParamsRequest")
-	proto.RegisterType((*QueryParamsResponse)(nil), "stafihub.stafihub.claim.QueryParamsResponse")
-	proto.RegisterType((*QueryIsClaimedRequest)(nil), "stafihub.stafihub.claim.QueryIsClaimedRequest")
-	proto.RegisterType((*QueryIsClaimedResponse)(nil), "stafihub.stafihub.claim.QueryIsClaimedResponse")
-	proto.RegisterType((*QueryClaimSwitchRequest)(nil), "stafihub.stafihub.claim.QueryClaimSwitchRequest")
-	proto.RegisterType((*QueryClaimSwitchResponse)(nil), "stafihub.stafihub.claim.QueryClaimSwitchResponse")
+	proto.RegisterType((*QueryParamsRequest)(nil), "furybase.furybase.claim.QueryParamsRequest")
+	proto.RegisterType((*QueryParamsResponse)(nil), "furybase.furybase.claim.QueryParamsResponse")
+	proto.RegisterType((*QueryIsClaimedRequest)(nil), "furybase.furybase.claim.QueryIsClaimedRequest")
+	proto.RegisterType((*QueryIsClaimedResponse)(nil), "furybase.furybase.claim.QueryIsClaimedResponse")
+	proto.RegisterType((*QueryClaimSwitchRequest)(nil), "furybase.furybase.claim.QueryClaimSwitchRequest")
+	proto.RegisterType((*QueryClaimSwitchResponse)(nil), "furybase.furybase.claim.QueryClaimSwitchResponse")
 }
 
 func init() { proto.RegisterFile("claim/query.proto", fileDescriptor_f8c6eefbad679c0d) }
@@ -372,7 +372,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.claim.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.claim.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -381,7 +381,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) IsClaimed(ctx context.Context, in *QueryIsClaimedRequest, opts ...grpc.CallOption) (*QueryIsClaimedResponse, error) {
 	out := new(QueryIsClaimedResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.claim.Query/IsClaimed", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.claim.Query/IsClaimed", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -390,7 +390,7 @@ func (c *queryClient) IsClaimed(ctx context.Context, in *QueryIsClaimedRequest, 
 
 func (c *queryClient) ClaimSwitch(ctx context.Context, in *QueryClaimSwitchRequest, opts ...grpc.CallOption) (*QueryClaimSwitchResponse, error) {
 	out := new(QueryClaimSwitchResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.claim.Query/ClaimSwitch", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.claim.Query/ClaimSwitch", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -435,7 +435,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.claim.Query/Params",
+		FullMethod: "/furybase.furybase.claim.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -453,7 +453,7 @@ func _Query_IsClaimed_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.claim.Query/IsClaimed",
+		FullMethod: "/furybase.furybase.claim.Query/IsClaimed",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).IsClaimed(ctx, req.(*QueryIsClaimedRequest))
@@ -471,7 +471,7 @@ func _Query_ClaimSwitch_Handler(srv interface{}, ctx context.Context, dec func(i
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.claim.Query/ClaimSwitch",
+		FullMethod: "/furybase.furybase.claim.Query/ClaimSwitch",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ClaimSwitch(ctx, req.(*QueryClaimSwitchRequest))
@@ -480,7 +480,7 @@ func _Query_ClaimSwitch_Handler(srv interface{}, ctx context.Context, dec func(i
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.claim.Query",
+	ServiceName: "furybase.furybase.claim.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	//sdk "github.com/cosmos/cosmos-sdk/types"
-	testkeeper "github.com/stafihub/stafihub/testutil/keeper"
-	"github.com/stafihub/stafihub/testutil/sample"
-	"github.com/stafihub/stafihub/x/relayers/types"
+	testkeeper "github.com/furybase/furybase/testutil/keeper"
+	"github.com/furybase/furybase/testutil/sample"
+	"github.com/furybase/furybase/x/relayers/types"
 	"github.com/stretchr/testify/require"
 )
 

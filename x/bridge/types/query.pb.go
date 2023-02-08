@@ -725,22 +725,22 @@ func (m *QueryGetDepositCountResponse) GetCount() uint32 {
 }
 
 func init() {
-	proto.RegisterType((*QueryParamsRequest)(nil), "stafihub.stafihub.bridge.QueryParamsRequest")
-	proto.RegisterType((*QueryParamsResponse)(nil), "stafihub.stafihub.bridge.QueryParamsResponse")
-	proto.RegisterType((*QueryChaindIdsRequest)(nil), "stafihub.stafihub.bridge.QueryChaindIdsRequest")
-	proto.RegisterType((*QueryChaindIdsResponse)(nil), "stafihub.stafihub.bridge.QueryChaindIdsResponse")
-	proto.RegisterType((*QueryProposalDetailRequest)(nil), "stafihub.stafihub.bridge.QueryProposalDetailRequest")
-	proto.RegisterType((*QueryProposalDetailResponse)(nil), "stafihub.stafihub.bridge.QueryProposalDetailResponse")
-	proto.RegisterType((*QueryResourceidToDenomsRequest)(nil), "stafihub.stafihub.bridge.QueryResourceidToDenomsRequest")
-	proto.RegisterType((*QueryResourceidToDenomsResponse)(nil), "stafihub.stafihub.bridge.QueryResourceidToDenomsResponse")
-	proto.RegisterType((*QueryRelayFeeReceiverRequest)(nil), "stafihub.stafihub.bridge.QueryRelayFeeReceiverRequest")
-	proto.RegisterType((*QueryRelayFeeReceiverResponse)(nil), "stafihub.stafihub.bridge.QueryRelayFeeReceiverResponse")
-	proto.RegisterType((*QueryRelayFeeRequest)(nil), "stafihub.stafihub.bridge.QueryRelayFeeRequest")
-	proto.RegisterType((*QueryRelayFeeResponse)(nil), "stafihub.stafihub.bridge.QueryRelayFeeResponse")
-	proto.RegisterType((*QueryBannedDenomListRequest)(nil), "stafihub.stafihub.bridge.QueryBannedDenomListRequest")
-	proto.RegisterType((*QueryBannedDenomListResponse)(nil), "stafihub.stafihub.bridge.QueryBannedDenomListResponse")
-	proto.RegisterType((*QueryGetDepositCountRequest)(nil), "stafihub.stafihub.bridge.QueryGetDepositCountRequest")
-	proto.RegisterType((*QueryGetDepositCountResponse)(nil), "stafihub.stafihub.bridge.QueryGetDepositCountResponse")
+	proto.RegisterType((*QueryParamsRequest)(nil), "furybase.furybase.bridge.QueryParamsRequest")
+	proto.RegisterType((*QueryParamsResponse)(nil), "furybase.furybase.bridge.QueryParamsResponse")
+	proto.RegisterType((*QueryChaindIdsRequest)(nil), "furybase.furybase.bridge.QueryChaindIdsRequest")
+	proto.RegisterType((*QueryChaindIdsResponse)(nil), "furybase.furybase.bridge.QueryChaindIdsResponse")
+	proto.RegisterType((*QueryProposalDetailRequest)(nil), "furybase.furybase.bridge.QueryProposalDetailRequest")
+	proto.RegisterType((*QueryProposalDetailResponse)(nil), "furybase.furybase.bridge.QueryProposalDetailResponse")
+	proto.RegisterType((*QueryResourceidToDenomsRequest)(nil), "furybase.furybase.bridge.QueryResourceidToDenomsRequest")
+	proto.RegisterType((*QueryResourceidToDenomsResponse)(nil), "furybase.furybase.bridge.QueryResourceidToDenomsResponse")
+	proto.RegisterType((*QueryRelayFeeReceiverRequest)(nil), "furybase.furybase.bridge.QueryRelayFeeReceiverRequest")
+	proto.RegisterType((*QueryRelayFeeReceiverResponse)(nil), "furybase.furybase.bridge.QueryRelayFeeReceiverResponse")
+	proto.RegisterType((*QueryRelayFeeRequest)(nil), "furybase.furybase.bridge.QueryRelayFeeRequest")
+	proto.RegisterType((*QueryRelayFeeResponse)(nil), "furybase.furybase.bridge.QueryRelayFeeResponse")
+	proto.RegisterType((*QueryBannedDenomListRequest)(nil), "furybase.furybase.bridge.QueryBannedDenomListRequest")
+	proto.RegisterType((*QueryBannedDenomListResponse)(nil), "furybase.furybase.bridge.QueryBannedDenomListResponse")
+	proto.RegisterType((*QueryGetDepositCountRequest)(nil), "furybase.furybase.bridge.QueryGetDepositCountRequest")
+	proto.RegisterType((*QueryGetDepositCountResponse)(nil), "furybase.furybase.bridge.QueryGetDepositCountResponse")
 }
 
 func init() { proto.RegisterFile("bridge/query.proto", fileDescriptor_09fd90c905cb448b) }
@@ -849,7 +849,7 @@ func NewQueryClient(cc grpc1.ClientConn) QueryClient {
 
 func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts ...grpc.CallOption) (*QueryParamsResponse, error) {
 	out := new(QueryParamsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.bridge.Query/Params", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.bridge.Query/Params", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -858,7 +858,7 @@ func (c *queryClient) Params(ctx context.Context, in *QueryParamsRequest, opts .
 
 func (c *queryClient) ChaindIds(ctx context.Context, in *QueryChaindIdsRequest, opts ...grpc.CallOption) (*QueryChaindIdsResponse, error) {
 	out := new(QueryChaindIdsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.bridge.Query/ChaindIds", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.bridge.Query/ChaindIds", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -867,7 +867,7 @@ func (c *queryClient) ChaindIds(ctx context.Context, in *QueryChaindIdsRequest, 
 
 func (c *queryClient) ProposalDetail(ctx context.Context, in *QueryProposalDetailRequest, opts ...grpc.CallOption) (*QueryProposalDetailResponse, error) {
 	out := new(QueryProposalDetailResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.bridge.Query/ProposalDetail", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.bridge.Query/ProposalDetail", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -876,7 +876,7 @@ func (c *queryClient) ProposalDetail(ctx context.Context, in *QueryProposalDetai
 
 func (c *queryClient) ResourceidToDenoms(ctx context.Context, in *QueryResourceidToDenomsRequest, opts ...grpc.CallOption) (*QueryResourceidToDenomsResponse, error) {
 	out := new(QueryResourceidToDenomsResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.bridge.Query/ResourceidToDenoms", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.bridge.Query/ResourceidToDenoms", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -885,7 +885,7 @@ func (c *queryClient) ResourceidToDenoms(ctx context.Context, in *QueryResourcei
 
 func (c *queryClient) RelayFeeReceiver(ctx context.Context, in *QueryRelayFeeReceiverRequest, opts ...grpc.CallOption) (*QueryRelayFeeReceiverResponse, error) {
 	out := new(QueryRelayFeeReceiverResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.bridge.Query/RelayFeeReceiver", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.bridge.Query/RelayFeeReceiver", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -894,7 +894,7 @@ func (c *queryClient) RelayFeeReceiver(ctx context.Context, in *QueryRelayFeeRec
 
 func (c *queryClient) RelayFee(ctx context.Context, in *QueryRelayFeeRequest, opts ...grpc.CallOption) (*QueryRelayFeeResponse, error) {
 	out := new(QueryRelayFeeResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.bridge.Query/RelayFee", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.bridge.Query/RelayFee", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -903,7 +903,7 @@ func (c *queryClient) RelayFee(ctx context.Context, in *QueryRelayFeeRequest, op
 
 func (c *queryClient) BannedDenomList(ctx context.Context, in *QueryBannedDenomListRequest, opts ...grpc.CallOption) (*QueryBannedDenomListResponse, error) {
 	out := new(QueryBannedDenomListResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.bridge.Query/BannedDenomList", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.bridge.Query/BannedDenomList", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -912,7 +912,7 @@ func (c *queryClient) BannedDenomList(ctx context.Context, in *QueryBannedDenomL
 
 func (c *queryClient) GetDepositCount(ctx context.Context, in *QueryGetDepositCountRequest, opts ...grpc.CallOption) (*QueryGetDepositCountResponse, error) {
 	out := new(QueryGetDepositCountResponse)
-	err := c.cc.Invoke(ctx, "/stafihub.stafihub.bridge.Query/GetDepositCount", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/furybase.furybase.bridge.Query/GetDepositCount", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -982,7 +982,7 @@ func _Query_Params_Handler(srv interface{}, ctx context.Context, dec func(interf
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.bridge.Query/Params",
+		FullMethod: "/furybase.furybase.bridge.Query/Params",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).Params(ctx, req.(*QueryParamsRequest))
@@ -1000,7 +1000,7 @@ func _Query_ChaindIds_Handler(srv interface{}, ctx context.Context, dec func(int
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.bridge.Query/ChaindIds",
+		FullMethod: "/furybase.furybase.bridge.Query/ChaindIds",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ChaindIds(ctx, req.(*QueryChaindIdsRequest))
@@ -1018,7 +1018,7 @@ func _Query_ProposalDetail_Handler(srv interface{}, ctx context.Context, dec fun
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.bridge.Query/ProposalDetail",
+		FullMethod: "/furybase.furybase.bridge.Query/ProposalDetail",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ProposalDetail(ctx, req.(*QueryProposalDetailRequest))
@@ -1036,7 +1036,7 @@ func _Query_ResourceidToDenoms_Handler(srv interface{}, ctx context.Context, dec
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.bridge.Query/ResourceidToDenoms",
+		FullMethod: "/furybase.furybase.bridge.Query/ResourceidToDenoms",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).ResourceidToDenoms(ctx, req.(*QueryResourceidToDenomsRequest))
@@ -1054,7 +1054,7 @@ func _Query_RelayFeeReceiver_Handler(srv interface{}, ctx context.Context, dec f
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.bridge.Query/RelayFeeReceiver",
+		FullMethod: "/furybase.furybase.bridge.Query/RelayFeeReceiver",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).RelayFeeReceiver(ctx, req.(*QueryRelayFeeReceiverRequest))
@@ -1072,7 +1072,7 @@ func _Query_RelayFee_Handler(srv interface{}, ctx context.Context, dec func(inte
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.bridge.Query/RelayFee",
+		FullMethod: "/furybase.furybase.bridge.Query/RelayFee",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).RelayFee(ctx, req.(*QueryRelayFeeRequest))
@@ -1090,7 +1090,7 @@ func _Query_BannedDenomList_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.bridge.Query/BannedDenomList",
+		FullMethod: "/furybase.furybase.bridge.Query/BannedDenomList",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).BannedDenomList(ctx, req.(*QueryBannedDenomListRequest))
@@ -1108,7 +1108,7 @@ func _Query_GetDepositCount_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/stafihub.stafihub.bridge.Query/GetDepositCount",
+		FullMethod: "/furybase.furybase.bridge.Query/GetDepositCount",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
 		return srv.(QueryServer).GetDepositCount(ctx, req.(*QueryGetDepositCountRequest))
@@ -1117,7 +1117,7 @@ func _Query_GetDepositCount_Handler(srv interface{}, ctx context.Context, dec fu
 }
 
 var _Query_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "stafihub.stafihub.bridge.Query",
+	ServiceName: "furybase.furybase.bridge.Query",
 	HandlerType: (*QueryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{

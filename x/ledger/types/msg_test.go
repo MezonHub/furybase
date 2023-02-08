@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/stafihub/stafihub/testutil/sample"
-	"github.com/stafihub/stafihub/utils"
+	"github.com/furybase/furybase/testutil/sample"
+	"github.com/furybase/furybase/utils"
 	"github.com/stretchr/testify/require"
 )
 
@@ -435,13 +435,13 @@ func TestMsgSubmitSignature_ValidateBasic(t *testing.T) {
 }
 
 func TestMsgLiquidityUnbond_GetSignBytes(t *testing.T) {
-	addr, _ := sdk.AccAddressFromBech32("stafi1wz9ax9xlxjtw9akxyf29aflau4f63p5duvkg9z")
+	addr, _ := sdk.AccAddressFromBech32("did:fury:1wz9ax9xlxjtw9akxyf29aflau4f63p5duvkg9z")
 	msg := NewMsgLiquidityUnbond(addr, "cosmos1gsth46z50w256p4kq36xquh4q90mfjq0t4lm9scln6zucg64epyqudzqzm", sdk.Coin{
 		Denom:  "uratom",
 		Amount: sdk.NewInt(200000),
 	}, "cosmos1wz9ax9xlxjtw9akxyf29aflau4f63p5d88xz36")
 	res := msg.GetSignBytes()
 	t.Log(string(res))
-	expected := `{"type":"ledger/LiquidityUnbond","value":{"creator":"stafi1wz9ax9xlxjtw9akxyf29aflau4f63p5duvkg9z","pool":"cosmos1gsth46z50w256p4kq36xquh4q90mfjq0t4lm9scln6zucg64epyqudzqzm","recipient":"cosmos1wz9ax9xlxjtw9akxyf29aflau4f63p5d88xz36","value":{"amount":"200000","denom":"uratom"}}}`
+	expected := `{"type":"ledger/LiquidityUnbond","value":{"creator":"did:fury:1wz9ax9xlxjtw9akxyf29aflau4f63p5duvkg9z","pool":"cosmos1gsth46z50w256p4kq36xquh4q90mfjq0t4lm9scln6zucg64epyqudzqzm","recipient":"cosmos1wz9ax9xlxjtw9akxyf29aflau4f63p5d88xz36","value":{"amount":"200000","denom":"uratom"}}}`
 	require.Equal(t, expected, string(res))
 }

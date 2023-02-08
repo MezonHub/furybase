@@ -4,7 +4,7 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/sudo/types"
+	"github.com/furybase/furybase/x/sudo/types"
 )
 
 type msgServer struct {

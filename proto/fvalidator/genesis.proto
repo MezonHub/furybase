@@ -1,0 +1,55 @@
+syntax = "proto3";
+package furybase.furybase.fvalidator;
+
+import "gogoproto/gogo.proto";
+import "fvalidator/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/furybase/furybase/x/fvalidator/types";
+
+// GenesisState defines the fvalidator module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  repeated FValidator selectedFValidatorList = 2;
+  repeated Cycle latestVotedCycleList = 3;
+  repeated Cycle latestDealedCycleList = 4;
+  repeated CycleSeconds cycleSecondsList = 5;
+  repeated ShuffleSeconds shuffleSecondsList = 6;
+  repeated DealingFValidator dealingFValidatorList = 7;
+  // this line is used by starport scaffolding # genesis/proto/state
+}
+
+
+message FValidator {
+  string denom  = 1;
+  string poolAddress = 2;
+  string valAddress = 3;
+}
+
+message DealingFValidator {
+  string denom  = 1;
+  string poolAddress = 2;
+  string oldValAddress = 3;
+  string newValAddress = 4;
+}
+
+
+
+message Cycle {
+  string denom = 1;
+  string poolAddress = 2;
+  uint64 version = 3;
+  uint64 number = 4;
+}
+
+message CycleSeconds {
+  string denom = 1;
+  uint64 version = 2;
+  uint64 seconds = 3;
+}
+
+message ShuffleSeconds {
+  string denom = 1;
+  uint64 version = 2;
+  uint64 seconds = 3;
+}

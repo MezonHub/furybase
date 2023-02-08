@@ -4,7 +4,7 @@ import (
 	"context"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/stafihub/stafihub/x/mining/types"
+	"github.com/furybase/furybase/x/mining/types"
 )
 
 func (k msgServer) UpdateStakeItem(goCtx context.Context, msg *types.MsgUpdateStakeItem) (*types.MsgUpdateStakeItemResponse, error) {

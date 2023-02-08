@@ -149,7 +149,7 @@ func (m *GenesisState) GetStakeItemLimit() *StakeItemLimit {
 }
 
 func init() {
-	proto.RegisterType((*GenesisState)(nil), "stafihub.stafihub.mining.GenesisState")
+	proto.RegisterType((*GenesisState)(nil), "furybase.furybase.mining.GenesisState")
 }
 
 func init() { proto.RegisterFile("mining/genesis.proto", fileDescriptor_2628b9fc0ab431ed) }
